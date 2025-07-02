@@ -24,12 +24,16 @@ This course covers the basics of Python, including
 
 # 🎯 Goals
 
-
+- Learn to write clean, readable Python code
+- Build a solid foundation for more advanced topics and projects
+- Share progress publicly as a portfolio of learning
 
 # 🧠 What I'm Learning
 
-
+I will update this repo regularly as I work through the course material. If you're also learning Python, feel free to fork, follow along, or reach out!
 
 # 🙌 Acknowledgements
 
+Thanks to Western Governor's University and the D335 course instructors for the material and support. 
 
+Additional thanks to the Python community for helpful tutorials!
