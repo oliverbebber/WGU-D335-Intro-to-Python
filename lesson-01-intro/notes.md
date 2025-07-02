@@ -69,4 +69,75 @@ Introduction to programming concepts and Python basics. This lesson covers gener
   # Display yearly salary
   print(salary)
   ```
+  
 - **Comments**: programmers can leave helpful notes that start with ```#``` within their code to explain what pieces of the program does. These are beneficial for others and for the programmer who wrote the code. Information starting with the ```#``` is ignored by Python.
+
+
+### 3. Basic Input and Output
+
+- **String**: a sequence of characters enclosed in quotes. Strings can include letters, numbers, spaces, **and** symbols.
+  - Example
+  ```python
+  "Hello, world!"
+  ```
+
+Note: a single output line can include multiple strings and variables. These are separated by commas in the ```print()``` function and automatically have a space character between them.
+
+> Example
+>  ```python
+>  wage = 160
+>
+>  # Display daily wage
+>  print('Your daily wage is $', wage)
+>
+>  weekly_wage = 800
+>
+>  # Display daily wage and weekly wage
+>  print('$', wage, 'per day is $', weekly_wage, 'per week')
+>  ```
+
+By default, every ```print()``` function outputs on a new line; however, to continue printing on the same line, you can use ```end=' '```. This adds a single space instead of moving to the next line.
+> Example
+> ```python
+> # Including end=' ' keeps output on the same line
+> print('Hello there.', end=' ')
+> print('My name is...', end=' ')
+> print('Oliver.')
+
+- **Escape sequence**: a combination of characters used inside a string that starts with a backslash {```\```) which tells Python to do something special - like add a line break, tab, or a special symbol.
+  - ```\n```: moves text to a new line
+  - ```\t```: indent text horizontally
+  - ```\\```: prints a backslash
+  
+  
+- **Newline character (```\n```)**: a specific type of escape sequence that moves the output onto the next line. Commonly used in strings to format output across multiple lines.
+  - Example
+   ```python
+   print("Line1\nLine2\nLine3")
+
+   # Output:
+   # Line 1
+   # Line 2
+   # Line 3
+   ```
+  
+- **Whitespace**: Any space, tab, or newline character; often used to separate words and format code clearly.
+- **```input()``` function**: a built-in Python function that pauses the program to accept user input. It returns the input as a string.
+  - Example
+  ```python
+  name = input("Enter your name: ")
+  print("Hello, " + name)
+  ```
+  
+- **Type**: the kind of data a value represents.
+ 
+  ```int```: integer (whole number; ex: ... -100, -1, 0, 1, 100, ...)
+
+  ```float```: decimal number
+  
+  ```str```: string of characters
+ 
+- **```int()``` function**: a built-in Python function that converts a string or number into an integer
+- **Whole numbers**: numbers **without** fractions or decimals; includes 0 and all **positive** integers.
+- **Integers**: numbers that include all whole numbers, plus their negative counterparts
+
