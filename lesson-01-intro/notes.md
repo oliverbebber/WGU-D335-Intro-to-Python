@@ -141,3 +141,120 @@ By default, every ```print()``` function outputs on a new line; however, to cont
 - **Whole numbers**: numbers **without** fractions or decimals; includes 0 and all **positive** integers.
 - **Integers**: numbers that include all whole numbers, plus their negative counterparts
 
+
+### 4. Errors
+
+- **SyntaxError**: occurs when the code breaks the rules of the programming language and usually the result of something being written incorrectly. Python will not understand the instruction, so it won't run the program.
+  - Examples:
+    - Missing parentheses
+    - Misspelled keywords
+    - Incorrect indentation
+    - Incorrect symbols (```( )``` instead of ```{ }```)
+    - Using multiple ```print()``` functions on the same line without proper formatting
+   
+    ```python
+    print('My name is Oliver") # Syntax error caused by mismatching quotes (single vs double)
+    ```
+
+Note: Executing code frequently is a best practice that is helpful to avoid continually hitting error messages. 
+
+> For beginners:
+> 
+> Write 3-5 lines at a time before executing to determine if there are any errors needing resolution before moving onto the next part of the program.
+
+- **Runtime error**: occurs after the code is executed, usually because the program attempts to do something that is impossible - such as dividing by zero or using a variable that has not been defined.
+  - Example
+    ```python
+    x = 10
+    y = 0
+
+    # Divide by zero
+    print(x / y) # RuntimeError: division by zero
+    ```
+    
+- **IndentationError**: occurs when lines of code are not properly indented. Indentation is critical in Python as it defines the structure of the code (especially in blocks like ```if```, ```for```, ```while```, etc.).
+  - Example
+    > ```python
+    > def greeting():
+    > print("Hello, world!") # IndentationError: expected an indented block
+    > ```
+    >
+    > ```python
+    > def greeting():
+    >   print("Hello, world!") # Correctly indented
+    > ```
+    >
+    > IndentationErrors can occur whether the indentation is missing or simply inconsistent.
+
+
+- **ValueError**: occurs when you attempt to use the correct type of data but the value doesn't make sense for the operation you're trying to perform.
+  - Example
+    > ```python
+    > # Attempting to convert a non-numeric string to an integer
+    > age = int("twenty-five") # ValueError: invalid literal for int() with base 10
+    > ```
+    >
+    > ```python
+    > import math
+    > # Asking for the square root of a negative number
+    > print(math.sqrt(-1)) # ValueError: math domain error
+    > ```
+
+- **NameError**: occurs when Python cannot recognize a name because it has not been defined in the current program. This is usually because you have forgotten to define it, made a typo, or used it before assigning it to a variable.
+  - Example
+    > ```python
+    > print(age) # NameError: name 'age' is not defined
+    > ```
+    >
+    > ```python
+    > username = "Oliver"
+    > print(usernme) # NameError: name 'usernme' is not defined
+    > ```
+    >
+    > Pay special attention to the error messages as these will assist you in resolving the problem that caused the error.
+
+
+- **TypeError**: occurs when an operation is performed on a value of the wrong data type.
+  - Example
+    > ```python
+    > import math
+    > print(math.pi(-1)) # TypeError: 'float' object is not callable
+    > ```
+    >
+    > This error occurs due to math.pi being a float constant (3.14159...) vs a function.
+    >
+    > ```python
+    > age = 25
+    > print("You are " + age) # TypeError: can only concatenate str (not "int") to str
+    > ```
+    >
+    > The resolution:
+    > ```python
+    > print*"You are " + str(age)) # Converts int to str before combining
+    > ```
+
+- **Crash**: when a program abruptly and unintentionally gets terminated.
+- **Logic error**: occurs when a program runs without any syntax or runtime errors, but it produces the wrong result because the code doesn't follow the correct steps to solve the problem; aka bug.
+  - Example
+    > ```python
+    > price = 100
+    > tax_rate = 0.0925
+    > total = price - (price * tax_rate) # Logic error: subtracting tax instead of adding
+    >
+    > print(total)
+    > ```
+    >
+    > The resolution:
+    > ```python
+    > total = price + (price * tax_rate)
+    > ```
+    >
+    > ```python
+    > current_salary = int(input('Enter current salary: '))
+    >
+    > raise_percentage = 10 # Logic error gives a 1000% raise instead of 10%
+    > new_salary = current_salary + (current_salary * raise_percentage)
+    > print('New salary:', new_salary)
+    > ```
+
+
