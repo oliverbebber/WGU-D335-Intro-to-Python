@@ -96,6 +96,22 @@ Useful Functions and Methods Related to Lists
 
 ### 4. Tuple basics
 
+- **Tuple**: stores a collection of items, similar to a list, but tuples are **immutable** - their values **cannot** change after creation.
+  - Tuples are typically surrounded by parentheses.
+    - Example
+    > ```python
+    > wh_coordinates = (38.8977, 77.0366)
+    > print(f'Coordinates: {wh_coordinates}')
+    > print(f'Tuple length: {len(wh_coordinates)}')
+    > 
+    > # Access tuples via index
+    > print(f'\nLatitude: {wh_coordinates[0]} north')
+    > print(f'Longitude: {wh_coordinates[1]} west\n')
+    > 
+    > # Error. Tuples are immutable
+    > wh_coordinates[1] = 50
+    > ```
+- 
 
 ### 5. Set basics
 
