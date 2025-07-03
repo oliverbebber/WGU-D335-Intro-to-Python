@@ -35,6 +35,80 @@ These are my notes for Lesson 02 of the Intro to Python course.
 
 ### 2. Identifiers
 
+- **Identifier** aka **name**: the name given to variables, functions, or classes within code.
+  - Names must follow these rules:
+    - Must start with a letter or an underscore - not a number.
+    - Can only include letters (**a-z, A-Z**), digits (**0-9**), and underscores ( **_** )
+    - Cannot be the same as a Python **keyword**
+  - Examples
+  > Valid identifiers
+  > ```python
+  > first_name
+  > _temp
+  > street_address1
+  > street_address2
+  > state
+  > zip_code
+  > ```
+  >
+  > Invalid identifiers
+  > ```python
+  > 2name  # Starts with a digit
+  > last-name  # Contains a hyphen
+  > class  # Reserved word (keyword) in Python
+  > ```
+
+- **Reserved words** aka **keywords**: special words built into the Python language that hold specific meaning and purpose.
+  - Cannot be used as variable or function names
+  - Python 3 reserved words:
+  > ```python
+  > if
+  > else
+  > while
+  > for
+  > def
+  > return
+  > class
+  > True
+  > False
+  > None
+  > assert
+  > as
+  > async
+  > await
+  > except
+  > import
+  > pass
+  > raise
+  > in
+  > is
+  > return
+  > try
+  > lambda
+  > nonlocal
+  > with
+  > yield
+  > or
+  > not
+  > elif
+  > del
+  > continue
+  > break
+  > and
+  > finally
+  > for
+  > from
+  > global
+  > ```
+  > 📌 Some of these keywords are valid identifiers if the first letter is either capitalized or lowercase. 
+
+- **PEP 8**: Python Enhancement Proposal 8; the official style guide for writing clean, readable, and consistent Python code.
+  - Includes best practices for:
+    - Naming variables & functions
+    - Spacing & indentation
+    - Organizing code for readability
+   
+
 
 ### 3. Objects
 
