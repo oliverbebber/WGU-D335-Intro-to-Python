@@ -82,3 +82,61 @@ user_address = input()
 addresses_str = user_name + ' lives on ' + user_address
 
 print(addresses_str)
+
+
+
+# 3.3.2
+# Read three integers from input into variables 
+datapoint1 = int(input())
+datapoint2 = int(input())
+datapoint3 = int(input())
+
+# Create list named data_list to hold variables
+data_list=[datapoint1, datapoint2, datapoint3]
+
+print(data_list)
+
+
+# Reads four values from input into names_list
+names_list = [input(), input(), input(), input()]
+
+# Print the 2nd element on one line, the 3rd element on another, and the 1st element on the last line, followed by 'is my sibling.'
+print(names_list[1], 'is my sibling.')
+print(names_list[2], 'is my sibling.')
+print(names_list[0], 'is my sibling.')
+
+# Originally tried using one print statement with \n for each new line. 
+# print(names_list[1], 'is my sibling.'\n names_list[2], 'is my sibling.'\n names_list[0], 'is my sibling.')
+
+# It's important to remember \n only works within strings and each print statement must be written separately
+# or inside a single properly formatted string.
+
+print(
+    names_list[1] + ' is my sibling.\n' +
+    names_list[2] + ' is my sibling.\n' +
+    names_list[0] + ' is my sibling.'
+)
+# This is an additional way the answer could have been written without rewriting each individual print function.
+# However, this option may not follow best practices for readability.
+
+
+# Reads four values from input into years_list
+years_list = [int(input()), int(input()), int(input()), int(input())]
+
+# Remove the second element
+years_list.pop(1)
+
+# Read another int from input and append to years_list
+years_list.append(int(input()))
+
+print(years_list)
+
+
+# Reads four values from input into state_codes_list
+state_codes_list = [input(), input(), input(), input()]
+
+len_value = len(state_codes_list)
+index_value = state_codes_list.index('TX')
+
+print(f'List length: {len_value}')
+print(f'TX is found at index {index_value} of {state_codes_list}')
