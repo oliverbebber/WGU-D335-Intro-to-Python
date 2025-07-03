@@ -308,3 +308,11 @@ print(x)
 
 
 ### 11. Representing text
+
+
+
+## References
+
+[Object Interning in Python](https://www.geeksforgeeks.org/python/object-interning-in-python/)
+
+[Python Bitwise Operators](https://www.geeksforgeeks.org/python/python-bitwise-operators/)
