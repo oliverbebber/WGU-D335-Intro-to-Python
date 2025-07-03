@@ -147,6 +147,25 @@ print(x)
     - Both inputs and the result are floats.
 
 
+📌 Exponents in Python
+
+  > **Reminder**: In Python, ```^``` does **not** mean exponent (power).
+  > Instead, it's the **bitwise XOR operator**.
+  > To raise a number to a power, use ```**```.
+  >
+  > Incorrect
+  > ```python
+  >   x = 5 ^ 2 # Result is 7
+  > ```
+  >
+  > Correct
+  > ```python
+  >   x = 5 ** 2 # Result is 25
+  > ```
+
+
+
+
 ### 10. Random numbers
 
 
