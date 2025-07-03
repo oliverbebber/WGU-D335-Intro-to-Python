@@ -230,7 +230,7 @@ Note: Executing code frequently is a best practice that is helpful to avoid cont
     >
     > The resolution:
     > ```python
-    > print*"You are " + str(age)) # Converts int to str before combining
+    > print("You are " + str(age)) # Converts int to str before combining
     > ```
 
 - **Crash**: when a program abruptly and unintentionally gets terminated.
