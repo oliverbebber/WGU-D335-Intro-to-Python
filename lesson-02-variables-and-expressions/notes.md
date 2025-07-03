@@ -355,8 +355,46 @@ print(x)
 
 ### 11. Representing text
 
+- **Unicode**:
+- **Code point**: 
 
+Common escape sequences
 
+| Escape Sequence | Explanation      | Example code                                               | Output                   |
+|:----------------|:-----------------|:-----------------------------------------------------------|:-------------------------|
+| \\              | Backslash (\)    | ```python print('\\home\\users\\')```                      | \home\users\             |
+| \'              | Single quote (') | ```python print('Name: John O\'Donald'```                  | Name: John O'Donald      |
+| \"              | Double quote (") | ```python print("He said, \"Hello friend!\"")```           | He said, "Hello friend!" |
+| \n              | Newline          | ```python print('My name...\nIs John...')```               | My name...<br>Is John... |
+| \t              | Tab (indent)     | ```python print('1. Back cookies\n\t1.1. Preheat oven')``` | 1. Bake cookies<br>&nbsp;&nbsp;&nbsp;&nbsp;1.1 Preheat oven |
+
+- **Raw string**: a special type of string where Python does **not** process escape sequences such as ```\n``` or ```\t```. To create a raw string, place an ```r``` before the opening quote: ```r'text'```.
+  - Example
+  > ```python
+  > # Prints out the text exactly as it is within the single quote
+  > print(r'This is a raw string\nIt will print the backslash and n literally')
+  >
+  > # Creates a string that be processed by the escape sequences, creating text on a new line (\n)
+  > my_string = 'This is a \n \'normal\' string\n'
+  > # Creates a string that will **not** be processed by the escape sequences,
+  > # creating a string that is exactly as it is within the single quotes
+  > raw_string = r'This is a \n \'raw\' string'
+  >
+  > print(my_string)
+  > print(raw_string)
+  > ```
+  
+- **ord() function**: takes a single character and returns its Unicode (integer) code.
+  - Example
+  > ```ord('A')``` returns ```65```
+  > ```ord('b')``` returns ```98```
+- **chr() function**: takes an integer Unicode point and returns the corresponding character as a string.
+  - Example
+  > ```chr(65)``` returns ```A```
+  > ```chr(52)``` returns ```4```
+  
+
+  
 ## References
 
 [Object Interning in Python](https://www.geeksforgeeks.org/python/object-interning-in-python/)
