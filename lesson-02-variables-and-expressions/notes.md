@@ -306,6 +306,52 @@ print(x)
 
 ### 10. Random numbers
 
+- **Random module**: part of the Python Standard Library, the ```random``` module provides tools for generating random values.
+  - **random() function**: returns a random floating-point number between ```0.0``` (inclusive) and ```1.0``` (exclusive).
+  - Example
+  > ```python
+  > import random
+  >
+  > # Store a random number in a variable
+  > x = random.random()
+  > print(x)
+  >
+  > # Print random numbers directly
+  > print("Another random number:", random.random())
+  > print("And another:", random.random())
+  > ```
+
+- **randrange(min, max)**: generates a random integer within a specified range; returns an integer between min (inclusive) and max (exclusive).
+  - Example
+  > ```python
+  > import random
+  >
+  > # Returns a random integer from 1 (inclusive) up to 10 (exclusive)
+  > num = random.randrange(1, 10)
+  > print(num)
+  >
+  ># Returns random integers with 5 possible values
+  > print(random.randrange(5))
+  > print(random.randrange(5))
+  > print(random.randrange(5))
+  > print(random.randrange(5))
+  > print(random.randrange(5))
+  > ```
+  
+- **randint(min, max)**: returns a random integer between min (inclusive) and max (inclusive).
+  - Example
+  > ```python
+  > # Returns a random integer between 23 and 50 inclusive
+  > print(random.randint(23, 50))
+  > ```
+
+- **Psuedo-random**: numbers created by the ```random``` module aren't truly random, they simply **look** random, but they're calculated using a formula behind the scenes.
+  - Python's random number generator works by:
+  >  - Starting with a special value (**seed**), oftened based on the current time.
+  >  - Using a formula to produce a sequence of random-looking numbers.
+  >  - Each new number is bsed on the one coming before it.
+  
+
 
 ### 11. Representing text
 
@@ -316,3 +362,7 @@ print(x)
 [Object Interning in Python](https://www.geeksforgeeks.org/python/object-interning-in-python/)
 
 [Python Bitwise Operators](https://www.geeksforgeeks.org/python/python-bitwise-operators/)
+
+[randrange in Python](https://www.geeksforgeeks.org/python/randrange-in-python/)
+
+[Range Function](https://pythonbasics.org/range-function/)
