@@ -6,6 +6,32 @@ These are my notes for Lesson 02 of the Intro to Python course.
 
 ### 1. Variables and Expressions
 
+- **Variable**: a named placeholder that stores data a program can use and modify.
+  - Examples
+    ```python
+    x = 3
+    num_cats = 7
+    ```
+
+- **Assignment statement**: stores a value in a variable by using the ```=``` symbol.
+  - Python evaluates the **expression on the right** and stores the result in the **variable on the left**.
+ 
+
+📌 ```=``` is **not** equals
+> Do not think of it in terms of math.
+> ```python
+> x = 3
+> ```
+> This is read as "x is assigned with 3."
+
+  
+- **Incrementing**: increasing a variable's value by 1; common operation used in loops or counters.
+  - Example
+      ```python
+      x = 5
+      x = x + 1
+      ```
+      - x is now 6
 
 ### 2. Identifiers
 
