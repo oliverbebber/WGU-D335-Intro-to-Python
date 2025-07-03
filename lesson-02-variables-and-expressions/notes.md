@@ -89,6 +89,64 @@ Common functions
 | e (constant)              | Mathematical constant 2.718281...             |
 
 
+Math function examples
+
+```python
+import math
+
+x = math.sqrt(25.0)
+print(x)
+```
+
+  - Output: ```5.0```
+    - The ```math.sqrt()``` function calculates the square root of a number.
+    - Since the input is ```25.0``` (a float), the result is also a float.
+
+```python
+import math
+
+x = math.fabs(3.1)
+print(x)
+```
+
+  - Output: ```3.1```
+    - The ```math.fabs()``` function returns the **absolute value** of a number.
+    - It always returns a **positive float**.
+
+```python
+import math
+
+x = math.pow(2.0, 5.0)
+print(x)
+```
+
+- Output: ```32.0```
+  - The ```math.pow()``` function raises the first number to the power of the second: 2<sup>5</sup> = 32.
+  - Both inputs and the result are floats.
+
+```python
+import math
+
+x = math.fabs(-10.0 + 5.0)
+print(x)
+```
+
+  - Output: ```5.0```
+    - The expression ```-10.0 + 5.0``` evaluates to ```-5.0```. and ```math.fabs()``` returns the absolute value: ```5.0```.
+
+```python
+import math
+
+x = math.pow(5.0, math.sqrt(25.0))
+print(x)
+```
+
+  - Output: ```3125.0```
+    - The innermost expression ```math.sqrt(25.0)``` evaluates to ```5.0```.
+    - Then ```math.pow(5.0, 5.0)``` calcuates 5<sup>5</sup> = ```3125```.
+    - Both inputs and the result are floats.
+
+
 ### 10. Random numbers
 
 
