@@ -112,6 +112,44 @@ These are my notes for Lesson 02 of the Intro to Python course.
 
 ### 3. Objects
 
+- **Object**: a container representing a value in a Python program; automatically created when you assign a value to a variable.
+  - Example
+  > ```python
+  > x = 42 # Creates an integer object
+  > name = "Oliver" # Creates a string object
+  > ```
+  >
+  > ```42``` and ```"Oliver"``` are objects (the values)
+  > ```x``` and ```name``` are identifiers that refer to those objects
+
+- **Garbage collection**: an automatic process Python uses to delete objects no longer needed by the program; frees up memory space to keep the program efficient
+- **Name binding**: the process of associating an identifier with an object in memory. When a value is assigned to a variable, Python binds the name to the object holding the value.
+  - Example
+  > ```python
+  > age = 25
+  > ```
+  > - The name ```age``` is **bound** to the integer object ```25```
+  > - If you write ```age = 30```, the name is **re-bound** to a new object (```30```)
+  
+- **Value**: the actual data stored in an object
+- **Type**: tells you what kind of value an object holds, like an integer, string, list, etc. which determines what operations can be performed on the object.
+- **Identity**: a unique identifier for each object in memory.
+- **type() function**: a built-in function that returns the **type** of an object, showing what kind of data it holds.
+- **Mutability**: describes whether an object's value can be changed after it's created.
+  - **Mutable** objects **can** be changed (lists, dictionaries)
+  - **Immutable** objects **cannot** be changed (integers, strings)
+- **id() function**: a built-in function that returns the unique identity of an object in memory; guaranteed to be unique and constant for the object during its lifetime.
+  - Example
+  > ```python
+  > a = 1000
+  > b = 1000
+  > print(id(a))
+  > print(id(b))
+  > ```
+  > Note: two different objects with the same value will always have different identities.
+  > Think of it like two people sharing the same birthday - even if they are twins, both individuals will have different SSNs.
+  >   - There is one exception to this due to Python interning small integers (-5 to 256) to optimize memory usage & performance.
+
 
 ### 4. Numeric Types: Floating-point
 
