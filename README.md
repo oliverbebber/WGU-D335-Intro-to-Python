@@ -4,7 +4,7 @@
 ![WGU](https://img.shields.io/badge/WGU-D335-blue)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
-Welcome to my repository for the **Introduction to Programming in Python (D335)** course at **Western Governor's University**! This repo includes **ungraded** code & exercises, as well as my personal notes as I learn the fundamentals of Python programming.
+Welcome to my repository for the **Introduction to Programming in Python (D335)** course at **Western Governors University**! This repo includes **ungraded** code & exercises, as well as my personal notes as I learn the fundamentals of Python programming.
 
 
 # 📚 About the Course
