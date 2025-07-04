@@ -34,6 +34,6 @@ I will update this repo regularly as I work through the course material. If you'
 
 # 🙌 Acknowledgements
 
-Thanks to Western Governor's University and the D335 course instructors for the material and support. 
+Thanks to Western Governors University and the D335 course instructors for the material and support. 
 
 Additional thanks to the Python community for helpful tutorials!
