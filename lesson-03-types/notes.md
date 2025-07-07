@@ -111,7 +111,10 @@ Useful Functions and Methods Related to Lists
     > # Error. Tuples are immutable
     > wh_coordinates[1] = 50
     > ```
-- 
+- **Named Tuple**: similar to a regular tuple, but with **named fields**. Makes the data more readable and easier to access by name rather than by index.
+  - These tuples are **immutable** and allow you to access elements using dot notation, like accessing attributes of an object.
+  - namedtuple() does not create new data objects, it just creates the new, simple data type.
+
 
 ### 5. Set basics
 
