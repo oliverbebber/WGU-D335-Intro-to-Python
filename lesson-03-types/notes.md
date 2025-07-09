@@ -111,9 +111,51 @@ Useful Functions and Methods Related to Lists
     > # Error. Tuples are immutable
     > wh_coordinates[1] = 50
     > ```
+    >
+    > ```python
+    > # Create a new variable that is a tuple containing two strings
+    > new_var = ('first string', 'second string')
+    >
+    > # Display length of new_var
+    > len(new_var) # Outputs 2
+    > ```
 - **Named Tuple**: similar to a regular tuple, but with **named fields**. Makes the data more readable and easier to access by name rather than by index.
   - These tuples are **immutable** and allow you to access elements using dot notation, like accessing attributes of an object.
   - namedtuple() does not create new data objects, it just creates the new, simple data type.
+  - The container ```namedtiple``` must be imported to create a new named tuple, then it can be created.
+    - Example
+    > ```python
+    > from collections import namedtuple
+    >
+    > # Define a named tuple called 'Cat' with fields for name, age, and breed
+    > Cat = namedtuple('Cat', ['name', 'age', 'breed', 'weight'])
+    >
+    > # Create instances of Cat
+    > cat_1 = Cat('Dallas', 11, 'DSH Tabby', 10.2)
+    > cat_2 = Cat('Phoenix', 6, 'DSH Tabby', 10.1)
+    > cat_3 = Cat('Miso', 3, 'DSH Tabby', 8.8)
+    >
+    > cats = [cat_1, cat_2. cat_3]
+    >
+    > # Access individual fields
+    > print(cat_1.name)   # Outputs: Dallas
+    > print(cat_1.age)    # Outputs: 11
+    >
+    > # Print the full named tuple
+    > print(cat_1)  # Outputs: Cat(name='Dallas', age=11, breed='DSH Tabby')
+    > print(cat_2)  # Outputs: Cat(name='Phoenix', age=6, breed='DSH Tabby')
+    > print(cat_3)  # Outputs: Cat(name='Miso', age=3, breed='DSH Tabby')
+    >
+    > # Compute the total weight of all cats
+    > total_weight = cat_1.weight + cat_2.weight + cat_3.weight
+    >
+    > # Display the result
+    > print(f'Total weight of my cats: {total_weight} lbs')  # Outputs: Total weight of my cats: 29.1 lbs
+    > ```
+    >
+    > ```cat_1```, ```cat_2```, and ```cat_3``` are instances of a ```Cat``` named tuple.
+    > ```.weight``` allows us to access the age field of each tuple.
+    > The sum is stored in ```total_weight``` and printed.
 
 
 ### 5. Set basics
@@ -141,3 +183,5 @@ Useful Functions and Methods Related to Lists
 ## References
 
 [Python Docs: Text Sequence Type - str](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+
+[Python Docs: collections - Container datatypes](https://docs.python.org/3/library/collections.html)
