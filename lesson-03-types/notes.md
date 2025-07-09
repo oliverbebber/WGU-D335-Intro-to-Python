@@ -160,6 +160,70 @@ Useful Functions and Methods Related to Lists
 
 ### 5. Set basics
 
+- **Set**: a collection of elements where each element is unique and the order does not matter.
+  - Sets do **not** support indexing or slicing because of the elements being unordered.
+    - Example
+    > ```python
+    > my_set = {1, 2, 3, 3, 2}
+    > print(my_set)  # Outputs: {1, 2, 3} - duplicates removed
+    > ```
+- **set() function**: a built-in Python function used to create a set.
+  - It can convert other iterable types (lists or strings) into a set, removing duplicates automatically
+    - Example
+    > ```python
+    > # From a list
+    > numbers = [1, 2, 2, 3, 4, 4]
+    > unique_nums = set(numbers)
+    > print(unique_nums)  # Outputs: {1, 2, 3, 4}
+    >
+    > # From a string
+    > letters = set("banana")
+    > print(letters)  # Outputs: {'a', 'n', 'b'}
+    > ```
+- **Set literal**: a way to create a set using curly braces ```{}``` with comma-separated values (CSV) inside.
+  - An empty set **cannot** be created this way, because it creates an empty dictionary instead.
+    - To create an empty set, use ```set()```
+      - Example
+      > ```python
+      > colors = {'red', 'blue', 'green'}
+      > print(colors)  # Outputs: {'green', 'red', 'blue'}
+      >
+      > # Creating an empty set
+      > empty_set = set()
+      > print(type(empty_set))  # Outputs: <class 'set'>
+      >
+      > # Using {} by itself, creating a dictionary vs a set
+      > not_a_set = {}
+      > print(type(not_a_set))  # Outputs: <class 'dict'>
+      > ```
+
+  ### Modifying Sets
+
+  - **add() method**: adds a single new element to a set.
+    - If an element already exists, nothing happens.
+      - Example
+      > ```python
+      > fruits = {'apple', 'banana'}
+      > fruits.add('orange')
+      > print(fruits)  # Outputs: {'apple', 'banana', 'orange'}
+      > ```
+  - **removed() method**: removes a specific element from a set.
+    - Raises a ```KeyError``` if the element is not found.
+      - Example
+      > ```python
+      > numbers = {1, 2, 3}
+      > numbers.remove(2)
+      > print(numbers)  # Output: {1, 3}
+      > ```
+  - **pop() method**: removes and returns a random element from the set.
+    - Raises a ```KeyError``` if the set is empty.
+      - Example
+      > ```python
+      > colors = {'red', 'green', 'bluee'}
+      > removed_color = colors.pop()
+      > print(removed_color)  # Outputs: could be 'red', 'green', or 'blue'
+      > print(colors)   # The set now contains the original colors, minus the color that was removed 
+      > ```
 
 ### 6. Dictionary basics
 
@@ -185,3 +249,13 @@ Useful Functions and Methods Related to Lists
 [Python Docs: Text Sequence Type - str](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
 
 [Python Docs: collections - Container datatypes](https://docs.python.org/3/library/collections.html)
+
+[set() Function in python](https://www.geeksforgeeks.org/python/python-set-function/)
+
+[Python Sets](https://www.geeksforgeeks.org/python/python-sets/)
+
+[Python Set add() Method](https://www.w3schools.com/python/ref_set_add.asp)
+
+[Python Set remove() Method]([https://www.w3schools.com/python/ref_list_remove.asp](https://www.w3schools.com/PYTHON/ref_set_remove.asp))
+
+[Python Set pop() Method](https://www.geeksforgeeks.org/python/python-set-pop-method/)
