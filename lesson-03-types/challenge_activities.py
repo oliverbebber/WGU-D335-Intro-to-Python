@@ -140,3 +140,62 @@ index_value = state_codes_list.index('TX')
 
 print(f'List length: {len_value}')
 print(f'TX is found at index {index_value} of {state_codes_list}')
+
+
+
+# 3.4.1
+from collections import namedtuple
+
+# Named tuple with the fields first name, last name, and birthday
+Person = namedtuple('Person', ['first_name', 'last_name', 'birthday'])
+
+# Person object with three strings read from input as attributes
+person_data = Person(input(), input(), input())
+
+# Output each field, ending with a newline
+print(f'First name: {person_data.first_name}')
+print(f'Last name: {person_data.last_name}')
+print(f'Birthday: {person_data.birthday}')
+
+
+# Four values get read from input and stored into variables
+color_name = input()
+red_channel = int(input())
+green_channel = int(input())
+blue_channel = int(input())
+
+# Initalize color named tuple to store variables in a specific order
+color = (color_name, red_channel, green_channel, blue_channel)
+
+print(f'Color name: {color[0]}, R: {color[1]}, G: {color[2]}, B: {color[3]}')
+
+
+# Import namedtuple container from collections container
+from collections import namedtuple
+
+# Define a named tuple called City with the following fields: name, state, population, in this order
+City = namedtuple('City', ['name', 'state', 'population'])
+
+city_name = input()
+state_located = input()
+population_count = int(input())
+
+city = City(city_name, state_located, population_count)
+
+print(f'City name: {city.name}, State: {city.state}, Population: {city.population}')
+
+
+from collections import namedtuple
+
+Color = namedtuple('Color', ['name', 'R', 'G', 'B'])
+
+# Read inputs
+color_name = input()
+red_channel = input()
+green_channel = input()
+blue_channel = input()
+
+# Create color_data tuple with input values
+color_data = Color(color_name, red_channel, green_channel, blue_channel)
+
+print(f'Color name: {color_data.name}, R: {color_data.R}, G: {color_data.G}, B: {color_data.B}')
