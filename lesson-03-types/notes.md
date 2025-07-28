@@ -286,6 +286,27 @@ Useful Functions and Methods Related to Lists
 
 ### 6. Dictionary basics
 
+- **Dictionary**: a Python container used to represent associative relationships by linking keys to pairs.
+  - Dictionary items **can** be removed after creating the dictionary, however, two keys **cannot** share the same name.
+  - Example
+  > ```python
+  > animal_sounds = {
+  >   "cat": "meow",
+  >   "dog": "bark",
+  >   "cow": "moo"
+  > }
+  > ```
+- **Dict object type**: the specific object type Python uses to create dictionaries.
+  - Example
+  > ``` python
+  > print(type(animal_sounds))  # Outputs: <class 'dict'>
+  > ```
+- **Key**: used to uniquely identify a value in a dictionary.
+- **Value**: the data used to describe a given key in a dictionary.
+  - Example
+    In the animal_sounds dictionary, ```{"cat": "meow"}```
+    - ```cat``` is the key
+    - ```meow``` is the value
 
 ### 7. Common data types summary
 
@@ -328,3 +349,7 @@ Useful Functions and Methods Related to Lists
 [Python Set difference() method](https://www.w3schools.com/python/ref_set_difference.asp)
 
 [Python Set symmetric_difference() method](https://www.w3schools.com/python/ref_set_symmetric_difference.asp)
+
+[Python Dictionaries](https://www.w3schools.com/python/python_dictionaries.asp)
+
+[Python Dictionary keys() method](https://www.geeksforgeeks.org/python/python-dictionary-keys-method/)
