@@ -199,3 +199,91 @@ blue_channel = input()
 color_data = Color(color_name, red_channel, green_channel, blue_channel)
 
 print(f'Color name: {color_data.name}, R: {color_data.R}, G: {color_data.G}, B: {color_data.B}')
+
+
+
+# 3.5.1
+# Create an empty set
+unique_cats = set()
+
+# Read 3 strings from user input
+cat1 = input()
+cat2 = input()
+cat3 = input()
+
+# Add inputs to the set & handle duplicates automatically
+unique_cats.add(cat1)
+unique_cats.add(cat2)
+unique_cats.add(cat3)
+
+# Print the set contents as a sorted list
+print(sorted(unique_cats))
+
+
+
+# Create empty set to store cat names
+cats = set()
+
+# Accept 3 cat names from user input
+cat1 = input()
+cat2 = input()
+cat3 = input()
+
+# Add each cat name to the set
+cats.add(cat1)
+cats.add(cat2)
+cats.add(cat3)
+
+# Get the number of unique cats in the set
+num_cats = len(cats)
+
+# Clear the set
+cats.clear()
+
+# Print the total number of unique cats
+print(f'Number of values picked: {num_cats}')
+
+# Print contents of the set (now empty)
+print(sorted(cats))
+
+
+
+# Create sets
+cats_set1 = {'Phoenix'}
+cats_set2 = set()
+
+# Read two colors from user input & add to set2
+cats_set2.add(input())
+cats_set2.add(input())
+
+# Read next string from input and remove the string from cats_set1
+remove_cat = (input)
+cats_set1.remove(remove_cat)
+
+# Read the next string from input and add the string to cats_set1
+add_cat = input()
+cats_set1.add(add_cat)
+
+# Output the sets (sort for readability)
+print(f'cats_set1: {sorted(cats_set1)}')
+print(f'cats_set2: {sorted(cats_set2)}')
+
+
+
+
+# Set my favorites to contain cat, opossum, shark
+my_favorites = {'cat', 'opossum', 'shark'}
+
+# Set Adam, Robert, and Haylee's favorites to contain one string from user input
+adams_favorites = {input()}
+roberts_favorites = {input()}
+haylees_favorites = {input()}
+
+# Assign likeable animals with the union of Adam, Robert, Haylee, and my favorites
+likeable_animals = my_favorites.union(adams_favorites, roberts_favorites, haylees_favorites)
+
+print(f'My favorite animals: {sorted(my_favorites)}')
+print(f"Adam's favorite animals: {sorted(adams_favorites)}") 
+print(f"Robert's favorite animals: {sorted(roberts_favorites)}") 
+print(f"Haylee's favorite animals: {sorted(haylees_favorites)}") 
+print(f'Likeable animals: {sorted(likeable_animals)}')
