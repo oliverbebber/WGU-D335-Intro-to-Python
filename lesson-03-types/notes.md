@@ -224,6 +224,65 @@ Useful Functions and Methods Related to Lists
       > print(removed_color)  # Outputs: could be 'red', 'green', or 'blue'
       > print(colors)   # The set now contains the original colors, minus the color that was removed 
       > ```
+  - **clear() method**: removes all elements from a set, leaving it empty - the length will be 0 after using.
+    - Example
+    > ```python
+    > cats = {'Phoenix', 'Dallas', 'Leo'}
+    > cats.clear()
+    > print(cats)  # Outputs: set()
+    > ```
+  - **update() method**: adds the elements from another set, list, or tuple, to the current set.
+    - Duplicate values are ignored.
+    - Example
+    > ```python
+    > colors = {'red', 'green'}
+    > new_colors = ['blue', 'yellow']
+    > colors.update(new_colors)
+    > print(colors)  # Outputs: {'red', 'yellow', 'blue', 'green'}
+    > ```
+  - **len(set) function**: returns the number of elements within a specific set.
+    - Example
+    > ```python
+    > cats = {'Phoenix', 'Dallas', 'Leo'}
+    > print(len(cats))  # Outputs: 3
+    > ```
+
+  ### Set Operations
+
+  - **set.intersection() method**: returns a new set with elements common between all sets (can be two or more sets)
+    - Example
+    > ```python
+    > a = {1, 2, 3, 4}
+    > b = {3, 4, 5. 6}
+    >
+    > common = a.intersection(b)
+    > print(common)  # Outputs: {3, 4}
+    > ```
+  - **set.union() method**: returns a new set with all elements from each set (duplicates are removed)
+    - Example
+    > ```python
+    > a = {1, 2, 3, 4, 5}
+    > b = {3, 4, 5}
+    > united = a.union(b)
+    > print(united)  # Outputs: {1, 2, 3, 4, 5}
+    > ```
+  - **set.difference() method**: returns a new set containing elements in each the set being compared that are **not** in any other the other sets
+    - Example
+    > ```python
+    > a = {1, 2, 3, 4, 5}
+    > b = {3, 4}
+    > c = {5, 6}
+    > result = a.difference(b, c)
+    > print(result)  # Outputs: {1, 2}
+    > ```
+  - **set.symmetric_difference() method**: returns a set containing elements from the sets compared
+    - Example
+    > ```python
+    > a = {1, 2, 3}
+    > b = {3, 4, 5}
+    > sym_diff = a.symmetric_difference(b)
+    > print(sym_diff)  # Outputs: {1, 2, 4, 5}
+    > ```
 
 ### 6. Dictionary basics
 
@@ -259,3 +318,13 @@ Useful Functions and Methods Related to Lists
 [Python Set remove() Method]([https://www.w3schools.com/python/ref_list_remove.asp](https://www.w3schools.com/PYTHON/ref_set_remove.asp))
 
 [Python Set pop() Method](https://www.geeksforgeeks.org/python/python-set-pop-method/)
+
+[Find the length of a set in Python](https://www.geeksforgeeks.org/python/find-the-length-of-a-set-in-python/)
+
+[Python Set intersection() method](https://www.w3schools.com/python/ref_set_intersection.asp)
+
+[Python Set union() method](https://www.w3schools.com/python/ref_set_union.asp)
+
+[Python Set difference() method](https://www.w3schools.com/python/ref_set_difference.asp)
+
+[Python Set symmetric_difference() method](https://www.w3schools.com/python/ref_set_symmetric_difference.asp)
