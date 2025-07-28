@@ -290,6 +290,7 @@ Useful Functions and Methods Related to Lists
   - Dictionary items **can** be removed after creating the dictionary, however, two keys **cannot** share the same name.
   - Example
   > ```python
+  > # Creating a dictionary
   > animal_sounds = {
   >   "cat": "meow",
   >   "dog": "bark",
