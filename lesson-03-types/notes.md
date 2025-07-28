@@ -207,7 +207,7 @@ Useful Functions and Methods Related to Lists
       > fruits.add('orange')
       > print(fruits)  # Outputs: {'apple', 'banana', 'orange'}
       > ```
-  - **removed() method**: removes a specific element from a set.
+  - **remove() method**: removes a specific element from a set.
     - Raises a ```KeyError``` if the element is not found.
       - Example
       > ```python
