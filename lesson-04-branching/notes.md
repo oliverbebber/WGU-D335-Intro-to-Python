@@ -66,6 +66,21 @@ These are my notes for Lesson 04 of the Intro to Python course.
 
 ### 4. Detecting ranges with branches
 
+- **relational operator**: compares two values or expressions and returns a Boolean result (```True``` or ```False```)
+
+Common Relational Operators in Python
+
+| Operator | Meaning                | Example   | Result |
+|----------|------------------------|-----------|--------|
+| `<`      | Less than              | `3 < 5`   | `True` |
+| `<=`     | Less than or equal to  | `3 <= 3`  | `True` |
+| `>`      | Greater than           | `10 > 7`  | `True` |
+| `>=`     | Greater than or equal  | `8 >= 9`  | `False`|
+| `==`     | Equal to               | `4 == 4`  | `True` |
+| `!=`     | Not equal to           | `6 != 2`  | `True` |
+
+- **operator chaining**: allows linking multiple relational comparisons in a single expression.
+  - Python will evaluate these from left to right and **all** conditions must be ```True``` for the entire expression to be ```True```.
 
 ### 5. Detecting ranges using logical operators
 
