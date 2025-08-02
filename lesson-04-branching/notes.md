@@ -84,6 +84,28 @@ Common Relational Operators in Python
 
 ### 5. Detecting ranges using logical operators
 
+- **logical operator**: treats operands as being `True` or `False`, and evaluates to a `True` or `False` result. Logical operators are used to combine or modify boolean expressions.
+
+  **Common logical operators:**
+
+  | Expression | Description                                       |
+  |------------|---------------------------------------------------|
+  | `a AND b`  | Logical AND: True when **both** operands are True |
+  | `a OR b`   | Logical OR: True when **at least one** is True    |
+  | `NOT a`    | Logical NOT: True when operand is **False**       |
+
+  - Example
+  > ```python
+  > cat_seen_today = True
+  >   cat_looks_like_phe = False
+  >
+  >   if cat_seen_today and cat_looks_like_phe:
+  >     print("Possible Phoenix sighting!")
+  >   else:
+  >     print("No match today.")
+  > ```
+
+
 
 ### 6. Detecting ranges with gaps
 
@@ -121,3 +143,9 @@ Common Relational Operators in Python
 [Python Comparison Operators](https://www.w3schools.com/python/gloss_python_comparison_operators.asp)
 
 [Python Booleans](https://www.w3schools.com/python/python_booleans.asp)
+
+[Python Relational Operators](https://pythonexamples.org/python-relational-operators/)
+
+[Chaining comparison operators in Python](https://www.geeksforgeeks.org/python/chaining-comparison-operators-python/)
+
+[Python Logical Operators](https://www.w3schools.com/python/gloss_python_logical_operators.asp)
