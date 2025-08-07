@@ -19,3 +19,17 @@ float("7.99")
 
 str(99)
 # converts 99 to a string
+
+
+# 3.11.4
+num = 31
+# value of num decimal base 10 int (31)
+print(f'{num:d}')
+
+num = 31
+# value of num as a hexadecimal base 16 int (1f)
+print(f'{num:x}')
+
+num = 31
+# value of num as a binary base 2 int (11111)
+print(f'{num:b}')
