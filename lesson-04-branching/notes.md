@@ -145,6 +145,38 @@ Common Relational Operators in Python
 
 ### 8. Comparing data types and common errors
 
+Python uses different rules to compare values, depending on the data types.
+
+- **Numbers**: if both values are numbers, they are compared using standard arthimetic rules
+  - Example
+  > ``` python
+  > 5 < 2  # False
+  > ```
+
+- **Strings**: compared by converting each character to a numeric value (ASCII or unicode) before comparing each character in order
+  - Example
+  > ``` python
+  > 'abc' >= 'ABCDEF'
+  > ```
+    - Most string comparisons use **equality operators** (`==` or `!=`)
+      - Example: `today == 'Friday'`
+
+- **Lists and Tuples**: compared by evaluating each element, in order.
+  - Using equality (`==`), each element *must* match
+    - For relational operators (`<`, `>`, etc.):
+      - Comparisons stop at the *first* mismatching element.
+  - Example
+  > ``` python
+  > x = [1, 5, 2]
+  > y = [1, 4, 3]
+  > print(x < y)  # 5 < 4 is False
+  > ```
+
+- **Dictionaries**: can only be compared using `==` or `!=`
+  - Two dictionaries are *if* they have the same set of keys **and** the same value for each key
+
+- **Type mismatch**: comparisons that make **no sense**, like comparing a number to a string (`1 < 'abc'`), will result in a **TypeError**
+
 
 ### 9. Membership and identity operators
 
