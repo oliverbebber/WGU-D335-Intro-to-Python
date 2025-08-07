@@ -9,3 +9,29 @@ os.path.isfile('C:\\Program Files\\')
 
 os.path.getsize(path_str)
 # returns the size in bytes of the file at path_str
+
+
+# 11.8.1
+# myfile.csv contains the following
+
+# Airline,Destination,Departure time,Plane
+# Southwest,Phoenix,615,B747
+# Alitalia,Milan,1545,B757
+# British Airways,London,1230,A380
+
+# create a csv module reader object to read myfile.csv
+import csv
+with open('myfile.csv', 'r') as myfile:
+  csv_reader = csv.reader(myfile)
+
+
+
+# print the destination of each flight in myfile.csv
+import csv
+with open('myfile.csv', 'r') as myfile:
+  csv_reader = csv.reader(myfile)
+  for row in csv_reader:
+    print(row[1])  # iterating over the reader object provides each row of the file as a list of the fields 
+
+# Airline = [0]
+# Destination = [1]
