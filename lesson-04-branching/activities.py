@@ -293,3 +293,25 @@ sales_type = 2; sales_bonus = 7;
 
 [1, 2, 3] >= ["1", "2", "3"]
 # False
+
+
+
+
+
+# 4.8.3 
+num_items = 3 
+if num_items == 3:
+   num_items = num_items + 1
+# num_items = 4
+
+
+num_items = 3 
+if num_items = 10:
+   num_items = num_items + 1
+# num_items = Error
+
+
+num_items = 3 
+if num_items > 10:
+   num_items = num_items + 1
+# num_items = 3
