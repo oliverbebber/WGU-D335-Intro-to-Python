@@ -325,3 +325,16 @@ avg_stripes_per_tiger = (num_stripes1 + num_stripes2) / 2
 avg_stripes_per_tiger = int(avg_stripes_per_tiger)
 
 print(avg_stripes_per_tiger)
+
+
+
+
+
+# 3.11.1
+number = 13
+
+print(f'{number:d}, {number:03d}, {number:.2f}')
+# Outputs:
+# 13, 013, 13.00
+#
+
