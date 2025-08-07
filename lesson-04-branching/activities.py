@@ -128,3 +128,23 @@ if (wage > 10) and (wage < 18):
 
 # num is a 3-digit positive integer, compare the smallest and largest 3-digit number
 if (num >= 100) and (num <= 999):
+
+
+
+
+
+# 4.5.7
+user_channel = int(input())  # Input is 300
+   
+if (user_channel >= 2) and (user_channel <= 499):
+    channel_type = 's'  # Evaluates to True
+
+elif (user_channel >= 1002) and (user_channel <= 1499):
+    channel_type = 'h'
+
+else:
+    channel_type = 'e'
+
+print(f'Channel type: {channel_type}')
+
+
