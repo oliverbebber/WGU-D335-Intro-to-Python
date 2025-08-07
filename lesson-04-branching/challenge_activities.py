@@ -120,3 +120,39 @@ else:
 
 print(accepted_groups)
 print(remaining_groups)
+
+
+
+
+# 4.4.5
+suitcase_volume = int(input())
+
+# if value of suitcase_volume is less than or equal to 46, output 'Too light'
+if suitcase_volume <= 46:
+  print('Too light')
+# if value of suitcase_volume is between 46 (exclusive) and 124, output 'Checkable'
+elif 46 < suitcase_volume <= 124:
+  print('Checkable')
+# if value of suitcase_volume is greater than 124, output 'Too big'
+else:
+  print('Too big')
+
+
+
+
+
+number_of_fish = int(input())
+
+
+# if value of number_of_fish is greater than 12, output 'Multiple aquariums needed'
+if number_of_fish > 12:
+  print('Multiple aquariums needed')
+# if value of number_of_fish is between 6 (inclusive) and 12 (inclusive), output 'Jumbo aquarium'
+elif 6 <= number_of_fish <=12:
+  print('Jumbo aquarium')
+# if value of number_of_fish is between 0 (exclusive) and 5 (inclusive), output 'Mid-sized aquarium'
+elif 0 < number_of_fish <= 5:
+  print('Mid-sized aquarium')
+# if value of number_of_fish is less than or equal to 0, output 'Invalid input'
+else:
+  print('Invalid input')
