@@ -85,6 +85,32 @@ print(addresses_str)
 
 
 
+
+# 3.3.1
+user_ages = [55, 66, 11]
+
+# write an expression to change user_ages to [55, 66]
+user_ages.pop(2)
+
+
+user_ages_1 = [7, 8, 6, 4, 1, 3]
+user_ages_2 = [66, 33, 22, 88, 77, 11]
+
+# write an expression to create the list [7, 8, 6, 4, 1, 3, 66, 33, 22, 88, 77, 11]
+user_ages_1 + user_ages_2
+
+
+user_ages = [6, 5, 4, 9, 1]
+
+user_ages.index(3)     # Returns: ValueError
+
+
+user_ages = [2, 8, 4]
+
+sum(user_ages)    # 14
+
+
+
 # 3.3.2
 # Read three integers from input into variables 
 datapoint1 = int(input())
