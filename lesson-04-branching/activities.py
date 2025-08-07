@@ -114,3 +114,17 @@ else:
 
 # Then double the size for night searches
 team_size = 2 * team_size
+
+
+
+
+
+# 4.5.6
+# num_cats has a minimum of 2 and a maximum of 5
+if (num_cats >= 2) and (num_cats <=5):
+
+# wage is greater than 10 and less than 18
+if (wage > 10) and (wage < 18):
+
+# num is a 3-digit positive integer, compare the smallest and largest 3-digit number
+if (num >= 100) and (num <= 999):
