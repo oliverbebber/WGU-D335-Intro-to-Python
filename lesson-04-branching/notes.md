@@ -137,9 +137,11 @@ Common Relational Operators in Python
 
 ### 6. Detecting ranges with gaps
 
+- **See activities & challenges sections**
 
 ### 7. Detecting multiple features with branches
 
+- **See activities & challenges sections**
 
 ### 8. Comparing data types and common errors
 
