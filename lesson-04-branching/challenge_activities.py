@@ -408,3 +408,110 @@ if user_num <= 2:
 
 
 
+
+# 4.9.1
+numbers = [5, 6, 7, 8]
+x = int(input())
+
+if x in numbers:
+  print('in')
+else:
+  print('not in')
+
+# input: 3
+# output: not in
+#
+
+
+numbers = [1, 2, 3, 4]
+x = int(input())
+
+if x not in numbers:
+    print('not in')
+else:
+    print('in')
+
+# input: 10
+# output: not in
+# 
+
+word = 'hill'
+vowel = input()
+
+if vowel in word:
+    print('in')
+else:
+    print('not in')
+
+# input: a
+# output: not in
+# 
+
+
+a = 'tiger'
+b = 'shark'
+c = [a, b]
+d = c
+d[0] = 'otter'
+
+if (c is d):
+    print('f')
+if (b is d[1]):
+    print('g')
+if (a is d[0]):
+    print('h')
+  
+# output: f
+# g
+# 
+
+a = 'horse'
+b = 'dog'
+c = [a, b]
+d = c
+d[0] = 'panda'
+
+if (b is d[1]):
+    print('f')
+if (c is d):
+    print('g')
+if (a is d[0]):
+    print('h')
+
+# output: f
+# g
+#
+
+a = 'horse'
+b = 'otter'
+c = [a, b]
+d = c
+d[0] = 'snake'
+
+if (c is d):
+    print('f')
+if (a is d[0]):
+    print('g')
+if (b is d[1]):
+    print('h')	
+
+# output: f
+# h
+#
+
+a = 'panda'
+b = 'donkey'
+c = [a, b]
+d = c
+d[0] = 'shark'
+
+if (b is d[1]):
+    print('f')
+if (c is d):
+    print('g')
+if (a is d[0]):
+    print('h')
+
+# output:f
+# g
+# 
