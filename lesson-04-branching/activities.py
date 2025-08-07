@@ -260,3 +260,36 @@ sales_type = 2; sales_bonus = 4;
 sales_type = 2; sales_bonus = 7;
 # exeutes second branch as sales_type = 2 making sales_type == 2 True and sales_bonus is NOT less than 5
 # sales_bonus = 9
+
+
+
+
+
+# 4.8.2 
+5 <= 5.0
+# True
+
+10 != 9.999999
+# True
+
+(4 + 1) != 5.0
+# False as 4 + 1 =  5 and the interger is converted to a float with a value of 5.0 for the comparison
+# 5.0 != 5.0 is False
+
+"FRIDAY" == "friday"
+# False
+
+"1" < "2"
+# True
+
+"a" != "b" < "c"
+# True
+
+{"Henrik": "$25"} == {"Daniel": "$25"}
+# False
+
+(1,2,3) > (0,2,3)
+# True
+
+[1, 2, 3] >= ["1", "2", "3"]
+# False
