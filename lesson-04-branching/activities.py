@@ -315,3 +315,11 @@ num_items = 3
 if num_items > 10:
    num_items = num_items + 1
 # num_items = 3
+
+
+
+
+
+# 4.9.2
+# check if my_list contains the value 15
+15 in my_list
