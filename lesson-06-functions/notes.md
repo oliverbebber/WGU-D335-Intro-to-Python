@@ -53,3 +53,6 @@ These are my notes for Lesson 06 of the Intro to Python course.
 
 
 ### 17. Engineering examples
+
+
+### References
