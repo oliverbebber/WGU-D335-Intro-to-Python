@@ -35,3 +35,6 @@ These are my notes for Lesson 05 of the Intro to Python course.
 
 
 ### 11. Getting both index and value when looping: enumerate()
+
+
+### References
