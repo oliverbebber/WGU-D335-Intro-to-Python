@@ -205,3 +205,32 @@ if (num > 49 and num < 80) or (num > 89 and num < 100):
 
 # Range 1 - 19
 if num > 0 and num < 20:
+
+
+
+
+
+# 4.7.1
+num_boxes  = 0
+num_apples = 9 
+
+if num_apples < 20:
+    num_boxes = 3  # executes branch
+if num_apples < 10:
+    num_boxes = num_boxes - 1
+
+# num_boxes = 2
+
+
+
+num_boxes  = 0
+num_apples = 12 
+
+if num_apples < 4:
+    num_boxes = 1
+elif num_apples < 14:
+    num_boxes = num_boxes + 3  # executes branch
+else: 
+    num_boxes = num_boxes + 5
+
+# num_boxes = 3
