@@ -287,3 +287,41 @@ print(f"Adam's favorite animals: {sorted(adams_favorites)}")
 print(f"Robert's favorite animals: {sorted(roberts_favorites)}") 
 print(f"Haylee's favorite animals: {sorted(haylees_favorites)}") 
 print(f'Likeable animals: {sorted(likeable_animals)}')
+
+
+
+
+# 3.9.2
+num_yards = float(input())
+
+# convert num_yards to a string
+str_yards = str(num_yards)
+
+print('Number of yards: ' + str_yards)
+
+
+
+
+
+total_cost = float(input())
+tip_amount = int(input())
+
+# Assign num_dollars with the sum of total_cost + tip_amount
+num_dollars = total_cost + tip_amount
+
+print(f'${num_dollars}')
+
+
+
+
+
+num_stripes1 = int(input())
+num_stripes2 = int(input())
+
+# Assign avg_stripes_per_tiger with the avg stripes per tiger
+avg_stripes_per_tiger = (num_stripes1 + num_stripes2) / 2
+
+# convert avg_stripes_per_tiger to int
+avg_stripes_per_tiger = int(avg_stripes_per_tiger)
+
+print(avg_stripes_per_tiger)
