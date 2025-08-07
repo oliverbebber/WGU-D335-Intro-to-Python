@@ -355,3 +355,12 @@ num = 5
 # Outout 5 tacos at $10 each costs $50.00
 print(f'{num} tacos at ${price} each costs ${price * num:.2f}.')
 
+
+
+
+
+# 3.11.3
+user_value = int(input())
+# Output user_value in fixed-point notation, with 6 places of precision
+# user_value in exponent notation
+print(f'{user_value:6f}\n{user_value:e}')
