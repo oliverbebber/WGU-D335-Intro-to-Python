@@ -354,3 +354,14 @@ w + 3 != y - 1 and x
 # order operators are evaluated in: +, -, !=, and
 
 
+
+
+# 4.10.3
+not x == 3 evaluates as not (x == 3)
+# True
+
+w + x == y + z evaluates as (w + x) == (y + z)
+# True
+
+w and x == y and z evaluates as (w and x) == (y and z)
+# False
