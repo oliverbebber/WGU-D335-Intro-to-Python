@@ -38,3 +38,20 @@ print(f"Lead status: {lead_status}")
 
 # I will be expanding upon this in another repo as I want to add input validation on parts of the form I created when I launched the website for findingphe
 # Additionally, I want to ensure that the days since I last seen him can be flexible as each day, that number increases.
+
+
+
+
+# 4.4.2
+# user_grade is read from user input
+user_grade = int(input())
+
+# value of user_grade is between 9 and 12 (both inclusive) then print 'in high school'
+if 9 <= user_grade <=12:
+  print('in high school')
+# otherwise, 'not in high school'
+else:
+  print('not in high school')
+
+
+
