@@ -388,3 +388,23 @@ else:
     print('Successful purchase')
   else: 
     print('Not enough money to buy all')
+
+
+
+
+
+
+# 4.8.1
+user_num = int(input()) 
+
+if user_num = 2:  # Error
+  print('Num is less than or equal to two')
+else:
+  print('Num is greater than two')
+
+# Resolved by using the following
+if user_num <= 2:
+  ...
+
+
+
