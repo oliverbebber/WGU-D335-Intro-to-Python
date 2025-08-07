@@ -105,7 +105,35 @@ Common Relational Operators in Python
   >     print("No match today.")
   > ```
 
+  ### Detecting Ranges Implicitly vs. Explicitly
 
+  When writing conditionals that check if a value falls within a specific range, programmers can explicitly or implicitly detect the range.
+
+  - **Explicit ranges**: uses logical operators (```and```, ```or```, ```<```, ```<=```, etc.) to state each end of the range.
+    - Example
+    > ``` python
+    > if x < 0:
+    >   # Negative
+    > elif (x >= 0) and (x <= 10):  # x >= 0 is implicit
+    >   # 0 through 10
+    > elif (x >= 11) and (x <= 20):
+    >   # 11 through 20
+    > else:
+    >   # 21 and above
+    > ```
+    
+  - **Implicit ranges**: relies on the structure of the conditional branches to define boundaries. In a multi-branch ```if-elif-else``` chain, the lower end of a range is implied if the previous conditions weren't met.
+    - Example
+    > ``` python
+    > if x < 0:
+    >   # Negative
+    > elif (x <= 10):
+    >   # 0 through 10
+    > elif (x <= 20):
+    >   # 11 through 20)
+    > else:
+    >   # 21 and above
+    > ```
 
 ### 6. Detecting ranges with gaps
 
