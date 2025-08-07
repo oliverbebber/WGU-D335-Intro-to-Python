@@ -365,3 +365,28 @@ w + x == y + z evaluates as (w + x) == (y + z)
 
 w and x == y and z evaluates as (w and x) == (y and z)
 # False
+
+
+
+# 4.10.4
+not green == red 
+# correct order of evaluation
+not (green == red)
+# == has precedence; lack of parentheses causes common errors
+
+bats < birds or birds < insects
+# correct order of evaluation
+(bats < birds) or (birds < insects)
+# comparisons occur first
+
+not (bats < birds) or (birds < insects)
+# correct order of evaluation
+(not (bats < birds)) or (birds < insects)
+# items within parentheses evaluated first
+# not has precedence over or
+
+(num1 == 9) or (num2 == 0) and (num3 == 0)
+# correct order of evaluation
+(num1 == 9)  or ((num2 == 0) and (num3 == 0))  
+# items within parentheses evaluated first
+# and has precedence over or
