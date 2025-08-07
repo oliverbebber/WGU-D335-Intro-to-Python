@@ -280,3 +280,55 @@ print('c')
 # b
 # c
 #
+
+
+
+
+# 4.6.2
+banana_amount = int(input())
+
+# if the number of bananas is less than 10 OR 30 or more
+if (banana_amount < 10) or (banana_amount >= 30):
+# output 'Unreasonable supply'
+    print('Unreasonable supply')
+
+
+
+
+weight_pounds = float(input())
+
+# if weight is lighter than 10.5 lbs OR heavier than 65.5 lbs
+if (weight_pounds < 10.5) or (weight_pounds > 65.5):
+# output 'Skip'
+    print('Skip')
+# Otherwise, output 'Allow'
+else:
+    print('Allow')
+
+
+
+
+napkins_requested = int(input())
+
+# Range: 50-90 inclusive
+if (napkins_requested >= 50) and (napkins_requested <= 90):
+  print('Medium carton')
+# Range: 120-150 inclusive
+if (napkins_requested >= 120) and (napkins_requested <= 150):
+  print('Large carton')
+
+
+
+
+num_napkins = int(input())
+
+# Number of napkins is greater than or equal to 55 and less than or equal to 100
+if (num_napkins >= 55) and (num_napkins <= 100):
+  print('Standard package')
+# Number of napkins is great than or equal to 145 and less than 165
+elif (num_napkins >= 145) and (num_napkins < 165):
+  print('Full package')
+# Otherwise, print 'Select another amount'
+else:
+  print('Select another amount')
+  
