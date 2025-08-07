@@ -156,3 +156,63 @@ elif 0 < number_of_fish <= 5:
 # if value of number_of_fish is less than or equal to 0, output 'Invalid input'
 else:
   print('Invalid input')
+
+
+
+
+
+# 4.5.1
+user_age = int(input())
+
+# Modify the following line so 'Not currently a teenager' is output if user_age is outside the range 13-19 (inclusive).
+if (user_age >= 13) or (user_age <= 19):
+    print('Not currently a teenager')
+else:
+    print('Currently a teenager')
+
+# modified 
+if (user_age < 13) or (user_age > 19):
+  print('Not currently a teenager')
+
+
+
+
+zip_code = int(input())
+
+# valid zip codes range: 10000 - 99950 (inclusive)
+if (zip_code >= 10000) and (zip_code <= 99950):
+  print('Valid ZIP code')
+else:
+  print('Invalid ZIP code')
+
+
+
+
+degree_val = int(input())
+
+if (degree_val <= 232):
+  print('New state: solid')
+elif (degree_val > 232) and (degree_val < 2500):
+  print('New state: liquid')
+else:
+    print('New state: gas')
+
+
+
+
+salary_num = int(input())
+
+# salary_num is in the inclusive ranges
+# range: 0 - 47000
+if (salary_num >= 0) and (salary_num <= 47000):
+  print('15% income tax bracket')
+# range: 47001 - 76000
+elif (salary_num >= 47001) and (salary_num <= 76000):
+  print('21% income tax bracket')
+# range: 76001 - 250000
+elif (salary_num >= 76001) and (salary_num <= 250000):
+  print('35% income tax bracket')
+else:
+  print('Invalid input')
+
+
