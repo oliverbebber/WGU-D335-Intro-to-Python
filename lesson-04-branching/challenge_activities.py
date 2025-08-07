@@ -332,3 +332,59 @@ elif (num_napkins >= 145) and (num_napkins < 165):
 else:
   print('Select another amount')
   
+
+
+
+
+# 4.7.2
+productivity_available = int(input())
+
+# Write multiple if statements
+
+if productivity_available > 39:
+  print('I can run a marathon.')
+
+if productivity_available > 63:
+  print('I can stay up all night.')
+
+if productivity_available <= 6:
+  print('I am tired.')
+
+
+
+
+
+user_input1 = int(input())
+user_input2 = int(input())
+
+# Write one if statement and one if-else statement
+
+# If user_input1 is less than 0, output 'user_input1 is negative.'
+if user_input1 < 0:
+  print('user_input1 is negative.')
+
+# If user_input2 is less than 15, assign user_input2 with 6
+if user_input2 < 15:
+  user_input2 = 6
+# Otherwise, output 'user_input2 is greater than or equal to 15.'
+else:
+  print('user_input2 is greater than or equal to 15.')  
+  
+print(f'user_input2 is {user_input2}.')
+
+
+
+
+
+num_pizzas = int(input())
+money_in_bank = int(input())
+
+if num_pizzas < 5:
+  print('Not enough pizzas purchased')
+else: 
+  total_cost = (num_pizzas * 15)
+  
+  if total_cost <= money_in_bank:
+    print('Successful purchase')
+  else: 
+    print('Not enough money to buy all')
