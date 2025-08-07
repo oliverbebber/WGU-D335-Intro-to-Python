@@ -216,3 +216,67 @@ else:
   print('Invalid input')
 
 
+
+
+
+
+# 4.6.1
+x = 4
+
+if (x < 8) and (x > 3):
+  print('a')
+else: 
+  print('b')
+
+# Outputs: 
+# a
+# 
+
+x = 6
+
+if (x > 7) or (x < 4):
+  print('a')
+else:
+  print('b')
+
+# Outputs: 
+# b
+#
+
+x = 5
+
+if not (x < 6):
+  print('a')
+if not (x == 3):
+  print('b')
+print('c')
+
+# Outputs: 
+# b
+# c
+#
+
+x = 5
+
+if (x > 6) and not (x <= 6):
+  print('a')
+if (x < 7) and not (x >= 1):
+  print('b')
+print('c')
+
+# Outputs:
+# c
+# 
+
+x = 7
+
+if not((x > 6) or (x < 2)):
+  print('a')
+if (x > 2) and (x < 9):
+  print('b')
+print('c')
+
+# Outputs:
+# b
+# c
+#
