@@ -177,6 +177,10 @@ Python uses different rules to compare values, depending on the data types.
 
 - **Type mismatch**: comparisons that make **no sense**, like comparing a number to a string (`1 < 'abc'`), will result in a **TypeError**
 
+  ### Common Branching Errors
+
+  - Using `=` instead of `==` in an if-else statement
+  - Using invalid character sequences (`=>`, `!<`, or `<>`) as these are not valid operators
 
 ### 9. Membership and identity operators
 
