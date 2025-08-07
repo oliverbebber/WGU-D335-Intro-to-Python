@@ -55,3 +55,26 @@ else:
 
 
 
+
+# 4.4.3
+input_val = int(input())
+
+# value of input_val is less than 90
+if input_val < 90:
+  print('Less than 90')
+# otherwise, '90 or more'
+else:
+  print('90 or more')
+
+
+
+in_val = int(input())
+
+if in_val <= -21:
+  print('-21 or less')
+else: 
+  print('More than -21')
+
+
+
+        
