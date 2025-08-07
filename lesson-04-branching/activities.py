@@ -323,3 +323,20 @@ if num_items > 10:
 # 4.9.2
 # check if my_list contains the value 15
 15 in my_list
+
+
+
+
+
+# 4.9.3 
+# x is a key in the dict my_dict
+x in my_dict
+
+# x and y don't refer to the same object in memory
+x is not y
+
+# character "G" exists in string my_str
+"G" in my_str
+
+# my_str isn't the 3rd element in list my_list
+my_str is not my_list[2]
