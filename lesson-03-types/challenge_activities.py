@@ -338,3 +338,20 @@ print(f'{number:d}, {number:03d}, {number:.2f}')
 # 13, 013, 13.00
 #
 
+
+
+
+# 3.11.2
+num_students = 25
+print(f'The math class has {num_students} students.')
+
+loan_rate = 0.09
+borrowers_name = 'Frank'
+# Output Frank's loan rate is 9.0%
+print(f'{borrowers_name}\'s loan rate is {loan_rate * 100:.1f}%.')
+
+price = 10
+num = 5
+# Outout 5 tacos at $10 each costs $50.00
+print(f'{num} tacos at ${price} each costs ${price * num:.2f}.')
+
