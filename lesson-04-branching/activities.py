@@ -340,3 +340,17 @@ x is not y
 
 # my_str isn't the 3rd element in list my_list
 my_str is not my_list[2]
+
+
+
+# 4.10.2
+not y and x
+# not is evaluated first
+
+w + 3 > x - y * z
+# * has precedence
+
+w + 3 != y - 1 and x
+# order operators are evaluated in: +, -, !=, and
+
+
