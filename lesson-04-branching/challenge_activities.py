@@ -78,3 +78,45 @@ else:
 
 
         
+# 4.4.4
+number_of_cats = int(input())
+
+if number_of_cats > 17:
+  print('Enough cats')
+
+
+
+
+user_val = int(input())
+new_val = int(input())
+
+# assign new_val with 1000 if user_val is less than or equal to 1000
+if user_val <= 1000:
+  new_val = 1000
+
+print(new_val)
+
+
+
+
+num_chairs = int(input())
+
+if num_chairs > 10:
+  print('A fine number of chairs')
+else:
+  print('Not many chairs')
+
+
+
+
+num_tasks = int(input())
+accepted_groups = int(input())
+remaining_groups = int(input())
+
+if num_tasks <= 23:
+  accepted_groups = accepted_groups - 2  # Remember to reassign the variable before performing equation
+else:
+  remaining_groups = remaining_groups + 1  # Remember to reassign the variable before performing equation
+
+print(accepted_groups)
+print(remaining_groups)
