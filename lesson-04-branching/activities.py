@@ -234,3 +234,29 @@ else:
     num_boxes = num_boxes + 5
 
 # num_boxes = 3
+
+
+
+
+
+# 4.7.2
+if sales_type == 2:
+    if sales_bonus < 5:
+        sales_bonus = 10
+    else:
+        sales_bonus = sales_bonus + 2
+else:
+    sales_bonus = sales_bonus + 1  
+
+
+sales_type = 1; sales_bonus = 0
+# exeuctes final else branch as sales_type = 1 making sales_type == 2 False
+# sales_bonus = 1
+
+sales_type = 2; sales_bonus = 4;
+# executes first branch as sales_type = 2 making sales_type == 2 True and sales_bonus is less than 5
+# sales_bonus = 10
+
+sales_type = 2; sales_bonus = 7;
+# exeutes second branch as sales_type = 2 making sales_type == 2 True and sales_bonus is NOT less than 5
+# sales_bonus = 9
