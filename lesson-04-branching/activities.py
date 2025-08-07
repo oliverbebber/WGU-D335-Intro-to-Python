@@ -189,3 +189,19 @@ else:   # Range: 1 - 100
 if num_items < 50: ...
 elif num_items > 50: ...
 else:   # Range: 50
+
+
+
+
+# 4.6.4
+# Range: 40 - 59 or 90 - 99
+if (num >= 40 and num <= 59) or (num >= 90 and num <= 99):
+
+# Range: 40 - 49 or 80 - 89
+if (40 <= num <= 49) or (80 <= num <= 89):
+
+# Range: 50 - 79 or 90 - 99
+if (num > 49 and num < 80) or (num > 89 and num < 100):
+
+# Range 1 - 19
+if num > 0 and num < 20:
