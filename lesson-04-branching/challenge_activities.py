@@ -526,3 +526,16 @@ user_val = int(input())
 cond_str = "negative" if user_val < 0 else "nonnegative"
 
 print(f'{user_val} is {cond_str}')
+
+
+
+
+
+# 4.12.3
+num_users = int(input())
+update_direction = int(input())
+
+# increment num_users if update_direction is 3, otherwise decrement num_users
+num_users = num_users + 1 if update_direction == 3 else num_users -1
+
+print(f'New value is: {num_users}')
