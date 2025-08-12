@@ -515,3 +515,14 @@ if (a is d[0]):
 # output:f
 # g
 # 
+
+
+
+
+
+# 4.12.2
+user_val = int(input())
+
+cond_str = "negative" if user_val < 0 else "nonnegative"
+
+print(f'{user_val} is {cond_str}')
