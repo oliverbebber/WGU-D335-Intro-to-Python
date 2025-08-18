@@ -48,6 +48,44 @@ max = -1, 5, 10, 20
 # sixth value is 0 > 20 --- FALSE
 
 
+
+# 5.2.2
+x = 3
+while x >= 1:
+  # Do something
+  x = x - 1
+
+# loop will execute 3 times
+# 3 >= 1 --- TRUE
+# 2 >= 1 --- TRUE
+# 1 >= 1 --- TRUE
+# 0 >= 1 --- FALSE
+
+
+
+# Get character from user here   --- input will be 'n', 'n', 'y'
+while user_char != 'n':
+  # do something
+  # get character from user here
+
+# loop will never execute because the first evaluation is FALSE
+# 'n' != 'n' --- FALSE
+
+
+
+# get character from user here  --- input will be 'a', 'b', 'n'
+while user_char != 'n':
+  # do something
+  # get character from user here
+
+# loop will execute 2 times
+# 'a' != 'n' --- TRUE
+# 'b' != 'n' --- TRUE
+# 'n' != 'n' --- FALSE
+
+
+
+
 # 5.2.5
 x = 0
 while x > 0:  # x == 0; loop never executes
