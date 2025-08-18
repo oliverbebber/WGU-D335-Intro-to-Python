@@ -51,7 +51,7 @@ These are my notes for Lesson 05 of the Intro to Python course.
   > print('goodbye!')
   > ```
   
-- ** infinite loop**: a loop that never ends because its conditional always evaluates as ```True``` (or there isn't a condition to stop the loop).
+- **infinite loop**: a loop that never ends because its conditional always evaluates as ```True``` (or there isn't a condition to stop the loop).
 
 ### 3. More while examples
 
