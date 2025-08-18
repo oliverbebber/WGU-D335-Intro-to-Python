@@ -24,6 +24,34 @@ These are my notes for Lesson 05 of the Intro to Python course.
 
 ### 2. While loops
 
+- **while loop**: repeatedly executes a block of code as long as a given condition evalues to ```True```
+  - Example
+  > ``` python
+  > while condition:
+  >   # loop body
+  > ```
+  
+- **loop body**: the indented block if code that runs each time the loop condition is checked and determined to be ```True```
+  - Example
+  > ``` python
+  > count = 0
+  > while count < 3:
+  >   print("Hello!")  # loop body
+  >   count += 1
+  > ```
+  
+- **sentinel value**: a special value used to signal the end of input, or to stop a loop.
+  - Example
+  > ``` python
+  > sentinel = -1
+  > num = int(input('Enter a number (-1 to quit): '))
+  > while num != sentinel:
+  >     print(num)
+  >     num = int(input('Enter a number (-1 to quit): '))
+  > print('goodbye!')
+  > ```
+  
+- ** infinite loop**: a loop that never ends because its conditional always evaluates as ```True``` (or there isn't a condition to stop the loop).
 
 ### 3. More while examples
 
@@ -59,3 +87,9 @@ These are my notes for Lesson 05 of the Intro to Python course.
 [Chapter 4: Loop - Professional Python Programming](https://pythonbook.org/ch04_loop/notes/loop/)
 
 [Iteration in Python: A Comprehensive Guide](https://coderivers.org/blog/iteration-in-python/)
+
+[Python While Loops](https://www.w3schools.com/python/python_while_loops.asp)
+
+[Sentinel Value And Its Uses in Python](https://www.pythonpool.com/sentinel-value-python/)
+
+[Python Infinite Loop](https://unstop.com/blog/python-infinite-loop)
