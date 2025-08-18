@@ -519,6 +519,36 @@ if (a is d[0]):
 
 
 
+# 4.11.1 - indentation fixes
+temperatures = {
+    'Seattle': 56.5,
+    'New York': float(input()),
+    'Kansas City': 81.9,
+    'Los Angeles': 76.5
+}
+
+    if 'New York' in temperatures:
+        if temperatures['New York'] > 90:
+        print('The city is melting!')
+        else:
+            print(f"The temperature in New York is {temperatures['New York']}.")
+else:
+        print('The temperature in New York is unknown.')
+
+# solution
+if 'New York' in temperatures:
+  if temperatures['New York'] > 90:
+    print('The city is melting!')
+  else:
+    print(f"The temperature in New York is {temperatures['New York']}.")
+
+else:
+  print('The temperature in New York is unknown.')
+
+
+
+
+
 
 # 4.12.2
 user_val = int(input())
