@@ -138,3 +138,24 @@ while (not (y < x < z)):
   x = x + 1
 # Output: 1 2 3 
 # Space afer each number, including the last number
+
+
+
+
+
+# 5.3.1
+num_a = int(input('Enter first positive integer: '))  # 15
+print()
+
+num_b = int(input('Enter second positive integer: '))  # 10
+print()
+
+while num_a != num_b:
+    if num_a > num_b:
+        num_a = num_a - num_b  # num_a = 15 - 10 = 5 ---- (num_a = 5)
+    else:
+        num_b = num_b - num_a  # num_b = 10 - 5 = 5 ----- (num_b = 5)
+
+print(f'GCD is {num_a}')   # ouput: GCD is 5
+
+# this program will execute two loop iterations given num_a = 15 and num_b = 10
