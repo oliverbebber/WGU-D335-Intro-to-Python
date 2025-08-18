@@ -547,6 +547,60 @@ else:
 
 
 
+# 4.11.2
+import math
+
+r = int(input())
+area = math.pi * r * r
+circumference = 2 * math.pi * r
+
+print(f'Radius = {r} in')
+print(f'Area = {area:.1f} in^2')
+print(f'Circumference = {circumference:.1f} in')
+
+
+
+
+num_lychees = int(input())
+
+if num_lychees > 22:
+  num_lychees = num_lychees + 1
+else:
+  print('Number of lychees is less than or equal to 22')
+
+print(f'Total lychees: {num_lychees}')
+
+
+
+
+num_jackfruits = int(input())
+jackfruits_wanted = int(input())
+
+if num_jackfruits < jackfruits_wanted:
+  print('Not enough jackfruits')
+else:
+  if num_jackfruits > jackfruits_wanted:
+    print(f'{num_jackfruits - jackfruits_wanted} extra jackfruits')
+  else:
+    print('Sufficient number of jackfruits')
+
+
+
+
+birthplace = input()
+job = input()
+
+# modified using implicit line joining to join the long string in adult_bio_str so the program doesn't contain lines with more than 80 characters
+adult_bio_str = (
+  'Ira is 27 years old and lives in {0}. Her favorite drink is coffee '
+  'and she is a {1}.'
+) 
+
+# format() replaces the curly braces in a string with variables.
+# This method is being used to test your code.
+new_str = adult_bio_str.format(birthplace, job)
+print(new_str)
+
 
 
 
