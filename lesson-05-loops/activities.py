@@ -1,3 +1,18 @@
+# 5.1.7
+# count ends having the number of negative values in an input list of values (list ends with 0)
+# if input is -1 -5 9 3 0, then count should end with 2
+count = 0
+val = Get next input
+
+while val is not 0
+  if __(A)___  # val < 0
+     __(B)___  # count = count + 1
+
+  val = Get next input
+
+# if input value is 0, the loop body will NOT execute
+
+
 # 5.2.5
 x = 0
 while x > 0:  # x == 0; loop never executes
