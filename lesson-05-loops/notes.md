@@ -55,6 +55,17 @@ These are my notes for Lesson 05 of the Intro to Python course.
 
 ### 3. More while examples
 
+- **docstring**: a special type of string used to document Python functions, classes, or modules; written inside triple quotes (```''' '''```) at the beginning of the function/class/module.
+
+- **randint() function**: part of Python's ```random``` module; returns a random integer within a specified range (inclusive)
+  - Example
+  > ``` python
+  > import random
+  >
+  > # generate a random number between 1 and 37
+  > num = random.randint(1, 37)
+  > print(num)
+  > ```  
 
 ### 4. Counting
 
@@ -93,3 +104,7 @@ These are my notes for Lesson 05 of the Intro to Python course.
 [Sentinel Value And Its Uses in Python](https://www.pythonpool.com/sentinel-value-python/)
 
 [Python Infinite Loop](https://unstop.com/blog/python-infinite-loop)
+
+[Python Docstrings](https://www.geeksforgeeks.org/python/python-docstrings/)
+
+[randint() Function in Python](https://www.geeksforgeeks.org/python/python-randint-function/)
