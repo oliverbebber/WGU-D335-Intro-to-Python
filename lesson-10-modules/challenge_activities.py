@@ -242,3 +242,124 @@ def fct_c(number):
 # 12
 # 6 
 # 
+
+
+
+
+
+
+# 10.1.2
+main.py
+import airline_kiosk
+import airline_luggage
+
+# string traveler_name & integer num_luggages are read from input
+traveler_name = input()
+num_luggages = int(input())
+
+airline_kiosk.check_in(traveler_name, num_luggages)
+airline_luggage.check_bags(num_luggages)
+
+
+airline_kiosk.py
+def check_in(traveler_name, num_luggages):
+	print(f'{num_luggages} pieces of luggage are checked by {traveler_name}.')
+
+
+airline_luggage.py
+def check_bags(num_luggages):
+	charge = num_luggages * 30
+	print(f'${charge} is charged for {num_luggages} pieces of luggage.')
+
+
+
+
+
+
+main.py
+import airline_kiosk
+import airline_luggage
+
+customer_name = input()
+luggage_quantity = int(input())
+
+# call airline_kiosk's check_in() with customer_name & luggage_quantity as arguments
+airline_kiosk.check_in(customer_name, luggage_quantity)
+
+# call airline_luggage's deposit() with luggage_quantity as the argument
+airline_luggage.deposit(luggage_quantity)
+
+# call airline_luggage's insure() with customer_name & luggage_quantity as the arguments, respectively
+airline_luggage.insure(customer_name, luggage_quantity)
+
+
+airline_kiosk.py
+def check_in(customer_name, luggage_quantity):
+	print(f'{customer_name} checks in with {luggage_quantity} pieces of luggage.')
+
+
+airline_luggage.py
+def deposit(luggage_quantity):
+	charge = luggage_quantity * 35
+	print(f'{luggage_quantity} pieces of luggage cost {charge} dollars.')
+
+def insure(customer_name, luggage_quantity):
+	print(f'$50 lost luggage insurance bought by {customer_name} to cover {luggage_quantity} pieces of luggage.')
+
+
+
+
+
+
+
+main.py
+import persons
+import colors
+import clothing
+import search
+
+one_sentence = input()
+
+# assign has_color with the value returned by search's find() called with one_sentence and color's search_list as the arguments, respectively
+has_color = search.find(one_sentence, colors.search_list)
+
+# assign has_person_and_clothing with the value returned by combining the following using logical AND:
+    # search's find() called with one_sentence & persons's search_list as the arguments, respectively
+    # search's find() called with one_sentence & clothing's search_list as the arguments, respectively
+has_person_and_clothing = (search.find(one_sentence, persons.search_list)) and (search.find(one_sentence, clothing.search_list))    
+    # be sure to use 'and' vs 'AND' to prevent syntax errors
+
+# could also be written as the following
+# has_person_and_clothing = (
+#    search.find(one_sentence, persons.search_list)
+#    and search.find(one_sentence, clothing.search_list)
+# )
+
+
+if has_color:
+	print('The sentence mentions a color.')
+
+if has_person_and_clothing:
+	print('The sentence mentions a person and a piece of clothing.')
+
+
+
+persons.py
+search_list = ['He', 'You', 'I']
+
+
+colors.py
+search_list = ['red', 'yellow', 'pink']
+
+
+clothing.py
+search_list = ['coat', 'hat', 'cap']
+
+
+search.py
+def find(one_sentence, search_list):
+    words = one_sentence[:-1].split()
+    for word in words:
+        if word in search_list:
+            return True
+    return False
