@@ -13,6 +13,41 @@ while val is not 0
 # if input value is 0, the loop body will NOT execute
 
 
+
+# 5.1.9
+# max ends having the maximum value in an input list of positive values (list ends with 0)
+# if input is 22 5 99 3 0, then max should end as 99
+max = -1
+val = get next input
+
+while val is not 0
+  if __(A)__  # val > max
+     __(B)__  # max = val
+
+  val = get next input
+
+# final value of max does NOT depend on the order of inputs
+
+max = -1
+val = get next input
+
+while val is not 0
+  if val > max
+     max = val
+
+  val = get next input
+
+# values 5 10 7 20 8 0
+max = -1, 5, 10, 20
+
+# first value is 5 > -1
+# second value is 10 > -1
+# third value is 7 > 10 --- FALSE
+# fourth value is 20 > 10 
+# fifth value is 8 > 20 --- FALSE
+# sixth value is 0 > 20 --- FALSE
+
+
 # 5.2.5
 x = 0
 while x > 0:  # x == 0; loop never executes
