@@ -101,3 +101,77 @@ while user_num >= 0:  # while user_num is non-negative
     
 print(f'Result is {result}')
 
+
+
+
+
+
+# 5.3.1
+curr_value = int(input())  # input: 6 7 4 9 2 0
+
+max_value = curr_value
+
+while curr_value > 0:
+    if curr_value > max_value:
+        max_value = curr_value
+    curr_value = int(input())
+
+print(f'Max value: {max_value}')
+# output: Max value: 9
+#
+
+
+total_sum = 0
+
+entered_value = int(input())  # input: 2 4 3 -1
+
+while entered_value > 0:
+    total_sum = total_sum + entered_value
+    entered_value = int(input())
+
+print(f'Sum: {total_sum}')
+# output: Sum: 9
+#
+
+
+entered_age = int(input())  # input: 55 22
+
+while (entered_age < 18 or entered_age > 60):
+    if entered_age < 18:
+        print('5% discount')
+    else:
+         print('15% discount')
+    entered_age = int(input())
+
+print('No discount')
+# output: No discount
+#
+
+
+user_age = int(input())  # input: 65 35 22
+
+while (user_age < 16 or user_age > 60):
+    if user_age < 16:
+        print('5% discount')
+    else:
+         print('15% discount')
+    user_age = int(input())
+
+print('No discount')
+# output: 15% discount
+# No discount
+#
+
+entered_age = int(input())  # input: 8 42 19
+
+while (entered_age < 16 or entered_age > 65):
+    if entered_age < 16:
+        print('5% discount')
+    else:
+         print('10% discount')
+    entered_age = int(input())
+
+print('Regular ticket price')
+# output: 5% discount
+# Regular ticket price
+#
