@@ -85,6 +85,21 @@ while user_char != 'n':
 
 
 
+# 5.2.3
+# iterate while x is less than 100
+while x < 100
+
+# iterate while x is greater than or equal to 0
+while x >= 0
+
+# iterate while c equals 'g'
+while c == 'g'
+
+# iterate until c equals 'z'
+while c != 'z'
+
+
+
 
 # 5.2.5
 x = 0
