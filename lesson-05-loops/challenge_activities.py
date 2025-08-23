@@ -175,3 +175,79 @@ print('Regular ticket price')
 # output: 5% discount
 # Regular ticket price
 #
+
+
+
+
+
+
+# 5.4.1 
+n = 1
+while n <= 3:
+  print(n)
+  n = n + 1
+
+# output: 1
+# 2
+# 3
+# 
+
+n = 6
+while n >= 0:
+  print(n)
+  n = n - 1
+
+# output: 6
+# 5
+# 4
+# 3
+# 2
+# 1
+# 0
+#
+
+target = int(input())  # 6
+n = int(input())       # 4
+while n <= target:
+  print(n * 2)
+  n += 1
+
+# output: 8
+# 10
+# 12
+# 
+
+target = int(input())  # 10
+n = int(input())       # 6
+while n <= target:
+  print(n * 2)
+  n += 1
+
+# output: 12
+# 14
+# 16
+# 18
+# 20
+# 
+
+target = int(input())  # 12
+n = int(input())       # 1
+step = 4
+while n <= target:
+    print(n * 2)
+    n += step
+
+# output: 2
+# 10
+# 18
+# 
+
+target = int(input())  # 4
+n = int(input())       # 6
+step = 2
+while n > target:
+    print(n * 2)
+    n -= step
+
+# output: 12
+# 
