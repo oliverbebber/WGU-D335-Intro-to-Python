@@ -159,3 +159,55 @@ while num_a != num_b:
 print(f'GCD is {num_a}')   # ouput: GCD is 5
 
 # this program will execute two loop iterations given num_a = 15 and num_b = 10
+
+
+
+
+
+# 5.4.1
+'''Program that calculates savings and interest'''
+
+initial_savings = 10000
+interest_rate = 0.05
+
+print(f'Initial savings of ${initial_savings}')
+print(f'at {interest_rate*100:.0f}% yearly interest.\n')
+
+years = int(input('Enter years: '))
+print()
+
+savings = initial_savings
+i = 1  # Loop variable
+while i <= years:  # Loop condition
+    print(f' Savings at beginning of year {i}: ${savings:.2f}')
+    savings = savings + (savings*interest_rate)
+    i = i + 1  # Increment loop variable
+
+print('\n')
+
+# beginning of year 4: $11576
+
+
+
+
+'''Program that calculates savings and interest'''
+
+initial_savings = 5000
+interest_rate = 0.03
+
+print(f'Initial savings of ${initial_savings}')
+print(f'at {interest_rate*100:.0f}% yearly interest.\n')
+
+years = int(input('Enter years: '))
+print()
+
+savings = initial_savings
+i = 1  # Loop variable
+while i <= years:  # Loop condition
+    print(f' Savings at beginning of year {i}: ${savings:.2f}')
+    savings = savings + (savings*interest_rate)
+    i = i + 1  # Increment loop variable
+
+print('\n')
+
+# savings will be greater than $7500 after how many iterations? 14
