@@ -134,3 +134,7 @@ These are my notes for Lesson 11 of the Intro to Python course.
 [csv - CSV File Reading and Writing - Python Documentation](https://docs.python.org/3/library/csv.html)
 
 [readline() in Python](https://www.geeksforgeeks.org/python/readline-in-python/)
+
+[with statement in Python](https://www.geeksforgeeks.org/python/with-statement-in-python/)
+
+[27. Context Managers - Python Tips](https://book.pythontips.com/en/latest/context_managers.html)
