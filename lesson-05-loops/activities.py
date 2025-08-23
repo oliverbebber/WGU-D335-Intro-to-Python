@@ -254,3 +254,15 @@ while i >= 31:
 i = -100
 while i <= 65:
   i = i + 1
+
+
+
+
+
+
+# 5.4.5 
+# write a statement using *= that doubles the value of a variable my_var
+my_var *= 2
+
+# write a statement using += that is equivalent to my_var = my_var + my_var / 2
+my_var += my_var / 2
