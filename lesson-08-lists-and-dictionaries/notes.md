@@ -33,6 +33,22 @@ These are my notes for Lesson 08 of the Intro to Python course.
   > print(fruits[i - 2])  # output: 'cherry' (index 2)
   > ```
 
+**Common list operators and in-place list modification**
+
+| Operation | Description | Example code | Example output |
+|-----------|-------------|--------------|----------------|
+| **`my_list = [1, 2, 3]`** | Creates a list. | ```python\nmy_list = [1, 2, 3]\nprint(my_list)``` | `[1, 2, 3]` |
+| **`list(iter)`** | Creates a list from an iterable. | ```python\nmy_list = list('123')\nprint(my_list)``` | `['1', '2', '3']` |
+| **`my_list[index]`** | Gets an element from a list. | ```python\nmy_list = [1, 2, 3]\nprint(my_list[1])``` | `2` |
+| **`my_list[start:end]`** | Gets a new list containing some of another list's elements. | ```python\nmy_list = [1, 2, 3]\nprint(my_list[1:3])``` | `[2, 3]` |
+| **`my_list1 + my_list2`** | Gets a new list with elements of `my_list2` added to end of `my_list1`. | ```python\nmy_list = [1, 2] + [3]\nprint(my_list)``` | `[1, 2, 3]` |
+| **`my_list[i] = x`** | Changes the value of the element at index `i` in-place. | ```python\nmy_list = [1, 2, 3]\nmy_list[2] = 9\nprint(my_list)``` | `[1, 2, 9]` |
+| **`del my_list[i]`** | Deletes the element from index `i` from a list. | ```python\nmy_list = [1, 2, 3]\ndel my_list[1]\nprint(my_list)``` | `[1, 3]` |
+
+- **in-place modification**: refers to changing the contents of a list **without** creating a new list
+
+
+
 ### 2. List methods
 
 ### 3. List methods and functions reference
