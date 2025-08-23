@@ -99,6 +99,19 @@ These are my notes for Lesson 05 of the Intro to Python course.
   >   i = i + 2
   > ```
 
+**Shorthand operators**
+
+| Operator | Meaning                         | Example           | Equivalent To       |
+|----------|---------------------------------|-------------------|---------------------|
+| +=       | Add and assign                  | x += 5            | x = x + 5           |
+| -=       | Subtract and assign             | x -= 3            | x = x - 3           |
+| *=       | Multiply and assign             | x *= 2            | x = x * 2           |
+| /=       | Divide and assign (float)       | x /= 4            | x = x / 4           |
+| //=      | Floor divide and assign         | x //= 4           | x = x // 4          |
+| %=       | Modulo and assign               | x %= 2            | x = x % 2           |
+| **=      | Exponent and assign             | x **= 3           | x = x ** 3          |
+
+
 ### 5. For loops
 
 
@@ -139,3 +152,5 @@ These are my notes for Lesson 05 of the Intro to Python course.
 [randint() Function in Python](https://www.geeksforgeeks.org/python/python-randint-function/)
 
 [Python for Loops](https://realpython.com/python-for-loop/)
+
+[Python Operators](https://www.w3schools.com/python/python_operators.asp)
