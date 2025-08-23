@@ -68,3 +68,5 @@ These are my notes for Lesson 08 of the Intro to Python course.
 ### 18. Lists and dictionaries practice
 
 ### References
+
+[Python Lists](https://www.geeksforgeeks.org/python/python-lists/)
