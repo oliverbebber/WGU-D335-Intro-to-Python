@@ -404,3 +404,5 @@ Common escape sequences
 [randrange in Python](https://www.geeksforgeeks.org/python/randrange-in-python/)
 
 [Range Function](https://pythonbasics.org/range-function/)
+
+[Floor Division in Python](https://www.geeksforgeeks.org/python/floor-division-in-python/)
