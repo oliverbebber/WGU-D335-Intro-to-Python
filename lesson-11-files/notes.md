@@ -83,6 +83,37 @@ These are my notes for Lesson 11 of the Intro to Python course.
 
 ### 3. The 'with' statement
 
+- **with statement**: can be used to open a file, execute a block of statements, and automatically close the file when finished
+  - Helpful to simplfy resources management
+  - Example
+  > ``` python
+  > with open('myfile.txt', 'r') as myfile
+  >     # Statement-1
+  >     # Statement-2
+  >     # ....
+  >     # Statement-N
+  > ```
+  - Example: opening a file
+  > ``` python
+  > print("Opening myfile.txt")
+  > # Open a file for reading and writing
+  > with open("myfile.txt", "r+") as f:
+  >     # Read in two integers
+  >     num1 = int(f.readline())
+  >     num2 = int(f.readline())
+  >
+  >     product = num1 * num2
+  >
+  >     # Write back result on own line
+  >     f.write("\n")
+  >     f.write(str(product))
+  >
+  > # No need to call f.close() - f closed automatically
+  > print("Closed myfile.txt")
+  > ```
+
+- **context manager**: manages the use of a resource by performing setup and cleanup operations.
+
 ### 4. Reading files
 
 ### 5. Writing files
