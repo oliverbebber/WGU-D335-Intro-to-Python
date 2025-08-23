@@ -98,3 +98,8 @@ These are my notes for Lesson 11 of the Intro to Python course.
 
 ### References
 
+[File Objects in Python](https://www.geeksforgeeks.org/python/file-objects-python/)
+
+[csv - CSV File Reading and Writing - Python Documentation](https://docs.python.org/3/library/csv.html)
+
+[readline() in Python](https://www.geeksforgeeks.org/python/readline-in-python/)
