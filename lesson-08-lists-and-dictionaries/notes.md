@@ -51,6 +51,31 @@ These are my notes for Lesson 08 of the Intro to Python course.
 
 ### 2. List methods
 
+- **list method**: can perform useful operations on lists like adding or removing elements, sorting, reversing, etc.
+
+| List method | Description | Code example | Final my_list value |
+|-------------|-------------|--------------|-------------------|
+| **`list.append(x)`** | Add an item to the end of list. | ```python\nmy_list = [5, 8]\nmy_list.append(16)``` | `[5, 8, 16]` |
+| **`list.extend([x])`** | Add all items in `[x]` to list. | ```python\nmy_list = [5, 8]\nmy_list.extend([4, 12])``` | `[5, 8, 4, 12]` |
+| **`list.insert(i, x)`** | Insert `x` into list before position `i`. | ```python\nmy_list = [5, 8]\nmy_list.insert(1, 1.7)``` | `[5, 1.7, 8]` |
+| **`list.remove(x)`** | Remove first item from list with value `x`. | ```python\nmy_list = [5, 8, 14]\nmy_list.remove(8)``` | `[5, 14]` |
+| **`list.pop()`** | Remove and return last item in list. | ```python\nmy_list = [5, 8, 14]\nval = my_list.pop()``` | `[5, 8]` <br> `val` is `14` |
+| **`list.pop(i)`** | Remove and return item at position `i` in list. | ```python\nmy_list = [5, 8, 14]\nval = my_list.pop(0)``` | `[8, 14]` <br> `val` is `5` |
+| **`list.sort()`** | Sort the items of list in-place. | ```python\nmy_list = [14, 5, 8]\nmy_list.sort()``` | `[5, 8, 14]` |
+| **`list.reverse()`** | Reverse the elements of list in-place. | ```python\nmy_list = [14, 5, 8]\nmy_list.reverse()``` | `[8, 5, 14]` |
+| **`list.index(x)`** | Return index of first item in list with value `x`. | ```python\nmy_list = [5, 8, 14]\nprint(my_list.index(14))``` | Prints `2` |
+| **`list.count(x)`** | Count the number of times value `x` is in list. | ```python\nmy_list = [5, 8, 5, 5, 14]\nprint(my_list.count(5))``` | Prints `3` |
+
+Important: It's a good practice to use methods to add and delete list elements vs alternative add and delete methods 
+- Alternative approaches:
+  > ```python
+  > my_list[len(my_list):] = [val]  # to add a list
+  >
+  > del my_list[0]  # to remove from a list
+  > ```
+
+
+
 ### 3. List methods and functions reference
 
 ### 4. Using built-in functions with lists
