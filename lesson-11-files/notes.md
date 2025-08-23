@@ -131,6 +131,55 @@ Note: each method (```file.close()```, ```file.read()```, ```file.readlines()```
 
 ### 5. Writing files
 
+- **file.write() method**: writes a string argument to a file; accepts string arguments only - int & floating-point values must be converted (```str()```)
+  - Example
+  > ``` python
+  > f = open('myfile.txt', 'w')  # Open file
+  > f.write('Example string:\n  test....')  # Write string
+  > f.close()  # Close the file
+  > ```
+
+ - Converting numeric values to strings
+   - Example of converting floating-point value
+    > ``` python
+    > f = open('myfile.txt', 'w')
+    > f.write(str(7.75))
+    > f.close()
+    > ```
+    >
+    > ``` python
+    > num1 = 5
+    > num2 = 7.5
+    > num3 = num1 + num2
+    >
+    > f = open('myfile.txt', 'w')
+    > f.write(str(num1))
+    > f.write(' + ')
+    > f.write(str(num2))
+    > f.write(' = ')
+    > f.write(str(num3))
+    > f.close()
+    > ```
+
+- **mode**: indicates *how* a file is opened; determines if writing to the file is allowed, if existing content is overwritten or appended, etc.
+
+**Modes for opening files**
+
+| Mode | Description | Allow read? | Allow write? | Create missing file? | Overwrite file? |
+|------|-------------|------------|-------------|--------------------|----------------|
+| 'r'  | Open the file for reading. | Yes | No | No | No |
+| 'w'  | Open the file for writing. If the file does not exist, then the file is created. Contents of an existing file are overwritten. | No | Yes | Yes | Yes |
+| 'a'  | Open the file for appending. If the file does not exist, then the file is created. Writes are added to the end of existing file contents. | No | Yes | Yes | No |
+
+- **Read mode**: ```'r'``` opens a file for reading; if the file is missing, it will result in an error
+
+- **Write mode**: ```'w'``` opens a file for writing; if the file is missing, a new file is created; contents are **overwritten**
+
+- **Append mode**: ```'a'``` opens a file for writing; if the file is missing, a new file is created; new information is appended to the end of the original file's contents
+
+- **Update mode**: using a '+' character at the end of a mode allows programmers to specific an *update* mode which allows **both** reading and writing of a file at the same time
+
+
 ### 6. Interacting with file systems
 
 ### 7. Command-line arguments and files
