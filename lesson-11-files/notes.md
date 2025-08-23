@@ -151,3 +151,5 @@ Note: each method (```file.close()```, ```file.read()```, ```file.readlines()```
 [with statement in Python](https://www.geeksforgeeks.org/python/with-statement-in-python/)
 
 [27. Context Managers - Python Tips](https://book.pythontips.com/en/latest/context_managers.html)
+
+[Python open() Function](https://www.geeksforgeeks.org/python/python-open-function/)
