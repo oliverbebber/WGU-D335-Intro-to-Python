@@ -1,3 +1,17 @@
+# 11.4.2
+# write a statement to open the file "readme.txt" for reading
+my_file = open("readme.txt")
+
+# write a statement to read up to 500 bytes from "readme.txt" into the contents variable
+my_file = open("readme.txt")
+contents = my_file.read(500)  # optional argument to lmit the number of bytes read
+
+# write a program to print the second line of "readme.txt"
+my_file = open("readne,txt")
+lines = my_file.readlines()
+print(lines[1])
+
+
 # 11.6.3
 import os
 p = 'C:\\Programs\\Microsoft\\msword.exe'
