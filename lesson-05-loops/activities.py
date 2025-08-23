@@ -211,3 +211,22 @@ while i <= years:  # Loop condition
 print('\n')
 
 # savings will be greater than $7500 after how many iterations? 14
+
+
+
+
+# 5.4.2
+# loop iterates 10 times
+i = 1
+while i <= 10:
+  i = i + 1
+
+# loop iterates 99 times
+i = 1
+while i <= 99:
+  i = i + 1
+
+# loop iterates 2 times
+i = 1
+while i <= 2:
+  i = i + 1
