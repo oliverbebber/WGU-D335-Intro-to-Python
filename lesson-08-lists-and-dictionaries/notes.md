@@ -6,6 +6,33 @@ These are my notes for Lesson 08 of the Intro to Python course.
 
 ### 1. Lists
 
+- **Container**: an object that groups related objects together
+
+- **List**: a mutable container; the size of the list can grow or shrink, elements can be changed within the list; also a sequence
+
+- **list() function**: accepts a single iterable object argument (string, list, tuple) and returns a new list object
+  - Example
+  > ``` python
+  > letters = list('abc')
+  > print(letters)  # output: ['a', 'b', 'c']
+  > ```
+
+- **index**: a zero-based integer matching to a specific position in a list's sequence of elements
+  - Example
+  > ``` python
+  > fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+  >
+  > # Accessing an element using a fixed integer index
+  > print(fruits[2])  # output: 'cherry' (3rd element, index 2)
+  >
+  > # Using a variable as an index
+  > i = 4
+  > print(fruits[i])  # output: 'elderberry' (5th element, index 4)
+  >
+  > # Using an expression as an index
+  > print(fruits[i - 2])  # output: 'cherry' (index 2)
+  > ```
+
 ### 2. List methods
 
 ### 3. List methods and functions reference
