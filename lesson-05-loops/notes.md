@@ -69,6 +69,18 @@ These are my notes for Lesson 05 of the Intro to Python course.
 
 ### 4. Counting
 
+- **loop variable**: keeps track of each repetition of a loop; usually changes value each time the loop runs and helps control how many times it is executed.
+  - Example
+  > ``` python
+  > # Iterating N times using a loop variable
+  > i = 1
+  > while i <= N:
+  >   # Loop body statesments go here
+  >   i = i + 1
+  > ```
+
+**NOTE: it's common to forget to include a loop variable update at the end of a loop which causes an *unintended* infinite loop.**
+
 
 ### 5. For loops
 
@@ -108,3 +120,5 @@ These are my notes for Lesson 05 of the Intro to Python course.
 [Python Docstrings](https://www.geeksforgeeks.org/python/python-docstrings/)
 
 [randint() Function in Python](https://www.geeksforgeeks.org/python/python-randint-function/)
+
+[Python for Loops](https://realpython.com/python-for-loop/)
