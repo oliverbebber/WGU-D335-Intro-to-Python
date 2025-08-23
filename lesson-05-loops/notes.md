@@ -79,8 +79,25 @@ These are my notes for Lesson 05 of the Intro to Python course.
   >   i = i + 1
   > ```
 
-**NOTE: it's common to forget to include a loop variable update at the end of a loop which causes an *unintended* infinite loop.**
+📌 Note: it's a common error to forget to include a loop variable update at the end of a loop which causes an *unintended* infinite loop.
 
+**Other forms of counting**
+
+- While loop with loop variable that counts down: 
+
+  > ``` python
+  > i = 5
+  > while i >= 1:
+  >   i = i - 1  # loop body will execute when i = 5, 4, 3, 2, 1 but does NOT execute when it reaches 0
+  > ```
+  
+- Loop variable increased by 2 per iteration
+
+  > ``` python
+  > i = 0
+  > while i <= 100:
+  >   i = i + 2
+  > ```
 
 ### 5. For loops
 
