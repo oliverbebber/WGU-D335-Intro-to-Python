@@ -230,3 +230,27 @@ while i <= 99:
 i = 1
 while i <= 2:
   i = i + 1
+
+
+
+
+# 5.4.3
+# loop iterates over odd integers from 1 to 9 (inclusive)
+i = 1
+while i <= 9:
+  i = i + 2
+
+# loop iterates over multiples of 5 from 0 to 1000 (inclusive)
+i = 0
+while i <= 1000:
+  i = i + 5
+
+# loop iterates over odd integers from 211 down to 31 (inclusive)
+i = 211
+while i >= 31:
+  i = i - 2
+
+# loop iterates from -100 to 65
+i = -100
+while i <= 65:
+  i = i + 1
