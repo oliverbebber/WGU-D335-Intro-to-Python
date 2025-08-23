@@ -251,3 +251,43 @@ while n > target:
 
 # output: 12
 # 
+
+
+
+
+
+# 5.4.2
+# integer num_threshold is read from input
+num_threshold = int(input())
+
+# integer i is initialized with 6
+i = 6
+
+# complete the while loop to perform the following tasks at each iteration
+# until i is greater than num_threshold:
+#   increment i
+#   if i is divisible by 3, output value of i
+
+while i <= num_threshold:
+  i += 1
+  if i % 3 == 0:
+    print(i)
+
+
+
+# integer input_num is read from input
+input_num = int(input())
+
+# initialize k with 25
+k = 25
+
+# write a while loop to perform the following tasks at each iteration until k is less than input_num
+#  decrement k
+#  if k is divisible by 2, then output the value of k
+while k > input_num:
+  k -= 1
+  if k % 2 == 0:
+    print(k)
+
+
+
