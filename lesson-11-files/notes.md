@@ -116,6 +116,19 @@ These are my notes for Lesson 11 of the Intro to Python course.
 
 ### 4. Reading files
 
+- **open() function**: built-in Python function; used to open files and retrieve information from them
+
+- **file.close() method**: closes a file; no more reads or writes to the file are allowed once it's closed
+
+- **file.read() method**: returns the file contents as a string
+
+- **file.readlines() method**: returns a *list* of strings; the first element is the information on the first line, the second is from the second line, etc.
+
+Note: each method (```file.close()```, ```file.read()```, ```file.readlines()``` stops reading when it reaches the **end-of-file (EOF)** as it indicates the file has no additional data.
+
+- **file.readline() method**: returns a single line at a time; beneficial when working with large files and the contents may not fit in the system memory
+
+
 ### 5. Writing files
 
 ### 6. Interacting with file systems
