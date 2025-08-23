@@ -337,7 +337,9 @@ Useful Functions and Methods Related to Lists
 
 [Python Set add() Method](https://www.w3schools.com/python/ref_set_add.asp)
 
-[Python Set remove() Method]([https://www.w3schools.com/python/ref_list_remove.asp](https://www.w3schools.com/PYTHON/ref_set_remove.asp))
+[Python List remove() Method](https://www.w3schools.com/python/ref_list_remove.asp)
+
+[Python Set remove() Method](https://www.w3schools.com/PYTHON/ref_set_remove.asp)
 
 [Python Set pop() Method](https://www.geeksforgeeks.org/python/python-set-pop-method/)
 
