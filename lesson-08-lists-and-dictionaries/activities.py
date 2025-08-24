@@ -34,3 +34,28 @@ my_list.pop()
 
 # write a statement that counts the number of elements of my_list that have the value 15
 my_list.count(15)
+
+
+
+# 8.4.2
+# count how many odd numbers (cnt_odd) there are
+cnt_odd = 0
+
+for i in num:
+    if i % 2 == 1:
+        cnt_odd += 1
+
+
+# count how many negative numbers (cnt_neg) there are
+cnt_neg = 0
+for i in num:
+    if i < 0:
+      cnt_neg += 1
+
+
+# Determine the number of elements in the list that are divisible by 10. 
+# (Hint: The number x is divisible by 10 if x % 10 is 0.)
+div_ten = 0
+for i in num:
+    if i % 10 == 0:
+        div_ten += 1
