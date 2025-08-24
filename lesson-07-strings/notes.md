@@ -16,6 +16,15 @@ These are my notes for Lesson 07 of the Intro to Python course.
   > my_str[0:3]  # output: Bog
   > ```
   
+**Slicing and slicing operations**
+
+| Syntax        | Result                          | Description                                                   |
+|---------------|---------------------------------|---------------------------------------------------------------|
+| my_str[10:19] | wikipedia                       | Returns the characters in indices 10–18.                      |
+| my_str[10:-5] | wikipedia.org/wiki/             | Returns the characters in indices 10–28.                      |
+| my_str[8:]    | n.wikipedia.org/wiki/Nasa/      | Returns all characters from index 8 until the end of the string. |
+| my_str[:23]   | http://en.wikipedia.org         | Returns every character up to index 23, but not including `my_str[23]`. |
+| my_str[:-1]   | http://en.wikipedia.org/wiki/Nasa | Returns all but the last character.                          |
 
 
 ### 2. Advanced string formatting
