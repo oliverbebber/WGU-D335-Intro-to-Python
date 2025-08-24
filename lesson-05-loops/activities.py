@@ -285,3 +285,37 @@ for price in my_prices:
 # iterate the string '911' using a variable called number
 for number in '911':
   # Loop body statements
+
+
+
+
+
+
+# 5.5.3
+# computer the average number of kids
+# each list item is the number of kids in a family
+num_kids = [1, 1, 2, 2, 1, 4, 3, 1]
+
+total = 0
+for num in num_kids:
+  total += num  # num will allow the iteration to add an item to the list for a running total
+
+average = total / len(num_kids)
+
+
+
+# assign num_neg with the number of below-freezing Celsius temps in the list
+temperatures = [30, 20, 2, -5, 15, -8, -1, 0, 5, 35]
+
+num_neg = 0
+for temp in temperatures:
+  if temp < 0:
+    num_neg += 1  # serves as a counter for how many negative temps there are in the list
+
+
+
+# print scores in order from highest to lowest
+# list is pre-sorted from lowest to highest
+scores = [75, 77, 80, 85, 90, 95, 99]
+for scr in reversed(scores):
+  print(scr, end=' ')
