@@ -7,3 +7,17 @@ protocol = 'http://'
 print(my_str[len(protocol):])  # len(protocol) = 7    my_str[7:]
 
 # output: reddit.com/r/python
+
+
+
+# 8.1.5
+my_str = 'Agt2t3afc2kjMhagrds!'
+print(my_str[0:5:1])  
+
+# output: Agt2t 
+# reads the first FIVE characters, adding a stride of 1 to the index to find each new element to read
+
+my_str = 'Agt2t3afc2kjMhagrds!'
+print(my_str[::2])
+
+# output: AttackMars
