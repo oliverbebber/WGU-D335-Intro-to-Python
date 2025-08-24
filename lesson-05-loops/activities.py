@@ -266,3 +266,22 @@ my_var *= 2
 
 # write a statement using += that is equivalent to my_var = my_var + my_var / 2
 my_var += my_var / 2
+
+
+
+
+
+
+
+# 5.5.2
+# iterate over the given list using a variable called my_pet
+for my_pet in ['Scooter', 'Kobe', 'Bella']:
+  # Loop body statements
+
+# iterate over the list my_prices using a variable called price
+for price in my_prices:
+  # Loop body statements
+
+# iterate the string '911' using a variable called number
+for number in '911':
+  # Loop body statements
