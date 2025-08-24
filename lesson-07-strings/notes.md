@@ -4,7 +4,7 @@ These are my notes for Lesson 07 of the Intro to Python course.
 
 ## Sections
 
-### 1. Strng slicing
+### 1. String slicing
 
 - **index**: an integer matching a specific position in a string's sequence of characters
 
