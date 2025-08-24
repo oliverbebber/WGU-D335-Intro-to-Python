@@ -78,6 +78,37 @@ Important: It's a good practice to use methods to add and delete list elements v
 
 ### 3. List methods and functions reference
 
+| Method            | Description                                                     |
+|-------------------|-----------------------------------------------------------------|
+| append(item)      | Adds an item to the end of the list.                            |
+| clear()           | Removes all items from the list.                                |
+| copy()            | Returns a shallow copy of the list.                             |
+| count(item)       | Returns the number of occurrences of the specified item.        |
+| extend(iterable)  | Extends the list by appending all items from an iterable.        |
+| index(item)       | Returns the index of the first occurrence of the specified item. |
+| insert(index, item)| Inserts an item at the specified index in the list.             |
+| pop(index)        | Removes and returns the item at the specified index.            |
+| remove(item)      | Removes the first occurrence of the specified item.             |
+| reverse()         | Reverses the elements of the list in place.                     |
+| sort()            | Sorts the list in place.                                        |
+
+
+**Additional List Methods**
+
+- Use ```help(list)``` and ```print(dir(list))``` to see more about lists & their methods; provide detailed info and a list of available list methods
+
+**Built-in Functions for List Reference**
+
+| Function       | Description                                                               |
+|----------------|---------------------------------------------------------------------------|
+| len(list)      | Returns the number of items in the list.                                  |
+| min(list)      | Returns the smallest item in the list.                                    |
+| max(list)      | Returns the largest item in the list.                                     |
+| sum(list)      | Returns the sum of all items in the list (requires numeric items).        |
+| sorted(list)   | Returns a new sorted list from the items in the original list.            |
+| reversed(list) | Returns an iterator that accesses the elements of the list in reverse order. |
+
+
 ### 4. Using built-in functions with lists
 
 ### 5. List games
