@@ -59,3 +59,17 @@ div_ten = 0
 for i in num:
     if i % 10 == 0:
         div_ten += 1
+
+
+
+
+# 8.4.3
+my_list = [0, 5, 10, 15]
+
+sum(my_list)     # output: 30
+max(my_list)     # output: 15
+any(my_list)     # output: True
+all(my_list)     # output: False - due to the list containing 0 as an element
+min(my_list)     # output: 0
+
+
