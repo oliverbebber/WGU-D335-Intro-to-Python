@@ -291,3 +291,63 @@ while k > input_num:
 
 
 
+
+
+# 5.5.1
+colors = ['cyan', 'blue', 'grey']
+for color in colors:
+    print(color)
+
+# output: cyan
+# blue
+# grey
+# 
+
+word = 'Memory'
+for char in word:
+    print(char, end=',')
+print()
+
+# output: M,e,m,o,r,y,
+#
+
+
+weights = [1, 3, 7, 6]
+result = 0
+for weight in weights:
+    result += weight
+print(result)
+
+# output: 17
+#
+
+
+colors = ['red', 'tan', 'grey', 'gold']
+for color in reversed(colors):
+    print(color)
+
+# output: gold
+# grey
+# tan
+# red
+#
+
+
+cities = {
+    'Montreal': 958,
+    'Rome': 550,
+    'Austin': 3435,
+    'Toronto': 5259,
+}
+
+best = ''
+distance = 0
+for city in cities:
+    if cities[city] > distance:
+        best = city
+        distance = cities[city]
+print(best, distance)
+
+# output: Toronto 5259
+
+
