@@ -114,6 +114,19 @@ These are my notes for Lesson 05 of the Intro to Python course.
 
 ### 5. For loops
 
+- **for loop**: each item in a sequence is processed in order. The loop will temporarily assign each item to a variable, which is then available for use within the loop body
+  - Example
+  > ``` python
+  > numbers = [2, 4, 6, 8]
+  > 
+  > for num in numbers:  # num is the variable, numbers is the container
+  >   # Loop body: goes through each item in numbers
+  >   print(f'The square of {num} is {num ** 2}'}
+  >
+  > # Statements to execute after the for loop is complete
+  > print('Done looping!')
+  > ```
+
 
 ### 6. Counting using the range() function
 
