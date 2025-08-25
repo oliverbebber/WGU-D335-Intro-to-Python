@@ -199,6 +199,21 @@ while keep_bidding != 'n':  # remember, while loops are great to use until a spe
 
 
 
+# 5.3.3
+# positive int num_insects is read from user input
+num_insects = int(input())
+
+# write a while loop that in each iteration first prints and then doubles num_insects
+# the loop executes while values are less than or equal to 100
+# output each number on a new line
+while num_insects <= 100: 
+  print(num_insects)
+  num_insects = num_insects * 2
+
+
+
+
+
 # 5.4.1 
 n = 1
 while n <= 3:
