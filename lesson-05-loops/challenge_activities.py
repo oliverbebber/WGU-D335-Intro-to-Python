@@ -213,6 +213,33 @@ while num_insects <= 100:
 
 
 
+# 5.3.4 
+# strings word_to_find and input_word are read from input
+word_to_find = input()
+input_word = input()
+
+# int expected_count is initialized with 1
+expected_count = 1
+
+# write a loop that iterates while input_word is not equal to 'Completed'
+while input_word != 'Completed':
+  # each iteration increments expected_count if input_word is equal to word_to_find
+  if input_word == word_to_find:  # don't get tricked nesting a while loop; use if statement instead to avoid an infinite loop
+    expected_count += 1
+  # reads string input_word from input
+  input_word = input()
+
+print(f'{word_to_find} occurs {expected_count} time(s).')
+
+
+
+
+
+
+
+
+
+
 
 # 5.4.1 
 n = 1
