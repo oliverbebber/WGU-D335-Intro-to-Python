@@ -319,3 +319,21 @@ for temp in temperatures:
 scores = [75, 77, 80, 85, 90, 95, 99]
 for scr in reversed(scores):
   print(scr, end=' ')
+
+
+
+
+
+
+# 5.6.2
+# write the simplest range() function for every int from 0 - 500
+range(501)
+
+# range from 10-20
+range(10, 21)
+
+# every 2nd int from 10-20
+range(10, 21, 2)
+
+# every int from 5 to -5
+range(5, -6, -1)
