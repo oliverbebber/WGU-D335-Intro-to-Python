@@ -180,6 +180,24 @@ print('Regular ticket price')
 
 
 
+# 5.3.2
+# keep_bidding is initially assigned 'y'
+# within the loop, keep_bidding is updated with the user's next input value
+# complete the while loop's expression to terminate the loop is 'n' is entered
+import random
+random.seed(5)
+
+keep_bidding = 'y'
+next_bid = 0
+
+while keep_bidding != 'n':  # remember, while loops are great to use until a specific condition is met
+   next_bid = next_bid + random.randint(1, 10)
+   print(f'I\'ll bid ${next_bid}!')
+   print('Continue bidding? (y/n)', end=' ')
+   keep_bidding = input()
+
+
+
 
 # 5.4.1 
 n = 1
