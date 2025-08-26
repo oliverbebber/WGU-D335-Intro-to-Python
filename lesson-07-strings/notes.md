@@ -84,3 +84,5 @@ These are my notes for Lesson 07 of the Intro to Python course.
 ### 6. Strings practice
 
 ### References
+
+[Python String Interpolation](https://www.geeksforgeeks.org/python/python-string-interpolation/)
