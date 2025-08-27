@@ -130,6 +130,8 @@ These are my notes for Lesson 05 of the Intro to Python course.
 
 ### 6. Counting using the range() function
 
+- **range() function**: allows counting in *for* loops; creates a sequence of integers between a starting integer that's included within the range, an ending integer that isn't included in the range, and an integer step value. 
+
 | Range            | Generated sequence | Explanation                   |
 |------------------|--------------------|-------------------------------|
 | `range(5)`       | 0 1 2 3 4          | Every integer from 0 to 4     |
@@ -140,6 +142,7 @@ These are my notes for Lesson 05 of the Intro to Python course.
 | `range(0, 5, 2)` | 0 2 4              | Every 2nd integer from 0 to 4 |
 | `range(5, 0, -1)`| 5 4 3 2 1          | Every 1 integer from 5 to 1   |
 | `range(5, 0, -2)`| 5 3 1              | Every 2nd integer from 5 to 1 |
+
 
 
 
@@ -179,3 +182,5 @@ These are my notes for Lesson 05 of the Intro to Python course.
 [Python for Loops](https://realpython.com/python-for-loop/)
 
 [Python Operators](https://www.w3schools.com/python/python_operators.asp)
+
+[Python range() Function: How-To Tutorial With Examples](https://python.land/deep-dives/python-range)
