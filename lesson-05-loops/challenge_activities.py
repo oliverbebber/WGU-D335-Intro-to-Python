@@ -481,3 +481,21 @@ for s in student_dict:
   print(f'student.value')
 
 print(f'Average pedometer reading: {average_value:.2f}')
+
+
+
+
+
+# 5.6.1
+for i in range(5):
+  print(i, end=' ')
+# output: 0 1 2 3 4 
+# space in between each number, including the last number printed
+
+for i in range(0, 5):
+  print(i * 2, end=' ')
+# ouput: 0 2 4 6 8 
+
+for i in range(0, -4, -1):
+  print(i, end=' ')
+# output: 0 -1 -2 -3 
