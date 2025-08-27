@@ -234,8 +234,36 @@ print(f'{word_to_find} occurs {expected_count} time(s).')
 
 
 
+# string input_key is read from input
+input_key = input()
+
+# write a loop that iterates while_input is not equal to "Over"
+while input_key != "Over":
+  # each iteration reads int food_number from input
+  food_number = int(input())
+  # if food_number is less than 45
+  if food_number < 45:
+    # output the value of input_key followed by ': reorder soon' on one line
+    print(f'{input_key}: reorder soon')
+    # read str input_key from input
+input_key = input()
 
 
+
+
+# the first and second int in input are read as variables previous_val and current_val
+previous_val = int(input())
+current_val = int(input())
+print(f'Sequence starts at {previous_val}.')
+
+# write a loop that iterates while current_val is 10 + previous_val
+while current_val == 10 + previous_val:
+  # each iteration outputs current_val followed by 'is 10 plus previous_val, amd '. Sequence is increasing arithmetically.' on one line
+  print(f'{current_val} is 10 plus {previous_val}. Sequence is increasing arithmetically.')
+  # assign previous_val with current_val
+  previous_val = current_val
+  # read the next int from input and assign current_val with the int read
+  current_val = int(input())
 
 
 
