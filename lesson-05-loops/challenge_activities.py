@@ -499,3 +499,34 @@ for i in range(0, 5):
 for i in range(0, -4, -1):
   print(i, end=' ')
 # output: 0 -1 -2 -3 
+
+
+
+
+
+
+# 5.6.2
+# positive int pairs_of_gloves is read from input
+pairs_of_gloves = int(input())
+
+print('Gloves are numbered:', end=' ')
+
+# complete the range() function call so the for loop iterates through 
+# the increasing sequence of all non-negative integers less than pairs_of_gloves times 2
+for i in range(pairs_of_gloves * 2):
+    print(i, end=' ')
+print()
+
+
+
+# positive int catalog_lower & catalog_upper are read from input
+catalog_lower = int(input())
+catalog_upper = int(input())
+
+print('Catalog numbers:', end=' ')
+
+# complete the for loop to iterate through the increasing sequence of all integers between
+# catalog_lower and catalog_upper, both inclusive
+for i between (catalog_lower, catalog_upper +1):
+    print(i, end=' ')
+print()
