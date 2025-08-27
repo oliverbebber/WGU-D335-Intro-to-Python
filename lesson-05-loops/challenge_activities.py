@@ -439,3 +439,45 @@ print(best, distance)
 # output: Toronto 5259
 
 
+
+
+
+
+# 5.5.2
+# int val_count is read from input representing the number of values to be read next
+val_count = int(input())
+# remaining values are read from input into state_list
+# initialize state_list empty to store remaining values
+state_list = []
+
+for i in range(val_count):
+  state_list.append(input())
+
+print(f'List has {val_count} elements:')
+
+# for each value in state_list
+for v in state_list:
+  # output 'To visit is ' followed by the value on the same line
+  print(f'To visit is {v}')
+
+
+
+
+
+# student_dict is a dictionary with students' name and pedometer reading pairs
+student_dict = {
+    'Abe': 1683,
+    'Ava': 642,
+    'Pal': 760,
+    'Mel': 1661
+}
+
+# a new student is read from input
+name = input()
+length_in_m = int(input())
+student_dict[name] = length_in_m
+
+for s in student_dict:
+  print(f'student.value')
+
+print(f'Average pedometer reading: {average_value:.2f}')
