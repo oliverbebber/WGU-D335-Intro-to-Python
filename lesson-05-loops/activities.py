@@ -337,3 +337,48 @@ range(10, 21, 2)
 
 # every int from 5 to -5
 range(5, -6, -1)
+
+
+
+
+# 5.8.1
+for i in range(2):
+  for j in range(3):
+    # inner loop body
+# executes 6 times
+# outer loop iterates 2 times for i = 0,1
+# inner loop iterates 3 times for j = 0,1,2
+# 2 * 3 = 6
+
+
+for i in range(5):
+    for j in range(10, 12):
+        print(f'{i}{j}')
+# the print statement executes 10 times
+# outer loop iterates 5 times for i = 0,1,2,3,4
+# inner loop iterates 2 times for j = 10,11
+# 5 * 2 = 10
+
+
+c1 = 'a'
+while c1 < 'b':  # run outer loop while a < b = True --- enter inner loop
+    c2 = 'a' 
+    while c2 <= 'c':  # run inner loop while a <= c (a, b or c)
+        print(f'{c1}{c2}', end = ' ')  # print c1 + c2 (aa, ab, ac) with space after
+        c2 = chr(ord(c2) + 1)  # move c2 to the next char (a moves to b, b moves to c)
+    c1 = chr(ord(c1) + 1)  # move c1 to the next char (a moves to b), ends loop since b < b = False
+  
+# output: aa ab ac 
+# space exists after ac: 'ac '
+
+
+i1 = 1
+while i1 < 19:  # run outer loop while 1 < 19 = True --- enter inner loop
+    i2 = 3
+    while i2 <= 9:  # run inner loop while 3 <= 9
+        print(f'{i1}{i2}', end=' ')  # print i1 + i2 (13, 16, 19, etc.) with space after
+        i2 = i2 + 3  # Increase i2 by 3 each time
+    i1 = i1 + 10  # Increase i1 by 10 each time (1 then 11)
+
+# output: 13 16 19 113 116 119 
+# space exists after '119 '
