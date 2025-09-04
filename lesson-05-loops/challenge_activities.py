@@ -485,6 +485,34 @@ print(f'Average pedometer reading: {average_value:.2f}')
 
 
 
+# student_dict is a dictionary with students' name and exam score pairs
+# a new student is read from input & added into the dictionary
+student_dict = {
+    'Abe': 43,
+    'Ada': 68,
+    'Ned': 73,
+    'Zia': 60
+}
+
+new_name = input()
+new_score = int(input())
+student_dict[new_name] = new_score
+
+# loop through each student (key) in the dictionary
+for s in student_dict:
+  # print the student's name and their exam score
+  print(f"{s}'s exam score: {student_dict[s]}")
+
+# calculate the average exam score
+# add all exam scores (values) together
+# divide by the total number of students (using len to determine total)
+average_value = sum(student_dict.values()) / len(student_dict)
+print(f'Average exam score: {average_value:.2f}')
+
+
+
+
+
 
 # 5.6.1
 for i in range(5):
@@ -530,3 +558,5 @@ print('Catalog numbers:', end=' ')
 for i between (catalog_lower, catalog_upper +1):
     print(i, end=' ')
 print()
+
+
