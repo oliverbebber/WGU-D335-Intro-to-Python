@@ -560,3 +560,25 @@ for i between (catalog_lower, catalog_upper +1):
 print()
 
 
+
+# positive int months_upp is read from input
+months_upp = int(input())
+
+print('Months passed:', end=' ')
+
+# complete the for loop: use curr_month as the loop variable
+# iterate through decreasing sequence of all int from months_upp to 1 (both inclusive)
+for curr_month in range(months_upp, 0, -1):
+    print(curr_month, end=' ')
+print()
+
+
+
+# int dozens_of_donuts is read from input
+dozens_of_donuts = int(input())
+
+# for every int between 1 and dozens_of_donuts (both inclusive)
+# output the integer's value followed by ' dozen(s) of donuts = ' the integer's value times 12 and ' donuts'
+for i in range (1, dozens_of_donuts + 1):
+  print(f'{i} dozen(s) of donuts = {i * 12} donuts')
+  
