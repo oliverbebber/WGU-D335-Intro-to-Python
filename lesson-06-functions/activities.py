@@ -49,3 +49,30 @@ f = CalcPQR(d, e, g)
 
 # In the last example, the main program was simplified by
 # predefining operations for XYZ and CalcPQR
+
+
+
+# 6.1.8
+# What defines two params x and y for a function definition:
+def calc_val(...):
+# (x, y)
+
+# What correctly passes two int arguments for the following function call:
+calc_val(...)
+# (99, 44 + 5)
+calc_val(99, 44 + 5)
+calc_val(99, 49)
+
+# Given a function definition:
+def calc_val(a, b, c):
+# b is assigned with what value during this function call:
+calc_val(42, 55, 77)
+# 55
+
+# given a function definition:
+def calc_val(a, b, c):
+# and given variables i, j, and k, what are valid arguments in the call?
+# (k, i + j, 99)
+a = k
+b = i + j
+c = 99
