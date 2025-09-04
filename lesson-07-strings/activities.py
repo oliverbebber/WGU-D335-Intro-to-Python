@@ -1,3 +1,17 @@
+# 7.1.2
+my_str = 'The cat in the hat'
+print(my_str[0:3])
+# output: The 
+# no space before or after 'The'
+
+
+my_str = 'The cat in the hat'
+print(my_str[3:7])
+# output: cat
+# space before ' cat'
+
+
+
 # 7.1.4
 my_str = 'http://reddit.com/r/python'
 print(my_str[17:])  # output: /r/python
