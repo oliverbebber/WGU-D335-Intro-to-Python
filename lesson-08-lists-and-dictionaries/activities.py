@@ -16,6 +16,15 @@ print(animals[i])
 
 
 
+
+# 8.1.5
+del my_list[2]    # deletes the third element from a list called my_list
+my_list3 = my_list1 + my_list2    # does NOT perform an in-place modification, it instead concatenates 2 to the end of 1 to make a new list 3
+my_copy = my_list[:]    # makes a copy of my_list
+
+
+
+
 # 8.2.2 
 temps = [65, 67, 72, 75]
 temps.append(77)
