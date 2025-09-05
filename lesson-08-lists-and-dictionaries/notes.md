@@ -37,13 +37,13 @@ These are my notes for Lesson 08 of the Intro to Python course.
 
 | Operation | Description | Example code | Example output |
 |-----------|-------------|--------------|----------------|
-| **`my_list = [1, 2, 3]`** | Creates a list. | ```python\nmy_list = [1, 2, 3]\nprint(my_list)``` | `[1, 2, 3]` |
-| **`list(iter)`** | Creates a list from an iterable. | ```python\nmy_list = list('123')\nprint(my_list)``` | `['1', '2', '3']` |
-| **`my_list[index]`** | Gets an element from a list. | ```python\nmy_list = [1, 2, 3]\nprint(my_list[1])``` | `2` |
-| **`my_list[start:end]`** | Gets a new list containing some of another list's elements. | ```python\nmy_list = [1, 2, 3]\nprint(my_list[1:3])``` | `[2, 3]` |
-| **`my_list1 + my_list2`** | Gets a new list with elements of `my_list2` added to end of `my_list1`. | ```python\nmy_list = [1, 2] + [3]\nprint(my_list)``` | `[1, 2, 3]` |
-| **`my_list[i] = x`** | Changes the value of the element at index `i` in-place. | ```python\nmy_list = [1, 2, 3]\nmy_list[2] = 9\nprint(my_list)``` | `[1, 2, 9]` |
-| **`del my_list[i]`** | Deletes the element from index `i` from a list. | ```python\nmy_list = [1, 2, 3]\ndel my_list[1]\nprint(my_list)``` | `[1, 3]` |
+| **`my_list = [1, 2, 3]`** | Creates a list. | ```my_list = [1, 2, 3]``` <br> ```print(my_list)``` | `[1, 2, 3]` |
+| **`list(iter)`** | Creates a list from an iterable. | ```my_list = list('123')``` <br> ```print(my_list)``` | `['1', '2', '3']` |
+| **`my_list[index]`** | Gets an element from a list. | ```my_list = [1, 2, 3]``` <br> ```print(my_list[1])``` | `2` |
+| **`my_list[start:end]`** | Gets a new list containing some of another list's elements. | ```my_list = [1, 2, 3]``` <br> ```print(my_list[1:3])``` | `[2, 3]` |
+| **`my_list1 + my_list2`** | Gets a new list with elements of `my_list2` added to end of `my_list1`. | ```my_list = [1, 2] + [3]``` <br> ```print(my_list)``` | `[1, 2, 3]` |
+| **`my_list[i] = x`** | Changes the value of the element at index `i` in-place. | ```my_list = [1, 2, 3]``` <br> ```my_list[2] = 9``` <br> ```print(my_list)``` | `[1, 2, 9]` |
+| **`del my_list[i]`** | Deletes the element from index `i` from a list. | ```my_list = [1, 2, 3]``` <br> ```del my_list[1]``` <br> ```print(my_list)``` | `[1, 3]` |
 
 - **in-place modification**: refers to changing the contents of a list **without** creating a new list
 
@@ -55,16 +55,16 @@ These are my notes for Lesson 08 of the Intro to Python course.
 
 | List method | Description | Code example | Final my_list value |
 |-------------|-------------|--------------|-------------------|
-| **`list.append(x)`** | Add an item to the end of list. | ```python\nmy_list = [5, 8]\nmy_list.append(16)``` | `[5, 8, 16]` |
-| **`list.extend([x])`** | Add all items in `[x]` to list. | ```python\nmy_list = [5, 8]\nmy_list.extend([4, 12])``` | `[5, 8, 4, 12]` |
-| **`list.insert(i, x)`** | Insert `x` into list before position `i`. | ```python\nmy_list = [5, 8]\nmy_list.insert(1, 1.7)``` | `[5, 1.7, 8]` |
-| **`list.remove(x)`** | Remove first item from list with value `x`. | ```python\nmy_list = [5, 8, 14]\nmy_list.remove(8)``` | `[5, 14]` |
-| **`list.pop()`** | Remove and return last item in list. | ```python\nmy_list = [5, 8, 14]\nval = my_list.pop()``` | `[5, 8]` <br> `val` is `14` |
-| **`list.pop(i)`** | Remove and return item at position `i` in list. | ```python\nmy_list = [5, 8, 14]\nval = my_list.pop(0)``` | `[8, 14]` <br> `val` is `5` |
-| **`list.sort()`** | Sort the items of list in-place. | ```python\nmy_list = [14, 5, 8]\nmy_list.sort()``` | `[5, 8, 14]` |
-| **`list.reverse()`** | Reverse the elements of list in-place. | ```python\nmy_list = [14, 5, 8]\nmy_list.reverse()``` | `[8, 5, 14]` |
-| **`list.index(x)`** | Return index of first item in list with value `x`. | ```python\nmy_list = [5, 8, 14]\nprint(my_list.index(14))``` | Prints `2` |
-| **`list.count(x)`** | Count the number of times value `x` is in list. | ```python\nmy_list = [5, 8, 5, 5, 14]\nprint(my_list.count(5))``` | Prints `3` |
+| **`list.append(x)`** | Add an item to the end of list. | ```my_list = [5, 8]``` <br> ```my_list.append(16)``` | `[5, 8, 16]` |
+| **`list.extend([x])`** | Add all items in `[x]` to list. | ```my_list = [5, 8]``` <br> ```my_list.extend([4, 12])``` | `[5, 8, 4, 12]` |
+| **`list.insert(i, x)`** | Insert `x` into list before position `i`. | ```my_list = [5, 8]``` <br> ```my_list.insert(1, 1.7)``` | `[5, 1.7, 8]` |
+| **`list.remove(x)`** | Remove first item from list with value `x`. | ```my_list = [5, 8, 14]``` <br> ```my_list.remove(8)``` | `[5, 14]` |
+| **`list.pop()`** | Remove and return last item in list. | ```my_list = [5, 8, 14]``` <br> ```val = my_list.pop()``` | `[5, 8]` <br> `val` is `14` |
+| **`list.pop(i)`** | Remove and return item at position `i` in list. | ```my_list = [5, 8, 14]``` <br> ```val = my_list.pop(0)``` | `[8, 14]` <br> `val` is `5` |
+| **`list.sort()`** | Sort the items of list in-place. | ```my_list = [14, 5, 8]``` <br> ```my_list.sort()``` | `[5, 8, 14]` |
+| **`list.reverse()`** | Reverse the elements of list in-place. | ```my_list = [14, 5, 8]``` <br> ```my_list.reverse()``` | `[8, 5, 14]` |
+| **`list.index(x)`** | Return index of first item in list with value `x`. | ```my_list = [5, 8, 14]``` <br> ```print(my_list.index(14))``` | Prints `2` |
+| **`list.count(x)`** | Count the number of times value `x` is in list. | ```my_list = [5, 8, 5, 5, 14]``` <br> ```print(my_list.count(5))``` | Prints `3` |
 
 Important: It's a good practice to use methods to add and delete list elements vs alternative add and delete methods 
 - Alternative approaches:
