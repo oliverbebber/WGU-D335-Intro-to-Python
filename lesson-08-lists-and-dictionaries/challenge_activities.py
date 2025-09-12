@@ -82,3 +82,35 @@ for i in range(num_students):
   students_list.insert(0, student)
 
 print(students_list)
+
+
+
+
+
+# 8.4.2
+# Read input and split input into tokens
+tokens = input().split()
+
+values_list = []
+for token in tokens:
+    values_list.append(int(token))
+
+print(f'Raw samples: {values_list}')
+
+count_good = 0
+
+for index, value in enumerate(values_list):    # 
+    # if element's value is less than 45
+    if value < 45:
+        # print the value followed by ' at index' with the index
+        # and 'needs attention'
+        print(f'{value} at index {index} needs attention'
+    # otherwise 
+    else:
+        # increment count_good
+        count_good += 1
+        # output the value followed by ' at index' with the index
+        # and ' is good'
+        print(f'{value} at index {index} is good')
+
+print(f'Total good samples: {count_good}')
