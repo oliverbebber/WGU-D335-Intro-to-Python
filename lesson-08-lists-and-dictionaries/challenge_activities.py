@@ -36,6 +36,38 @@ print(user_values)
 # 
 
 
+# 8.1.2
+# int n is read from user input and 7 strings are read and stored in the list country_data
+n = int(input())
+country_data = input().split()
+
+# output "Jan's favorite country: " followed by the nth element of country_data
+print(f'Jan\'s favorite country: {country_data[n - 1]}')  # n needs to be reduced to match indices across various tests
+
+
+
+# SOLVE LATER
+m = int(input())
+customer_line = input().split()
+
+# write multi-branch if-else statements
+# if m == 1
+    # assign suffix with 'st'
+
+# if m == 2
+    # assign suffix with 'nd'
+    
+# if m == 3
+    # assign suffix with 'rd'
+    
+# otherwise
+    # assign suffix with 'th'
+    
+# output the mth element of customer_line
+# output 'is the '
+# m and suffix
+# ' customer in line.'
+
 
 
 # 8.2.1
