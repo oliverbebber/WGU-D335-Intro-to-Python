@@ -309,6 +309,51 @@ Compound Operators
 
 ### 8. Module basics
 
+- **Interactive Python interpreter**: executes code one line at a time; extremely useful for testing small snippets, experimenting, and/or practicing Python syntax
+ 
+- **Script**: a file containing code which executes every line at one time by the interpreter; common workflow with larger programs
+
+- **Import**: the statement to use to bring a module, or specific items (functions, variables, classes) from a module, into a script
+  - Example  
+  > ```python
+  > import math
+  > print(math.sqrt(16))  # 4.0
+  > ```
+
+- **Dot notation**: a way to access objects within a module once it's been imported; the **module name** comes first, followed by a `.`, then the **object name**
+  - Example
+  > ```python
+  > import universe
+  > print(universe.speed_of_light)  # speed_of_light is accessed once the universe module is imported
+  > ```
+
+- **Module**: a Python file that contains code which can be **reused in other scripts or modules**, which helps organize code into separate, logical pieces
+  - Modules are made accessible using the `import` statement
+  - Example  
+  > File `universe.py` defines:  
+  > ```python
+  > speed_of_light = 299792458  # meters per second
+  > ```  
+  >
+  > Another script can use this value:  
+  > ```python
+  > import universe
+  > print(universe.speed_of_light)  # 299792458
+  > ```
+  > After importing, any item in the module is accessed with **dot notation**
+
+**Importing modules and executing scripts**
+- When a module is imported, all of its top-level code runs *immediately*. Python provides a special variable `__name__` to check whether a file is being run directly as a script or imported as a module
+  - If `__name__` is `'__main__'`, the file is being executed directly by the interpreter
+  - Example
+    > `pet_names.py` defines some variables and may print statistics in an `if __name__ == '__main__'` block
+    > `favorite_pet.py` imports `pet_names.py` to use the variables
+    > 
+    > Running `python pet_names.py` executes all code, including the `if __name__ == '__main__'` block
+    > Running `favorite_pet.py` imports `pet_names.py`, but the `if __name__ == '__main__'` block does **not** execute, so favorite pets aren't printed
+
+Note: code inside `if __name__ == '__main__':` only runs when the file is executed directly, **not when imported**
+
 
 ### 9. Math module
 
@@ -559,4 +604,14 @@ Common escape sequences
 
 [Operator Precedence in Python](https://pythongeeks.org/python-operator-precedence/)
 
-[]()
+[6. Modules - Python 3.13.7 documentation](https://docs.python.org/3/tutorial/modules.html)
+
+[Absolute vs Relative Imports in Python - Real Python](https://realpython.com/absolute-vs-relative-python-imports/)
+
+[Module execution in Python: Import, python -m script.py, and python script.py](https://alberto-agudo.github.io/posts/03-python-m-flag/index.html)
+
+[Python Modules](https://www.geeksforgeeks.org/python/python-modules/)
+
+[What does the if __name__ == "__main__ ": do?](https://www.geeksforgeeks.org/python/what-does-the-if-__name__-__main__-do/)
+
+[__main__ - Top-level code enviroment - Python 3.13.7 documentation](https://docs.python.org/3/library/__main__.html)
