@@ -582,3 +582,61 @@ dozens_of_donuts = int(input())
 for i in range (1, dozens_of_donuts + 1):
   print(f'{i} dozen(s) of donuts = {i * 12} donuts')
   
+
+
+
+# 5.8.1
+count = 0
+for i in range(3):  # iterates 3 times; i = 0, 1, 2
+   for j in range(5):  # iterates 5 times; j = 0, 1, 2, 3, 4
+      count = count + 1  # increment count by 1 each time inner loop runs
+print(count)
+# output: 15
+# 
+
+# NOTE: solving these types of problems can cause confusion. How I've approached these problems is as follows:
+for i in range(A):  
+  for j in range(B):
+    count += 1
+print(count)
+
+# IF count is incremented by 1 inside the INNER LOOP: total = a * b
+# therefore, 3 * 5 in the problem above = 15
+
+
+count = 0
+for i in range(2):  # iterates 2 times; i = 0, 1
+   for j in range(4):  # iterates 4 times; j = 0, 1, 2, 3
+      count = count + 1  # increment count by 1 each time inner loop runs
+print(count)
+# output: 8
+# 
+
+# step count would be:
+  # for i = 0: count goes 1, 2, 3, 4
+  # for i = 1: count goes 5, 6, 7, 8
+
+count = 0
+for i in range(4):
+   for j in range(5):
+      count = count + 1
+print(count)
+# output: 20
+#
+
+
+count = 0
+for i in range(5):  # Outer loop: iterates 5 times (i = 0 to 4)
+   for j in range(4, 8):  # Inner loop: iterates 4 times for each i (j = 4, 5, 6, 7)
+      count = count + 1  # increment count by 1 each time inner loop runs; for each outer loop, inner loop runs 4 times
+print(count)
+# output: 20
+# 
+
+# step count would be:
+  # i = 0: count = 1, 2, 3, 4  --> count = 4
+  # i = 1: count = 5, 6, 7, 8  --> count = 8
+  # i = 2: count = 9, 10, 11, 12  --> count = 12
+  # i = 3: count = 13, 14, 15, 16  --> count = 16
+  # i = 4: count = 17, 18, 19, 20  --> count = 20
+
