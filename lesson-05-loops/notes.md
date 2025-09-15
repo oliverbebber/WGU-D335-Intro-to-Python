@@ -149,7 +149,83 @@ These are my notes for Lesson 05 of the Intro to Python course.
 ### 7. While vs. for loops
 
 
+
+
+
+
+
 ### 8. Nested loops
+
+- **Nested loop**: a loop that exists within another loop; often used when working with multi-dimensional data or repeating a set of actions multiple times for each iteration of an outer loop
+- **Outer loop**: the loop that contains the nested (*inner*) loop
+- **Inner loop**: the loop that is nested inside the outer loop
+  - Example
+  > ```python
+  > for i in range(3):         # outer loop
+  >     for j in range(2):     # inner loop
+  >         print(i, j)
+  > ```
+  > - The **outer loop** iterates over `i`  
+  > - For each iteration of `i`, the **inner loop** iterates over `j`
+
+
+
+NOTE: Nested loops are tricky because it feels like the outer loop does something, but it *only controls how many times the inner loop runs*. Track the inner loop as this is what increments the counter. 
+
+> ``` python
+> count = 0
+> for i in range(5):        # outer loop; i = 0, 1, 2, 3, 4
+>   for j in range(4, 8):   # inner loop; j = 4, 5, 6, 7
+>     count += 1            # increment count each time inner loop runs
+> print(count)	
+> ```
+> 1. Outer loop (i):
+>   - Iterates **5** times --> 0, 1, 2, 3, 4
+> 2. Inner loop (j):
+>   - Iterates **4** times --> 4, 5, 6, 7; stops at 7 as 8 is not inclusive as range(start, stop) includes the start number but NOT the stop number
+>   - `count += 1` occurs here, increasing the count each time
+> 4. Count iterations:
+>   - Outer x inner = 5 * 4 = 20 --> final `count` = 20
+
+
+## Trace Table
+
+I felt using a trace table helped me grasp this concept best.
+
+> ``` python
+> count = 0
+> for i in range(5):                              # outer loop; i = 0, 1, 2, 3, 4
+>   for j in range(4, 8):                         # inner loop; j = 4, 5, 6, 7
+>     count += 1                                  # increment count each time inner loop runs
+>         print(f"i={i}, j={j}, count={count}")   # Trace output
+>
+> print("Final count:", count)
+> ```
+> | i | j | count |
+> |---|---|-------|
+> | i=0 | j=4 | count=1     |
+> | i=0 | j=5 | count=2     |
+> | i=0 | j=6 | count=3     |
+> | i=0 | j=7 | count=4     |
+> | i=1 | j=4 | count=5     |
+> | i=1 | j=5 | count=6     |
+> | i=1 | j=6 | count=7     |
+> | i=1 | j=7 | count=8     |
+> | i=2 | j=4 | count=9     |
+> | i=2 | j=5 | count=10    |
+> | i=2 | j=6 | count=11    |
+> | i=2 | j=7 | count=12    |
+> | i=3 | j=4 | count=13    |
+> | i=3 | j=5 | count=14    |
+> | i=3 | j=6 | count=15    |
+> | i=3 | j=7 | count=16    |
+> | i=4 | j=4 | count=17    |
+> | i=4 | j=5 | count=18    |
+> | i=4 | j=6 | count=19    |
+> | i=4 | j=7 | count=20    |
+> **Final count:** 20
+
+
 
 
 ### 9. Developing programs incrementally
@@ -184,3 +260,14 @@ These are my notes for Lesson 05 of the Intro to Python course.
 [Python Operators](https://www.w3schools.com/python/python_operators.asp)
 
 [Python range() Function: How-To Tutorial With Examples](https://python.land/deep-dives/python-range)
+
+<!-- 5.7 --> []() []()
+
+
+
+<!-- 5.8 -->
+[Python Nested Loops](https://www.geeksforgeeks.org/python/python-nested-loops/)
+
+[Nested Loops in Python - Real Python](https://realpython.com/nested-loops-python/)
+
+[trace - Trace or track Python statement execution - Python 3.13.7 documentation](https://docs.python.org/3/library/trace.html)
