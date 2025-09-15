@@ -153,14 +153,158 @@ These are my notes for Lesson 02 of the Intro to Python course.
 
 ### 4. Numeric Types: Floating-point
 
+- **Floating-point number**: a real number that can include a fractional part, like '100.3', '2.384', or '-123.45'
+- **Float**: the *datatype* to use for floating-point numbers
+- **Floating-point literal**: a number explicitly written with a decimal point, even if the fractional part is '0', like '100.0', '0.0', '-13.0'
+
+  - Example
+  > ```python
+  > temperature = 98.6  # variable bound to a float value
+  > balance = 0.0  # fractional part '0'
+  > negative = -123.45  # negative float
+  > ```
+
+- **Scientific notation**: a way to represent extremely large or small floating-point numbers
+  - Uses an `e` or `E` to indicate the power-of-10 exponent and is often used in scientific or engineering contexts
+  - Example
+  > ```python
+  > avogadro_number = 6.02e23  # 6.02 * 10^23
+  > small_value = 1.0e-3  # 0.001
+  > ```
+
+
+Note: Python does have float range limitations. 
+- Standard 32-bit Python install is limited to the following:
+  - Max: ~`1.8e308`
+  - Min: ~`2.2e308`
+
+- **OverflowError aka overflow**: occurs when a value is too large for Python to store in memory allocated for a float
+  - Example
+  > ```python
+  > large_number = 1.8e300  # within the float range  
+  > too_large = 1.8e309   # OverflowError
+  > ```
+
+Note: Some floating-point numbers have a repeating decimals and some have an infinite number after the decimal
+- Most programming langauges output at least 5 digits past the decimal point by default
+- To output a floating-point number with specific number of digits after the decimal:
+  - `print(f'{my_float:.2f}')` --> this syntax `:.2f` prints two digits after the decimal
+ 
 
 ### 5. Arithmetic expressions
+
+- **Expression**: a combo of items (variables, literals, operators, and parentheses) that evaluate to a value. Typically, the expression is on the right-hand side of the assignment statement.
+  - Example
+  > ```python
+  > x = 3
+  > y = 2 * (x + 1)  # 2 * (x + 1) is the expression
+  > ```
+  > This expression evaluates to `8` and assigns it to `y`
+
+- **Literal**: a fixed value written directly in code
+  - Examples: `1` (integer), `3.14` (float), `'hello'` (string)
+
+- **Operator**: a symbol that instructs Python to perform a specific operation on one or more values
+  - Examples: `+` (addition), `-` (subtraction), `*` (multiplication)
+
+
+Arithmetic Operators
+
+| Operator | Description |
+|----------|-------------|
+| `+`  | **Addition** operator, as in `x + y` |
+| `-`  | **Subtraction** operator, as in `x - y`.<br>Also used for negation, as in `-x + y` or `x + -y` |
+| `*`  | **Multiplication** operator, as in `x * y` |
+| `/`  | **Division operator**, as in `x / y` |
+| `**` | **Exponent operator**, as in `x ** y` (`x` to the power of `y`) |
+
+- **Evaluates**: when Python processes an expression, it produces or *evaluates to* a value that replaces the expression
+  - Example  
+  > ```python
+  > x = 5
+  > y = x + 1  # evaluates to 6
+  > ```
+
+- **Precedence rules**: the order in which Python evaluates operators in an expression, following standard math rules
+  - Example  
+  > ```python
+  > result = 2 + 3 * 4  # evaluates to 14
+  > ```
+
+
+Precedence Rules for Arithmetic Operators
+
+| Operator / Convention | Description | Example / Explanation |
+|----------------------|-------------|---------------------|
+| `( )` | Items within parentheses are evaluated first | `2 * (x + 1)` → `x + 1` is evaluated first, then multiplied by 2 |
+| Exponent `**` | Exponentiation is evaluated next | `x**y * 3` → `x**y` is computed first, then multiplied by 3 |
+| Unary `-` | Negation (unary minus) is next | `2 * -x` → `-x` is evaluated first, then multiplied by 2 |
+| `* / %` | Multiplication, division, and modulo have equal precedence | `%` is discussed elsewhere |
+| `+ -` | Addition and subtraction have equal precedence | `y = 3 + 2 * x` → `2 * x` is evaluated first, then added to 3 |
+| Left-to-right | Operators of equal precedence are evaluated left to right (except `**`, which is right-to-left) | `y = x * 2 / 3` → `x * 2` is evaluated first, then divided by 3 |
 
 
 ### 6. Python expressions
 
+- **Unary minus (-)**: the minus sign is used to indicate a negative value instead of subtraction
+  - Example
+  > ```python
+  > x_coordinate = -y_coordinate  # the - is a unary minus
+  > ```
+
+
+Compound Operators
+
+| Compound Operator | Expression with Compound Operator | Equivalent Expression |
+|------------------|---------------------------------|---------------------|
+| Addition assignment | `age += 1` | `age = age + 1` |
+| Subtraction assignment | `age -= 1` | `age = age - 1` |
+| Multiplication assignment | `age *= 1` | `age = age * 1` |
+| Division assignment | `age /= 1` | `age = age / 1` |
+| Modulo assignment | `age %= 1` | `age = age % 1` |
+
 
 ### 7.  Division and modulo
+
+- **Division (/)**: performs division and always returns a floating-point number.  
+  - Example  
+  > ```python
+  > 15 / 3   # 5.0
+  > 7 / 2   # 3.5
+  > 9 / 4    # 2.25
+  > ```
+
+- **Floor division (//)**: divides and rounds **down** to the nearest smaller whole number.  
+  - Returns an **integer** if both operands are integers; returns a **float** if either operand is a float.  
+  - Example  
+  > ```python
+  > 15 // 3   # 5
+  > 7 // 2   # 3
+  > 9 // 4    # 2
+  > 9.0 // 4   # 2.0
+  > ```
+
+- **Division by zero**: the second operand of `/` or `//` must **never** be `0`.  
+  - Example  
+  > ```python
+  > 10 / 0      # ZeroDivisionError
+  > 10 // 0     # ZeroDivisionError
+  > ```
+
+- **Modulo (%)**: evaluates the **remainder** after dividing one number by another  
+  - Example  
+  > ```python
+  > 23 % 10   # 3
+  > ```
+  > `23 ÷ 10` equals `2` with a remainder of `3`, modulo returns `3`
+
+- More examples:  
+  > ```python
+  > 9 % 5     # 4   (9 = 5 * 1 + 4)
+  > 70 % 7    # 0   (70 = 7 * 10 + 0)
+  > 1 % 2     # 1   (1 = 2 * 0 + 1)
+  > ```
+  > The modulo operator gives the leftover part after **floor division** (`//`)
 
 
 ### 8. Module basics
@@ -406,3 +550,13 @@ Common escape sequences
 [Range Function](https://pythonbasics.org/range-function/)
 
 [Floor Division in Python](https://www.geeksforgeeks.org/python/floor-division-in-python/)
+
+[15. Floating-Point Arithmetic: Issues and Limitations](https://docs.python.org/3/tutorial/floatingpoint.html)
+
+[Python Floating-Point Numbers](https://coderivers.org/blog/python-floating-number/)
+
+[Python Arithmetic Operators](https://www.w3schools.com/python/gloss_python_arithmetic_operators.asp)
+
+[Operator Precedence in Python](https://pythongeeks.org/python-operator-precedence/)
+
+[]()
