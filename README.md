@@ -37,3 +37,9 @@ I will update this repo regularly as I work through the course material. If you'
 Thanks to Western Governors University and the D335 course instructors for the material and support. 
 
 Additional thanks to the Python community for helpful tutorials!
+
+# Helpful Resources
+
+Within each lesson's notes I have linked references to helpful resources. However, since this class uses zyBooks and the lesson material / challenges don't operate like an IDE, I found it to be a little difficult trying to debug my code while in each lesson until I got to the labs sections. The following resource was a game changer for completing the course material and prepping for the exam. Hope it helps and good luck!
+
+[Online Python - IDE, Editor, Compiler, Interpreter](https://www.online-python.com/)
