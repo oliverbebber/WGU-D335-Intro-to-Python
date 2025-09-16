@@ -31,6 +31,19 @@ These are my notes for Lesson 07 of the Intro to Python course.
 
 ### 3. String methods
 
+String comparisons
+
+| Example | Expression result | Why? |
+|---------|-----------------|------|
+| 'Hello' == 'Hello' | True | The strings are exactly identical values |
+| 'Hello' == 'Hello!' | False | The left hand string does not end with '!' |
+| 'Yankee Sierra' > 'Amy Wise' | True | The first character of the left side 'Y' is "greater than" (in ASCII value) the first character of the right side 'A' |
+| 'Yankee Sierra' > 'Yankee Zulu' | False | The characters of both sides match until the second word. The first character of the second word on the left 'S' is not "greater than" (in ASCII value) the first character on the right side 'Z' |
+| 'seph' in 'Joseph' | True | The substring 'seph' can be found starting at the 3rd position of 'Joseph' |
+| 'jo' in 'Joseph' | False | 'jo' (with a lowercase 'j') is not in 'Joseph' (with an uppercase 'J') |
+
+
+
 ### 4. String methods reference
 
 | Method              | Description                                                                 |
