@@ -89,3 +89,52 @@ print(f'{name:6}{points:3}{matches:5}')  # matches:5 will be similar to points:5
 
 # output: Jane    8   21
 # 
+
+
+
+
+
+# 7.2.2
+# string food_name & int food_quantity are read from user input
+food_name = input()
+food_quantity = int(input())
+
+# use one print(f'') statement to output the following on one line:
+# food_name with a width of 13 chars, left-aligned, and with the fill char '+'
+# the pound sign '#'
+# food_quantity with a width of 13 chars, right-aligned, and with the fill char '+'
+print(f'{food_name:+<13}#{food_quantity:+>13}')  # be sure to put the plus signs before the alignment and no space between #
+
+
+
+
+
+# floating-point num location_size is accepted from user input
+location_size = float(input())
+
+# use one print(f'') statement to output 'Square Feet: ', followed by location_size to decimal places
+print(f'Square Feet: {location_size:.2f}')
+
+
+
+
+# three strings are read from user input & stored into list plants
+plants = input().split()
+# three more strings are read from user input & stored into list colors
+colors = input().split()
+# string separator_char is read from user input
+separator_char = input()
+
+# use five print(f'') statements to output the following 5 lines:
+# "Plants", with a field width of 21, centered. Then "Colors", with a field width of 21, centered.
+print(f'{"Plants":^21}{"Colors":^21}')    # do NOT put a space between the two curly braces
+# 42 instances of separator_char
+print(f'{separator_char*42}')
+# plants[0], with a field width of 21, left-aligned.
+print(f'{plants[0]:<21}{colors[0]:>21}')
+# plants[1], with a field width of 21, left-aligned. Then colors[1] with a field width of 21, right-aligned
+print(f'{plants[1]:<21}{colors[1]:>21}')
+# plants[2], with a field width of 21, left-aligned. Then colors[2] with a field width of 21, right-aligned
+print(f'{plants[2]:<21}{colors[2]:>21}')
+
+
