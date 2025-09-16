@@ -640,3 +640,29 @@ print(count)
   # i = 3: count = 13, 14, 15, 16  --> count = 16
   # i = 4: count = 17, 18, 19, 20  --> count = 20
 
+
+
+# 5.8.4
+# int first_num and second_num are read from user input
+first_num = int(input())
+second_num = int(input())
+
+# for each num from first_num to second_num (both inclusive)
+for num in range(first_num, second_num + 1):  # + 1 makes second_num inclusive
+  # output the number's value of dash characters ('-')
+  print('-' * num)  # do not use print(x, end='') as this prints all dashes on the same line instead of new lines
+
+
+
+# given int num_rows & num_columns
+num_rows = int(input()) # int means we're using range()
+num_columns = int(input())
+
+# output the label for each tile, followed by a space
+# end each row with a newline
+for r in range(num_rows):  
+    for c in range(num_columns):
+        print(chr(65 + r) + str(c + 1), end=' ')    # prints A1 - C5 all on one line with spaces
+        
+    print() # adds new line between A1-A5, B1-B5, C1-C5
+
