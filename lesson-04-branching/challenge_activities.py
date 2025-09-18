@@ -519,6 +519,19 @@ if (a is d[0]):
 
 
 
+# 4.9.2
+special_list = [-99, 0, 44]
+special_num = int(input())
+
+if special_num in special_list:  
+    print('Special number')
+else:
+    print('Not special number')
+
+
+
+
+
 # 4.11.1 - indentation fixes
 temperatures = {
     'Seattle': 56.5,
