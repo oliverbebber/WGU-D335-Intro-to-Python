@@ -33,3 +33,21 @@ num_z = float(input())
 max_sum = find_max(num_a, num_b) + find_max(num_y, num_z)
 
 print(f'max_sum is: {max_sum}')
+
+
+# 6.5.2
+MILLILITERS_PER_TEASPOON = 4.92892
+TEASPOONS_PER_TABLESPOON = 3
+
+# define function convert_volume()
+def convert_volume(tablespoons, teaspoons):
+    # returns volume converted to milliliters
+    total_teaspoons = tablespoons * TEASPOONS_PER_TABLESPOON + teaspoons
+    result = total_teaspoons * MILLILITERS_PER_TEASPOON
+    return result   # remember to always return the result at the end of a function
+   
+tablespoons = int(input())
+teaspoons = int(input())
+
+# Print with value rounded to 3 decimal places  
+print(f'{convert_volume(tablespoons, teaspoons):.3f} milliliters')
