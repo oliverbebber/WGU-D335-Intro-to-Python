@@ -99,3 +99,14 @@ String comparisons
 ### References
 
 [Python String Interpolation](https://www.geeksforgeeks.org/python/python-string-interpolation/)
+
+[3. An Informal Introduction to Python](https://docs.python.org/3/tutorial/introduction.html#strings)
+
+[4. Built-in Types - Python 3.5.10 documentation](https://docs.python.org/3.5/library/stdtypes.html#str)
+
+[6.1 string - Common string operations](https://docs.python.org/3.5/library/string.html)
+
+[Python Strings](https://www.w3schools.com/python/python_strings.asp)
+
+[Strings and Character Data in Python](https://realpython.com/python-strings/)
+
