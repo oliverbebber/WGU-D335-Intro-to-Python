@@ -138,3 +138,44 @@ print(f'{plants[1]:<21}{colors[1]:>21}')
 print(f'{plants[2]:<21}{colors[2]:>21}')
 
 
+
+
+
+
+# 7.3.1
+vowel_letters = input()
+
+if 'i' in vowel_letters:
+    index = vowel_letters.rfind('i')    # find last occurence of i
+    print(f'Found at index: {index}')
+    new_string = vowel_letters.replace('i', '+')    # replace all 'i' with '+'
+    print(new_string)
+else:
+    print('No results')
+
+
+
+my_name = input()
+your_name = input()
+
+# write an if-else statement that compares the strings:
+# if my_name and your_name have exactly the same chars
+if my_name == your_name:
+    # output "Same inputs"
+    print('Same inputs')
+# otherwise
+else: 
+    # output the string with the smaller ASCII value
+    if my_name < your_name:
+        print(my_name)
+    else:
+        print(your_name)
+
+
+
+# 7.5.2
+key_value = input()
+
+key_value_tokens = key_value.split(' => ')
+
+print(key_value_tokens)
