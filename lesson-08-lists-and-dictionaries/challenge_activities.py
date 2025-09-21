@@ -114,6 +114,46 @@ print(students_list)
 
 
 
+not_on_board = input().split()
+on_board_bus = input().split()
+
+print(f'Passengers waiting at a bus stop: {not_on_board}')
+print(f'Passengers on board: {on_board_bus}')
+
+# remove the last element from not_on_board 
+passenger_left = not_on_board.pop()
+
+# output "Passenger left bus stop: " followed by the element
+print(f'Passenger left bus stop: {passenger_left}')
+
+# add all remaining elements of not_on_board to the end of on_board_bus
+on_board_bus.extend(not_on_board)
+
+print(f'Updated passengers on board: {on_board_bus}')
+
+
+
+
+tokens = input().split()
+values_list = []
+for token in tokens:
+    values_list.append(int(token))
+
+# sort values_list in-place
+values_list.sort()
+
+# assign median_index with the size of values_list divided by 2 using floor division
+median_index = len(values_list) // 2 # be sure to use len(values_list) before dividing
+
+# assign middle_value with the value at median_index in values_list
+middle_value = values_list[median_index]
+
+print(f'Sorted data: {values_list}')
+print(f'Median: {middle_value}')
+
+
+
+
 
 # 8.4.2
 # Read input and split input into tokens
