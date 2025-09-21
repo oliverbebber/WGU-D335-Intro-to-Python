@@ -50,23 +50,23 @@ print(f'Jan\'s favorite country: {country_data[n - 1]}')  # n needs to be reduce
 m = int(input())
 customer_line = input().split()
 
-# write multi-branch if-else statements
-# if m == 1
+if m == 1:
     # assign suffix with 'st'
-
-# if m == 2
+    suffix = 'st'
+elif m == 2:
     # assign suffix with 'nd'
-    
-# if m == 3
+    suffix = 'nd'
+elif m == 3:
     # assign suffix with 'rd'
-    
-# otherwise
+    suffix = 'rd'
+else:
     # assign suffix with 'th'
+    suffix = 'th'
     
 # output the mth element of customer_line
-# output 'is the '
-# m and suffix
-# ' customer in line.'
+print(f'{customer_line[m - 1]} is the {m}{suffix} customer in line.')
+
+
 
 
 
