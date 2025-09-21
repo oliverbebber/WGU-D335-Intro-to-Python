@@ -86,6 +86,18 @@ print(f'My favorite colors: {paint_colors}')
 
 
 
+paint_colors = input().split()
+new_colors = input().split()
+
+# create a new list updated_colors that 
+# contains elements of new_colors and paint_colors, in that order
+updated_colors = new_colors + paint_colors
+
+print(f'Resulting data: {updated_colors}')
+
+
+
+
 # 8.2.1
 # int num_students is read from input
 num_students = int(input())
