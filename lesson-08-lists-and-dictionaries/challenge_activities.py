@@ -46,7 +46,7 @@ print(f'Jan\'s favorite country: {country_data[n - 1]}')  # n needs to be reduce
 
 
 
-# SOLVE LATER
+
 m = int(input())
 customer_line = input().split()
 
@@ -65,6 +65,22 @@ else:
     
 # output the mth element of customer_line
 print(f'{customer_line[m - 1]} is the {m}{suffix} customer in line.')
+
+
+
+
+
+n = int(input())
+new_color = input()
+paint_colors = input().split()
+
+# delete second element in paint_colors
+del paint_colors[1]
+
+# replace nth element of paint_colors with new_color
+paint_colors[n - 1] = new_color
+
+print(f'My favorite colors: {paint_colors}')
 
 
 
