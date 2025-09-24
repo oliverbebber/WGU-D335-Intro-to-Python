@@ -286,3 +286,7 @@ String Immutability
 [Python - Replace all occurrences of a substring in a string](https://www.geeksforgeeks.org/python/python-replace-all-occurrences-of-a-substring-in-a-string/)
 
 [String Comparison in Python](https://www.geeksforgeeks.org/python/string-comparison-in-python/)
+
+[Help function in Python](https://www.geeksforgeeks.org/python/help-function-in-python/)
+
+[dir() function in Python](https://www.geeksforgeeks.org/python/python-dir-function/)
