@@ -173,3 +173,36 @@ value_k = float(input())
 print(f'{value_k} K is {kelvin_to_celsius(value_k)} C')
 
 
+
+
+
+# 6.12.1
+# my_age and num_years are read from input
+# calculate_future_age() has two params num_age and num_years
+# outputs the sum of num_age and num_years
+def calculate_future_age(num_age, years):
+    print(f'Age in {years} years: {num_age + years}')
+
+my_age = int(input())
+num_years = int(input())
+
+# call calculate_future_age() to output the sum of my_age and num_years without modifying my_age
+calculate_future_age(my_age, num_years)
+
+print(f'Age now: {my_age}')
+
+
+
+
+# write a function set_elements() that assigns 'default' to the 
+# last and 5th elements of a list param
+def set_elements(number_list):
+    # set the 5th element
+    number_list[4] = 'default'
+    # set the last element
+    number_list[-1] = 'default'
+
+number_list = input().split()
+
+set_elements(number_list)
+print(number_list)
