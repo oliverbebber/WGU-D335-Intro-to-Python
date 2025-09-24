@@ -29,7 +29,7 @@ These are my notes for Lesson 07 of the Intro to Python course.
 
 ### 2. Advanced string formatting
 
-## Left-aligned
+## Left-aligned (<)
 ```python
 f'{"Player Name":<16}{"Goals":<8}'
 f'{names[i]:<16}{goals[i]:<8}'
@@ -40,7 +40,7 @@ Sadio Mane      22
 Gabriel Jesus   7
 ```
 
-## Right-aligned
+## Right-aligned (>)
 ```python
 f'{"Player Name":>16}{"Goals":>8}'
 f'{names[i]:>16}{goals[i]:>8}'
@@ -52,7 +52,7 @@ f'{names[i]:>16}{goals[i]:>8}'
     Gabriel Jesus      7
 ```
 
-## Centered
+## Centered (^)
 ```python
 f'{"Player Name":^16}{"Goals":^8}'
 f'{names[i]:^16}{goals[i]:^8}'
@@ -64,6 +64,30 @@ f'{names[i]:^16}{goals[i]:^8}'
 
 
 ```
+
+- **field width**: sets the minimum number of characters a value should occupy in the output. If the value is smaller than the specified width, it is padded with spaces.
+  - By default, numbers are right-aligned within the width, while strings are left-aligned.
+  - Field widths help create neatly formatted columns in output.
+  - Example
+  > ``` python
+  > name = "Alice"
+  > f"{name:16}"  # Output: "Alice           "
+  > ```
+  > 'Alice' is a total of 5 characters, so the remaining 11 characters are made up of whitespace
+
+
+
+- **fill character**: used to pad a value when it's smaller than the field width specified. By default, the padding is done with a space `' '`.
+
+| Format specification | Value of score | Output |
+|---------------------|----------------|--------|
+| `{score:}`          | 9              | `9`      |
+| `{score:4}`         | 9              | `   9`   |
+| `{score:0>4}`       | 9              | `0009`   |
+| `{score:0>4}`       | 18             | `0018`   |
+| `{score:0^4}`       | 18             | `0180`   |
+
+
 
 
 
