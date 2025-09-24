@@ -96,3 +96,7 @@ def print_popcorn_time(bag_ounces):
    # otherwise, compute & print 6 * bag_ounces followed by " seconds"
    else:
       print(f'{bag_ounces * 6} seconds')
+
+bag_ounces = int(input())
+print_popcorn_time(bag_ounces)
+
