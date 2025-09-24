@@ -251,6 +251,10 @@ String Immutability
 | zfill(width)        | Pads the string with zeroes to the left to fill a given width.               |
 
 
+- `help(str)` and `print(dir(str))` can be used to see more about strings and their methods.
+  - Both commands provided additional information and list available string methods
+
+
 ### 5. Splitting and joining strings
 
 ### 6. Strings practice
