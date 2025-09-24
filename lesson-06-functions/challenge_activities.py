@@ -51,3 +51,30 @@ teaspoons = int(input())
 
 # Print with value rounded to 3 decimal places  
 print(f'{convert_volume(tablespoons, teaspoons):.3f} milliliters')
+
+
+
+
+# define find_base_area() with two params as a prism's base length & width
+# the function returns the area of the prism's base
+def find_base_area(base_length, base_width):
+    area = base_length * base_width
+    return area
+
+# define find_vol() with three params as a prism's base length, width, and height
+# the function returns the prism's volume and uses the find_base_area() function
+# to calculate the prism's base area
+def find_vol(base_length, base_width, height):
+    base_area = find_base_area(base_length, base_width)   # area is not defined, requiring find_base_area() to be included
+    volume = base_area * height
+    return volume
+
+base_length = float(input())
+base_width = float(input())
+height = float(input())
+
+print(f'Base length: {base_length}')
+print(f'Base width: {base_width}')
+print(f'Height: {height}')
+print(f'Base area: {find_base_area(base_length, base_width):.1f}')
+print(f'Volume: {find_vol(base_length, base_width, height):.1f}')
