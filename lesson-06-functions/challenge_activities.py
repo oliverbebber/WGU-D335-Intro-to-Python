@@ -100,3 +100,46 @@ def print_popcorn_time(bag_ounces):
 bag_ounces = int(input())
 print_popcorn_time(bag_ounces)
 
+
+
+
+
+
+# 6.7.3
+# define function find_fee() with one parameter as person's age traveling by train
+def find_fee(input_age):
+   # returns ticket price
+   # price is returned as follows:
+   # if the person's age is less than 5 or more than 78, price is $5
+   if input_age < 5 or input_age > 78:  # use OR
+      return 5    # return val instead of price == val
+   # if the person's age is no more than 56 and at least 17, price is $21
+   elif 17 <= input_age <= 56: # 17 <= means age is greater than or equal to 17
+      return 21
+   # otherwise, price is $11
+   else:
+      return 11
+    
+input_age = int(input())
+
+print(f'Testing 1: {find_fee(1)}')
+print(f'Testing user input: {find_fee(input_age)}')
+
+
+
+
+
+
+# define function output_sum() with two params
+def output_sum(numberA, numberB):
+    # outputs the sum of all integers starting with the 1st parameter, ending with the 2nd
+    result = sum(range(numberA, numberB + 1))   # range(start, end +1)
+    print(result)   # function does NOT return any value
+
+numberA = int(input())
+numberB = int(input())
+
+print('Testing static input: ')
+output_sum(4, 6)
+print(f'\nTesting user input: ')
+output_sum(numberA, numberB)
