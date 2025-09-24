@@ -274,3 +274,11 @@ String Immutability
 [8.4 String formatting - Intro to Python Programming](https://openstax.org/books/introduction-python-programming/pages/8-4-string-formatting)
 
 [Add padding to a string in Python](https://www.geeksforgeeks.org/python/add-padding-to-a-string-in-python/)
+
+[Python String Methods](https://www.w3schools.com/python/python_ref_string.asp)
+
+[string - Common string operations](https://docs.python.org/3/library/string.html)
+
+[Python - Replace all occurrences of a substring in a string](https://www.geeksforgeeks.org/python/python-replace-all-occurrences-of-a-substring-in-a-string/)
+
+[String Comparison in Python](https://www.geeksforgeeks.org/python/string-comparison-in-python/)
