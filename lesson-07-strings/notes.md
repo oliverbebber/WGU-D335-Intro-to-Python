@@ -93,7 +93,7 @@ f'{names[i]:^16}{goals[i]:^8}'
 
 ### 3. String methods
 
-String comparisons
+**String comparisons**
 
 | Example | Expression result | Why? |
 |---------|-----------------|------|
@@ -103,6 +103,103 @@ String comparisons
 | 'Yankee Sierra' > 'Yankee Zulu' | False | The characters of both sides match until the second word. The first character of the second word on the left 'S' is not "greater than" (in ASCII value) the first character on the right side 'Z' |
 | 'seph' in 'Joseph' | True | The substring 'seph' can be found starting at the 3rd position of 'Joseph' |
 | 'jo' in 'Joseph' | False | 'jo' (with a lowercase 'j') is not in 'Joseph' (with an uppercase 'J') |
+
+
+**Boolean Methods for Strings**
+
+Python provides several **methods that check string values** and return `True` or `False`
+
+
+**Character and Content Checks**
+
+| Method         | Description |
+|----------------|-------------|
+| `isalnum()`    | Returns `True` if all characters are **letters (a-z, A-Z) or digits (0-9)**. |
+| `isdigit()`    | Returns `True` if all characters are **digits (0-9)**. |
+| `islower()`    | Returns `True` if all **cased characters** are lowercase letters. |
+| `isupper()`    | Returns `True` if all **cased characters** are uppercase letters. |
+| `isspace()`    | Returns `True` if all characters are **whitespace**. |
+
+- Note: `islower()` and `isupper()` **ignore non-cased characters**.
+- Example
+> `"abc?".islower()` returns `True` because `?` is not a cased character.
+
+
+**String Position Checks**
+
+| Method           | Description |
+|------------------|-------------|
+| `startswith(x)`  | Returns `True` if the string **starts with** `x`. |
+| `endswith(x)`    | Returns `True` if the string **ends with** `x`. |
+
+
+
+**Editing and Searching Strings in Python**
+
+String Immutability
+
+- Strings in Python are **immutable**; once created, they cannot be changed
+- To update a string variable, you must **create a new string** and assign it to the variable, replacing the old string
+
+
+**Replacing Substrings**
+
+- **replace() method**: creates a **new string** by replacing occurrences of a substring
+  > ```python
+  > # Replace all occurrences
+  > string.replace(old, new)
+  >
+  > # Replace only the first `count` occurrences
+  > string.replace(old, new, count)
+  > ```
+  - Example
+  > ``` python
+  > text = "I like cats and cats"
+  > text.replace("cats", "dogs")
+  > # Output: "I like dogs and dogs"
+  >
+  > text.replace("cats", "dogs", 1)
+  > # Output: "I like dogs and cats"
+  > ```
+  > `old` and `new` can be **string literals** or **string variables**
+  
+**Finding Substrings**
+
+- **find() method**: string.find(x) returns the index of the first occurrence of x
+  - If not found, returns -1.
+  - String indices start at 0.
+  - Example
+  >``` python
+  > my_str = "Boo Hoo!"
+  >my_str.find('!')     # Returns 7
+  >my_str.find('Boo')   # Returns 0
+  >my_str.find('oo')    # Returns 1 (first occurrence only)
+  >```
+
+- string.find(x, start) → starts searching from index start
+- string.find(x, start, end) → searches from start up to end - 1
+  > ```python
+  > my_str.find('oo', 2)     # Returns 5
+  > my_str.find('oo', 2, 4)  # Returns -1
+  > ```
+
+- **rfind() method**: string.rfind(x) searches in reverse and returns the last occurrence of x
+
+**Counting Substrings**
+
+- **count() method**: string.count(x) returns the number of times x occurs in the string
+  > ``` python
+  > my_str.count('oo')  # Returns 2
+  > ```
+  
+**Membership Check**
+
+- If the exact position of a substring is not needed, use the in operator
+  > ``` python
+  > if "oo" in my_str:
+  >   print("Found!")
+  > ```
+  > This is more simple than using find() when you just need to check for existence
 
 
 
