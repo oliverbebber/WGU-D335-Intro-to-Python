@@ -29,6 +29,44 @@ These are my notes for Lesson 07 of the Intro to Python course.
 
 ### 2. Advanced string formatting
 
+## Left-aligned
+```python
+f'{"Player Name":<16}{"Goals":<8}'
+f'{names[i]:<16}{goals[i]:<8}'
+
+Player Name     Goals
+------------------------
+Sadio Mane      22
+Gabriel Jesus   7
+```
+
+## Right-aligned
+```python
+f'{"Player Name":>16}{"Goals":>8}'
+f'{names[i]:>16}{goals[i]:>8}'
+
+
+     Player Name   Goals
+------------------------
+       Sadio Mane     22
+    Gabriel Jesus      7
+```
+
+## Centered
+```python
+f'{"Player Name":^16}{"Goals":^8}'
+f'{names[i]:^16}{goals[i]:^8}'
+
+  Player Name    Goals
+------------------------
+   Sadio Mane      22
+ Gabriel Jesus     7
+
+
+```
+
+
+
 ### 3. String methods
 
 String comparisons
