@@ -172,3 +172,8 @@ String comparisons
 
 [Strings and Character Data in Python](https://realpython.com/python-strings/)
 
+[Format a Number Width in Python](https://www.geeksforgeeks.org/python/format-a-number-width-in-python/)
+
+[8.4 String formatting - Intro to Python Programming](https://openstax.org/books/introduction-python-programming/pages/8-4-string-formatting)
+
+[Add padding to a string in Python](https://www.geeksforgeeks.org/python/add-padding-to-a-string-in-python/)
