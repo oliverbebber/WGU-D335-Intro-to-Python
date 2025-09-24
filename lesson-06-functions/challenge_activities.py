@@ -78,3 +78,21 @@ print(f'Base width: {base_width}')
 print(f'Height: {height}')
 print(f'Base area: {find_base_area(base_length, base_width):.1f}')
 print(f'Volume: {find_vol(base_length, base_width, height):.1f}')
+
+
+
+
+
+
+# 6.7.2
+# define function print_popcorn_time() with param bag_ounces
+def print_popcorn_time(bag_ounces):
+   # if bag_ounces is less than 3, print "Too small"
+   if bag_ounces < 3:
+      print('Too small')
+   # if bag_ounces is greater than 10, print "Too large"
+   elif bag_ounces > 10: 
+      print('Too large')
+   # otherwise, compute & print 6 * bag_ounces followed by " seconds"
+   else:
+      print(f'{bag_ounces * 6} seconds')
