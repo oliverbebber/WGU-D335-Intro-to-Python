@@ -305,3 +305,30 @@ new_tip_percentage = float(input())
 
 # Cost per diner at different tax and tip percentages
 print(f'Cost per diner: ${split_check(bill, people, new_tax_percentage, new_tip_percentage):.2f}')
+
+
+
+# 6.17.1
+# define a function compute_gas_volume() 
+# returns the volume of gas given params: 
+	# pressure, temperature, moles
+# use gas equation PV = nRT
+	# P is pressure in Pascals
+	# V is volume in cubic meters
+	# n is number of moles
+	# R is the gas constant 8.3144621 ( J / (mol*K))
+	# T is temperature in Kelvin
+gas_const = 8.3144621
+
+def compute_gas_volume(pressure, temperature, moles):
+    # V = nRT / P
+    volume = (moles * gas_const * temperature) / pressure
+    return volume
+
+gas_pressure = float(input())
+gas_moles = float(input())
+gas_temperature = float(input())
+gas_volume = 0.0
+
+gas_volume = compute_gas_volume(gas_pressure, gas_temperature, gas_moles)
+print(f'Gas volume: {gas_volume} m^3')
