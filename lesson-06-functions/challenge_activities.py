@@ -206,3 +206,102 @@ number_list = input().split()
 
 set_elements(number_list)
 print(number_list)
+
+
+
+
+# 6.13.1
+def show(a, b, c): 
+print(f"{a}-{b}-{c}") 
+
+show(a=9, c=1, b=8)
+# output: 9-8-1
+#
+
+# kw args can appear in any order
+
+
+def show_time(year, month, day, hour, minutes): 
+print(f"{month}/{day}/{year} {hour}:{minutes}") 
+
+show_time(2014, 3, 15, minutes=7, hour=18)
+
+# output: 3/15/2014 18:7
+#
+
+
+def show(a, b, c=16): 
+print(f"{b}|{c}|{a}") 
+
+show(3, 2) 
+show(1, 8, c=6)
+# output: 2|16|3
+# 8|6|1
+#
+
+
+def show(a, b=4, c=5): 
+print(f"{a}-{b}-{c}") 
+
+show(b=1, a=2) 
+show(c=8, a=6)
+# output: 2-1-5
+# 6-4-8
+# 
+
+
+
+
+# 6.13.2
+# given 1 dollar = 100 pennies, write a function number_of_pennies() that takes 2 args
+# number of dollars and an optional number of pennies
+# number_of_pennies() should return the total number of pennies
+# read three values from input
+# call number_of_pennies() twice
+
+def number_of_pennies(number_of_dollars, number_of_pennies=0):
+	total_pennies = number_of_dollars * 100 + number_of_pennies
+	return total_pennies
+
+print(number_of_pennies(int(input()), int(input()))) # Both dollars and pennies
+print(number_of_pennies(int(input())))               # Dollars only
+
+
+
+
+
+# 6.13.3
+# write a split_check function
+# returns the amount that each diner must pay to cover the cost of the meal
+# function has 4 params:
+	# bill
+	# people
+	# tax_percentage
+	# tip_percentage
+# the tax or tip percentages are optional and may not be given when calling split_check
+# use default param values:
+	# 0.15 for tip_percentage
+	# 0.09 for tax_percentage
+# assume the tip is calculated from the amount of the bill before tax
+
+# HINT: Calculate the amount of tip and tax,
+# add to the bill total, then divide by the number of diners.
+
+def split_check(bill, people, tax_percentage=0.09, tip_percentage=0.15):
+    total_bill = bill + (bill * tip_percentage) + (bill * tax_percentage)   # don't convert decimal to percent for calculation
+    cost_per_diner = total_bill / people
+    return cost_per_diner
+
+bill = float(input())
+people = int(input())
+
+# Cost per diner at the default tax and tip percentages
+print(f'Cost per diner: ${split_check(bill, people):.2f}')
+
+bill = float(input())
+people = int(input())
+new_tax_percentage = float(input())
+new_tip_percentage = float(input())
+
+# Cost per diner at different tax and tip percentages
+print(f'Cost per diner: ${split_check(bill, people, new_tax_percentage, new_tip_percentage):.2f}')
