@@ -80,12 +80,14 @@ Task 6
 # and print the new string
 def replaceWGU(mystring):
 # Student code goes here
+ update = mystring.replace('WGU', 'Western Governors University')
+ return update
     
 # expected output: Western Governors University Rocks
-replaceWGU('WGU Rocks')
+print(replaceWGU('WGU Rocks'))
     
 # expected output: Hello, Western Governors University
-replaceWGU('Hello, WGU')
+print(replaceWGU('Hello, WGU'))
 
 
 
