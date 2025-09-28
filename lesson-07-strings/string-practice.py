@@ -17,6 +17,7 @@ Task 2
 # in the given string
 def getLast(mystring, x):
 # Student code goes here
+ print(mystring[-x:])
  
 # expected output: IT
 print(getLast('WGU College of IT', 2))
