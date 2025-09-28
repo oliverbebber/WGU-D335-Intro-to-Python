@@ -32,6 +32,10 @@ Task 3
 # otherwise return False
 def containsWGU(mystring):
 # Student code goes here
+ if 'WGU' in mystring:
+  return True            # remember that functions must RETURN something
+ else:                   # instead of print something
+  return False
     
 # expected output: True
 print(containsWGU('WGU College of IT'))
