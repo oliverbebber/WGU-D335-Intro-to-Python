@@ -2,6 +2,7 @@ Task 1
 # Complete the function to print the first X number of characters in the given string
 def printFirst(mystring, x):
 # Student code goes here
+ print(mystring[:x])
  
 # expected output: WGU
 printFirst('WGU College of IT', 3)    
