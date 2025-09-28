@@ -49,6 +49,8 @@ Task 4
 # Complete the function to print all of the words in the given string
 def printWords(mystring):
 # Student code goes here
+ words = mystring.split()
+ print(words)
     
 # expected output: ['WGU', 'College', 'of', 'IT']
 printWords('WGU College of IT')    
