@@ -290,3 +290,9 @@ String Immutability
 [Help function in Python](https://www.geeksforgeeks.org/python/help-function-in-python/)
 
 [dir() function in Python](https://www.geeksforgeeks.org/python/python-dir-function/)
+
+[Check if String Contains Substring in Python](https://www.geeksforgeeks.org/python/check-if-string-contains-substring-in-python/)
+
+[6.6 Keyword arguments](https://openstax.org/books/introduction-python-programming/pages/6-6-keyword-arguments) 
+
+[Default arguments in Python](https://www.geeksforgeeks.org/python/default-arguments-in-python/)
