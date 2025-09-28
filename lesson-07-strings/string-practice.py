@@ -64,7 +64,9 @@ Task 5
 # Complete the function to combine the words into a sentence and return a string 
 def combineWords(words):
 # Student code goes here
-    
+    combo = ' '.join(words)
+    return combo
+ 
 # expected output: WGU College of IT
 print(combineWords(['WGU', 'College', 'of', 'IT']))
     
