@@ -146,6 +146,11 @@ Task 10
 # Complete the function to return the number of uppercase letters in the given string
 def countUpper(mystring):
 # Student code goes here
+ upper = 0
+ for char in mystring:
+  if char.isupper():
+   upper += 1
+ return upper
  
 # expected output: 4
 print(countUpper('Welcome to WGU'))
