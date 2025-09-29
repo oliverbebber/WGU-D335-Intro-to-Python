@@ -666,3 +666,59 @@ for r in range(num_rows):
         
     print() # adds new line between A1-A5, B1-B5, C1-C5
 
+
+
+
+
+# 5.11.2
+# list color_popularities contains 3 colors from user input
+color_popularities = [input(), input(), input()]
+
+# complete the for loop using the enumerate() function
+# to output each color's popularity ranking followed by the color
+for rank, color in enumerate(color_popularities):
+    print(f'#{rank + 1}: {color}')
+
+
+
+
+# integer num_beverages is read from input & represents the number of
+# beverages to be read from input
+num_beverages = int(input())
+
+# orders_list contains the beverage names read from the remaining input
+orders_list = []
+
+for i in range(num_beverages):
+    orders_list.append(input())
+    # print(orders_list)    # prints list contents after each iteration
+# print(orders_list)          # prints list contents after all iterations are completed
+
+# for each element in orders_list, output the following:
+    # 'Order number', the element's index in the list plus 1 followed by ':'
+    # and the element
+for position, beverage in enumerate(orders_list):
+    print(f'Order number {position + 1}: {beverage}')
+
+
+
+
+# integer num_values is read from input, representing the number of patient names
+# to be read from input
+num_values = int(input())
+
+# patients_list contains the paitent names read from the remaining input
+patients_list = []
+for i in range(num_values):
+    patients_list.append(input())
+    
+# for each element in patients_list:
+# if the element's index is odd, output the element followed by " is scheduled 
+# for Wednesday"
+# otherwise, output the element followed by " is scheduled for Tuesday"
+# Note: x % 2 !=0 returns True if x is odd
+for position, patient in enumerate(patients_list):
+    if position % 2 != 0:
+        print(f'{patient} is scheduled for Wednesday')
+    else:
+        print(f'{patient} is scheduled for Tuesday')
