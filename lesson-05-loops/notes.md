@@ -236,6 +236,47 @@ I felt using a trace table helped me grasp this concept best.
 
 ### 11. Getting both index and value when looping: enumerate()
 
+- **enumerate() function**: gets both the index and corresponding element value at the same time
+  - Example
+  > ``` python
+  > # using range() & len() to iterate over a seq
+  > origins = [4, 8, 10]
+  >
+  > for index in range(len(origins)):
+  >     value = origins[index]      # Retrieve value of element in list.
+  > print(f'Element {index}: {value}')
+  > ```
+  > This generates a position index but requires additional code to get the value
+  >
+  > ``` python
+  > # using list.index() to find the index of each element
+  > origins = [4, 8, 10]
+  >
+  > for value in origins:
+  >   index = origins.index(value)  # Retrieve index of value in list
+  >   print(f'Element {index}: {value}')
+  > ```
+  > The for loop interates over a container and obtains the value directly, but it must look up the index using a function call
+  >
+  > ``` python
+  > # using enumerate()
+  > origins = [4, 8, 10]
+  >
+  > for (index, value) in enumerate(origins):
+  >   print(f'Element {index}: {value}')
+  > ```
+  > This provides a much cleaner and easier to read solution
+  > The enumerate() function produces a new tuple each time it passes through the loop. The new tuple contains the current index and the element value.
+  
+- **Unpacking**: a process that performs multiple assignments at one time; binds comma separated values on the left to the elements of a seq on the right
+  - Example
+  > ``` python
+  > num1, num2 = [350, 400]
+  > # the above is equivalent to the following:
+  > num1 = 350
+  > num2 = 400
+  > ```
+
 
 ### References
 
