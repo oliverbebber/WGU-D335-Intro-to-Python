@@ -132,6 +132,7 @@ Task 9
 # Complete the function to print the specified hourly rate with two decimals
 def displayHourlyRate(rate):
 # Student code goes here
+ print(f'${rate:.2f}')
  
 # expected output: $34.79
 displayHourlyRate(34.789123)    
