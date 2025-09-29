@@ -302,9 +302,7 @@ I felt using a trace table helped me grasp this concept best.
 
 [Python range() Function: How-To Tutorial With Examples](https://python.land/deep-dives/python-range)
 
-<!-- 5.7 --> []() []()
-
-
+<!-- 5.7 --> 
 
 <!-- 5.8 -->
 [Python Nested Loops](https://www.geeksforgeeks.org/python/python-nested-loops/)
@@ -312,3 +310,12 @@ I felt using a trace table helped me grasp this concept best.
 [Nested Loops in Python - Real Python](https://realpython.com/nested-loops-python/)
 
 [trace - Trace or track Python statement execution - Python 3.13.7 documentation](https://docs.python.org/3/library/trace.html)
+
+<!-- 5.9 -->
+
+<!-- 5.10 -->
+
+<!-- 5.11 -->
+[Enumerate() in Python](https://www.geeksforgeeks.org/python/enumerate-in-python/)
+
+[Enumerate Explained with Examples](https://pythonbasics.org/enumerate/)
