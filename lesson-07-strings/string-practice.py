@@ -116,7 +116,10 @@ Task 8
 # and leading spaces from the second string and return the combined strings
 def removeSpaces(string1, string2):
 # Student code goes here
-    
+ trailing = string1.rstrip()
+ leading = string2.lstrip()
+ return trailing + leading
+ 
 # expected output: WGU Rocks-You know it!
 print(removeSpaces('WGU Rocks    ', '  -You know it!'))
     
