@@ -96,7 +96,13 @@ Task 7
 # ONLY if it's not the first word and return the new string
 def removeWGU(mystring):
 # Student code goes here
-    
+ words = mystring.split()
+ if words and words[0] == 'WGU':
+  new_words = [words[0]] + [w.replace('WGU', '') for w in words[1:]]
+ else:
+  new_words = [w.replace('WGU', '') for w in words]
+ return ' '.join(new_words)       
+ 
 # expected output: WGU Rocks
 print(removeWGU('WGU Rocks'))
     
