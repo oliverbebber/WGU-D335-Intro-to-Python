@@ -408,3 +408,31 @@ print(new_list)
 # 
 
 
+my_list = [13, 14, 15, 16, 17]
+new_list = my_list[-5:-2]
+print(new_list)
+
+# output: [13, 14, 15]
+#
+
+my_list = [13, 14, 15, 16, 17]
+new_list = my_list[-3:-2]
+print(new_list)
+
+# output: [15]
+#
+
+
+my_list = [13, 14, 15, 16, 17]
+new_list = my_list[-3:-1]
+print(new_list)
+
+# output: [15, 16]
+#
+
+my_list = [13, 14, 15, 16, 17]
+new_list = my_list[0:-3]
+print(new_list)
+
+# output: [13, 14]
+# 
