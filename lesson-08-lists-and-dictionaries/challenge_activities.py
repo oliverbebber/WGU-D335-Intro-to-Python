@@ -376,3 +376,35 @@ for row in pattern_grid:
     for cell in row:
         print(cell, end=' ')
     print()
+
+
+
+
+
+
+# 8.7.1 Enter the output of the sliced list
+my_list = [13, 14, 15, 16, 17, 18, 19]
+new_list = my_list[0:3]
+print(new_list)
+
+# output: [13, 14, 15]
+#
+
+
+my_list = [13, 14, 15, 16, 17, 18, 19]
+new_list = my_list[0:7:3]
+print(new_list)
+
+# output: [13, 16, 19]
+# 
+
+
+
+my_list = [13, 14, 15, 16, 17, 18, 19]
+new_list = my_list[3:4]
+print(new_list)
+
+# output: [16]
+# 
+
+
