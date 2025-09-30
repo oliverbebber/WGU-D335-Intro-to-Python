@@ -163,6 +163,22 @@ Important: It's a good practice to use methods to add and delete list elements v
 
 ### 9. List comprehensions
 
+A list comprehension has 3 parts:
+
+1. An **expression component** to evaluate for each element in the iterable object
+2. A **loop variable component** to bind the current iteration element
+3. An **iterable object component** to iterate over (list, string, tuple, enumerate, etc)
+
+Note: list comprehensions are *always* surrounded by brackets; it builds and returns a **new** list object. 
+
+  - Example
+  > ``` python
+  > my_list = [10, 20, 30]
+  > list_plus_5 = [(i + 5) for i in my_list]
+  >
+  > print(f'New list contains: {list_plus_5}')   
+  > ```
+
 ### 10. Sorting lists
 
 ### 11. Command-line arguments
