@@ -480,3 +480,112 @@ print(f'Complete data list: {experimental_data}')
 print(f'Early group: {early_group}')
 print(f'Mid group: {mid_group}')
 print(f'Late group: {late_group}')
+
+
+
+
+
+
+
+# 8.8.1 Iterating through a list using range()
+user_values = [3, 6, 7]
+
+for n in range(len(user_values)):
+   print(user_values[n])
+
+# output: 3
+# 6
+# 7
+#
+
+
+user_values = [1, 4, 9]
+sum_value = 0
+
+for pos in range(len(user_values)):
+  sum_value += user_values[pos]
+
+print(sum_value)
+
+# output: 14
+#
+
+
+user_values = [1, 4, 7]
+sum_value = 0
+
+for i in range(len(user_values)):
+  sum_value += user_values[i]
+
+print(sum_value)
+
+# output: 12
+#
+
+
+user_values = [-2, 3, 6, -8]
+
+for i in range(len(user_values)):
+  if user_values[i] < 0:
+    print(user_values[i])
+
+# output: -2
+# -8
+#
+
+
+user_values = [-2, 3, -6, 8]
+
+for i in range(len(user_values)):
+  if user_values[i] < 0:
+    user_values[i] = -1 * user_values[i]
+  print(user_values[i])
+
+# output: 2
+# 3
+# 6
+# 8
+#
+
+
+user_values = [-2, 4, -5, 8]
+
+for i in range(len(user_values)):
+  if user_values[i] < 0:
+    user_values[i] = -1 * user_values[i]
+  print(user_values[i])
+
+# output: 2
+# 4
+# 5
+# 8
+#
+
+
+user_values = [1, 6, 7, 4]
+
+max_value = user_values[0]
+for i in range(len(user_values)):
+  if user_values[i] >= max_value:
+    max_value = user_values[i]
+    print(max_value)
+
+# output: 1
+# 6
+# 7
+#
+
+
+user_values = [1, 6, 7, 4]
+
+max_value = user_values[0]
+for pos in range(len(user_values)):
+  if user_values[pos] >= max_value:
+    max_value = user_values[pos]
+    print(max_value)
+
+# output: 1
+# 6
+# 7
+#
+
