@@ -173,6 +173,22 @@ else:
 
 
 
+
+string_data = input()
+
+# if all chars in my_string are numbers, output "All numbers"
+# otherwise, if all chars in my_string are uppercase, output "All uppercase"
+# if none of the above are true, output "No condition fits"
+#while True:
+if string_data.islower():
+    print('All lowercase')
+elif string_data.isnumeric():
+    print('All numbers')
+else:
+    print('No condition fits')
+
+
+
 # 7.5.2
 key_value = input()
 
