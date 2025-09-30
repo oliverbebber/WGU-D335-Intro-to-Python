@@ -179,6 +179,18 @@ Note: list comprehensions are *always* surrounded by brackets; it builds and ret
   > print(f'New list contains: {list_plus_5}')   
   > ```
 
+List comprehensions can replace *some* for loops
+
+| Num | Description                                         | For loop                                                                 | Equivalent list comprehension                            | Output of both programs |
+|-----|-----------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------|------------------------|
+| 1   | Add 10 to every element.                           | my_list = [5, 20, 50]  <br>for i in range(len(my_list)):  <br>my_list[i] += 10  <br>print(my_list) | my_list = [5, 20, 50]  <br>my_list = [(i+10) for i in my_list]  <br>print(my_list) | [15, 30, 60]           |
+| 2   | Convert every element to a string.                 | my_list = [5, 20, 50]  <br>for i in range(len(my_list)):  <br>my_list[i] = str(my_list[i])  <br>print(my_list) | my_list = [5, 20, 50]  <br>my_list = [str(i) for i in my_list]  <br>print(my_list) | ['5', '20', '50']      |
+| 3   | Convert user input to a list of integers.          | inp = input('Enter numbers:')  <br>my_list = []  <br>for i in inp.split():  <br>my_list.append(int(i))  <br>print(my_list) | inp = input('Enter numbers:')  <br>my_list = [int(i) for i in inp.split()]  <br>print(my_list) | Enter numbers: 7 9 3 <br>[7, 9, 3] |
+| 4   | Find the sum of each row in a two-dimensional list. | my_list = [[5, 10, 15], [2, 3, 16], [100]]  <br>sum_list = []  <br>for row in my_list:  <br>sum_list.append(sum(row))  <br>print(sum_list) | my_list = [[5, 10, 15], [2, 3, 16], [100]]  <br>sum_list = [sum(row) for row in my_list]  <br>print(sum_list) | [30, 21, 100]         |
+| 5   | Find the sum of the row with the smallest sum in a two-dimensional table. | my_list = [[5, 10, 15], [2, 3, 16], [100]]  <br>sum_list = []  <br>for row in my_list:  <br>sum_list.append(sum(row))  <br>min_row = min(sum_list)  <br>print(min_row) | my_list = [[5, 10, 15], [2, 3, 16], [100]]  <br>min_row = min([sum(row) for row in my_list])  <br>print(min_row) | 21                     |
+
+
+
 ### 10. Sorting lists
 
 ### 11. Command-line arguments
