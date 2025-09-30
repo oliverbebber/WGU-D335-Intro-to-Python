@@ -37,3 +37,84 @@ while carry_on:
             has_read = has_read + 1
     except:
         print('Bad input for color intensity is discarded')
+
+
+
+# 9.3.1 Exception handling
+try:
+    user_age = int(input())
+
+    if user_age < 0:
+        raise ValueError('Invalid age')
+
+    # Source: https://www.heart.org/en/healthy-living/fitness
+    avg_max_heart_rate = 220 - user_age
+
+    print(f'Avg: {avg_max_heart_rate}')
+
+except ValueError as excpt:
+    print(f'Error: {excpt}')
+
+# input: 70
+# output: Avg: 150
+#
+
+try:
+    user_age = int(input())
+
+    if user_age < 0:
+        raise ValueError('Invalid age')
+
+    # Source: https://www.heart.org/en/healthy-living/fitness
+    avg_max_heart_rate = 220 - user_age
+
+    print(f'Avg: {avg_max_heart_rate}')
+
+except ValueError as excpt:
+    print(f'Error: {excpt}')
+
+# input: -30
+# output: Error: Invalid age
+#
+
+
+valid_password = False
+
+while valid_password == False:
+    try:
+        password = input()
+
+        if len(password) < 8:
+            raise ValueError('Invalid')
+
+        valid_password = True
+        print('Accepted')
+
+    except ValueError as excpt:
+        print(f'Error: {excpt}')
+
+# input: apples107
+# output: Accepted
+#
+
+
+valid_password = False
+
+while valid_password == False:
+    try:
+        password = input()
+
+        if len(password) < 8:
+            raise ValueError('Invalid')
+
+        valid_password = True
+        print('Accepted')
+
+    except ValueError as excpt:
+        print(f'Error: {excpt}')
+
+# input: red59
+#     yellow62
+# output: Error: Invalid
+# Accepted
+#
