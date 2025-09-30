@@ -221,6 +221,14 @@ List comprehensions can replace *some* for loops
 
 ### 14. Dictionary methods
 
+| Dictionary method          | Description                                                                 | Code example                                                                 | Output                                   |
+|----------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|------------------------------------------|
+| `my_dict.clear()`          | Removes all items from the dictionary.                                      | ```python my_dict = {'Ahmad': 1, 'Jane': 42}```<br>```my_dict.clear()```<br>```print(my_dict)``` | `{}`                                     |
+| `my_dict.get(key, default)`| Reads the value of the key from the dictionary. If the key does not exist, returns default. | ```python my_dict = {'Ahmad': 1, 'Jane': 42}```<br>```print(my_dict.get('Jane', 'N/A'))```<br>```print(my_dict.get('Chad', 'N/A'))``` | `42`<br>`N/A`                            |
+| `my_dict1.update(my_dict2)`| Merges dictionary `my_dict1` with another dictionary `my_dict2`. Existing entries are overwritten if the same keys exist. | ```python my_dict = {'Ahmad': 1, 'Jane': 42}```<br>```my_dict.update({'John': 50})```<br>```print(my_dict)``` | `{'Ahmad': 1, 'Jane': 42, 'John': 50}`   |
+| `my_dict.pop(key, default)`| Removes and returns the key value from the dictionary. If key does not exist, returns default. | ```python my_dict = {'Ahmad': 1, 'Jane': 42}```<br>```val = my_dict.pop('Ahmad')```<br>```print(my_dict)``` | `{'Jane': 42}`                           |
+
+
 ### 15. Dictionary methods reference
 
 ### 16. Iterating over a dictionary
