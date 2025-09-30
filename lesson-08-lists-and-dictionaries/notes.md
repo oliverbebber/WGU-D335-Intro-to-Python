@@ -199,6 +199,26 @@ List comprehensions can replace *some* for loops
 
 ### 13. Dictionaries
 
+- **dict type**: the data type that implements a dictionary in Python; dictionaries associate keys with values
+  - Example
+  > ``` python
+  > my_dict = {
+  >   'Oliver': 'A+',
+  >   'Thomas': '93',
+  >    10: 5.0
+  > }
+  > ```
+  
+## Common dict operations
+
+| Operation          | Description                                                        | Example code                       |
+|--------------------|--------------------------------------------------------------------|-------------------------------------|
+| `my_dict[key]`     | Indexing operation — retrieves the value associated with `key`.    | `jose_grade = my_dict['Jose']`      |
+| `my_dict[key] = value` | Adds an entry if the entry does not exist, else modifies the existing entry. | `my_dict['Jose'] = 'B+'`            |
+| `del my_dict[key]` | Deletes the key from a dict.                                       | `del my_dict['Jose']`               |
+| `key in my_dict`   | Tests for existence of `key` in `my_dict`.                         | `if 'Jose' in my_dict: # ....`      |
+
+
 ### 14. Dictionary methods
 
 ### 15. Dictionary methods reference
