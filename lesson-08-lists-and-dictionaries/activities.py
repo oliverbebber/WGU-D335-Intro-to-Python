@@ -104,3 +104,16 @@ nums = [0, 25, 50, 75, 100]
 
 # the result of evaluating nums[0:-1:3] is [0, 75]
 # TRUE
+
+
+
+# 8.7.4 Matching expressions
+my_list = [1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+my_list[4:]    # output: [5, 8, 13, 21, 34]
+my_list[3:1]    # output: []
+my_list[:20]    # output: [1, 1, 2, 3, 5, 8, 13, 21, 34]
+my_list[len(my_list)//2:(len(my_list)//2) + 1]    # output: [5]
+my_list[2:5]    # output: [2, 3, 5]
+my_list[3:6]    # output: [3, 5, 8]
+
