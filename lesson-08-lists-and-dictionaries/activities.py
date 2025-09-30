@@ -95,4 +95,12 @@ nums = [1, 1, 2, 3, 5, 8, 13]
 [3, 5, 8]
 
 
+# 8.7.3 
+nums = [0, 25, 50, 75, 100]
 
+# the result of evaluating nums[0:5:2] is [25, 75]
+# FALSE
+[0, 50, 100]
+
+# the result of evaluating nums[0:-1:3] is [0, 75]
+# TRUE
