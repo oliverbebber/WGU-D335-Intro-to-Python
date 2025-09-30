@@ -205,3 +205,68 @@ for index, value in enumerate(values_list):    #
         print(f'{value} at index {index} is good')
 
 print(f'Total good samples: {count_good}')
+
+
+
+
+
+# data_list contains integers read from input, representing data samples from an experiment
+
+# 1.    initialize var sum_good with 0, 
+# 2.    for each element in data_list that is at an odd-numbered index 
+#       AND greater than or equal to 60:
+# 3.    output 'Index ', the element's index, ': ' and the element's value
+# 4.    increase sum_good by each such element's value
+
+# Read input and split input into tokens
+tokens = input().split()
+
+data_list = []  # initialize data_list to store integers
+for token in tokens:
+    data_list.append(int(token))
+
+print(f'All data: {data_list}')
+
+sum_good = 0    # initialize sum as 0 before loop
+
+for position, data in enumerate(data_list): # use enumerate() with looking for 2 criteria
+    if position % 2 == 1 and data >= 60:
+        print(f'Index {position}: {data}')
+        sum_good += data
+
+print(f'Sum of selected elements is: {sum_good}')
+
+
+
+
+# data_list contains integers read from input, representing an increasing sequence of 
+# data values. 
+
+# max_diff measures the max difference between 2 neighboring values in the sequence 
+# and is initialized with None
+
+# 1.    for each index i of data_list from 1 through the last index (range)
+# 2.    compute var neighbor_diff as the element at index i minus the element
+#       at index i - 1
+# 3.    output the element at index i, followed by '-', the element at index i - 1,
+#       '=', and the value of neighbor_diff
+# assign max_diff with the max value of neighbor_diff computed in all iterations
+
+# Read input and split input into tokens
+tokens = input().split()
+
+data_list = []
+for token in tokens:
+    data_list.append(int(token))
+
+print(f'Sequence: {data_list}')
+
+max_diff = None
+
+for i in range(1, len(data_list)):
+    neighbor_diff = data_list[i] - data_list[i - 1]
+    print(f'{data_list[i]} - {data_list[i - 1]} = {neighbor_diff}')
+    if max_diff is None or neighbor_diff > max_diff:
+        max_diff = neighbor_diff
+
+print(f'The maximum difference between two neighboring values is {max_diff}')
