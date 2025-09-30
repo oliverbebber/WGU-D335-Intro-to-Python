@@ -436,3 +436,47 @@ print(new_list)
 
 # output: [13, 14]
 # 
+
+
+
+# 8.7.2 List slicing
+# list locations_list is read from input
+# assign selected_locations with a slice of locations_list from the 3rd element
+# up to and excluding the last two element
+locations_list = input().split()
+
+selected_locations = locations_list[2:-2]
+
+print(f'Original list of locations: {locations_list}')
+print(f'Selected list of locations: {selected_locations}')
+
+
+
+
+# list experimental_data is read from input
+# the elements of experimental_data are separated into thirds
+# the first third of the data is collected in the beginning of a month
+# the second third in the middle of a month
+# and the last third in the end of the month
+# integer slice_size represents the number of data in each third
+# 1.    Assign slice_size with len(experimental_data) // 3
+# 2.    Assign early_group with a slice of experimental_data from the beginning up to
+#       and excluding index slice_size
+# 3.    Assign mid_group with a slice of experimental_data from index slice_size up to
+#       and excluding index (2 * slice_size)
+# 4.    Assign late_group with a slice of experimental_data from index (2 * slice_size)
+#       up to and including the end
+experimental_data = []
+for token in input().split():
+	experimental_data.append(int(token))
+
+slice_size = len(experimental_data) // 3
+early_group = experimental_data[:slice_size]    # {} and () are not needed
+mid_group = experimental_data[slice_size:2*slice_size]
+late_group = experimental_data[2*slice_size:]
+
+print(f'Number of data in each third: {slice_size}')
+print(f'Complete data list: {experimental_data}')
+print(f'Early group: {early_group}')
+print(f'Mid group: {mid_group}')
+print(f'Late group: {late_group}')
