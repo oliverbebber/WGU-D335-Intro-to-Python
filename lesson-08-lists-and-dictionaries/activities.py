@@ -117,3 +117,13 @@ my_list[len(my_list)//2:(len(my_list)//2) + 1]    # output: [5]
 my_list[2:5]    # output: [2, 3, 5]
 my_list[3:6]    # output: [3, 5, 8]
 
+
+# 8.8.1 List modification
+nums = [10, 20, 30, 40, 50]
+
+for pos in range(len(nums)):
+    tmp = nums[pos] / 2
+    if (tmp % 2) == 0:
+        nums[pos] = tmp
+print(nums[1])
+# 10.0
