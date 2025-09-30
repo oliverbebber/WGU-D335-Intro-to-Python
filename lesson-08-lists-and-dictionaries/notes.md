@@ -233,6 +233,67 @@ List comprehensions can replace *some* for loops
 
 ### 16. Iterating over a dictionary
 
+Useful methods:
+
+| Method        | Description                                             |
+|---------------|---------------------------------------------------------|
+| dict.items()  | Returns a view object that yields `(key, value)` tuples. |
+| dict.keys()   | Returns a view object that yields dictionary keys.       |
+| dict.values() | Returns a view object that yields dictionary values.     |
+
+
+# Iterating over a Dictionary
+
+## `dict.items()`
+
+> ```python
+> num_calories = dict(Coke=90, Coke_zero=0, Pepsi=94)
+> for soda, calories in num_calories.items():
+>    print(f'{soda}: {calories}')
+> ```
+> Output:
+> 
+> Coke: 90
+> 
+> Coke_zero: 0
+> 
+> Pepsi: 94
+
+## `dict.keys()`
+
+> ``` python
+> num_calories = dict(Coke=90, Coke_zero=0, Pepsi=94)
+> for soda in num_calories.keys():
+>   print(soda)
+> ```
+> Output:
+>
+> Coke
+>
+> Coke_zero
+>
+> Pepsi
+
+## `dict.values()`
+
+> ``` python
+> num_calories = dict(Coke=90, Coke_zero=0, Pepsi=94)
+> for calories in num_calories.values():
+>   print(calories)
+> ```
+>
+> Output:
+>
+> 90
+>
+> 0
+>
+> 94
+
+
+
+
+
 ### 17. Dictionary nesting
 
 ### 18. Lists and dictionaries practice
