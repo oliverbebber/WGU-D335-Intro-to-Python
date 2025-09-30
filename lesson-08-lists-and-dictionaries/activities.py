@@ -82,3 +82,17 @@ all(my_list)     # output: False - due to the list containing 0 as an element
 min(my_list)     # output: 0
 
 
+# 8.7.2 List slicing
+nums = [1, 1, 2, 3, 5, 8, 13]
+
+# what is the result of nums[1:5]
+[1, 2, 3, 5]
+
+# what is the result of nums[5:10]
+[8, 13]
+
+# what is the result of nums[3:-1]
+[3, 5, 8]
+
+
+
