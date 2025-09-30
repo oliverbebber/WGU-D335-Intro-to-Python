@@ -270,3 +270,109 @@ for i in range(1, len(data_list)):
         max_diff = neighbor_diff
 
 print(f'The maximum difference between two neighboring values is {max_diff}')
+
+
+
+
+
+# 8.6.1 
+# two-dimensional list three_drinks consists of 3 lists
+# list new_drink is read from input
+# replace the element at index 2 of list three_drinks with new_drink
+three_drinks = [
+	['t', 'e', 'a'],
+	['m', 'i', 'l', 'k'],
+	['m', 'o', 'c', 'h', 'a']
+]
+
+new_drink = input().split()
+
+three_drinks[2] = new_drink
+
+print(three_drinks[0])
+print(three_drinks[1])
+print(three_drinks[2])
+
+
+
+
+# two-dimensional list game_board represents a 3x3 tic-tac-toe game board from input
+# list game_board contains 3 lists, each representing a row
+# each list has 3 elements representing the 3 columns on the board
+# each element in the tic-tac-toe game board is 'x', 'o', or '-'
+
+# TODO: if all the elements at column index 2 are 'x', output 'A win at column 2.'
+# TODO: otherwise, output 'No win at column 2'
+# NOTE: a == 'x' and b == 'x' and c == 'x' returns True if a, b, and c are equal to 'x'
+#       returns False otherwise
+game_board = [
+  input().split(),
+  input().split(),
+  input().split()
+]
+
+# print(game_board)   # v1: [['-', 'o', 'x'], ['o', '-', 'x'], ['-', '-', 'x']]
+    # A win at column (index) 2
+
+# print(game_board)   # v2: [['x', 'o', 'o'], ['-', '-', 'x'], ['-', '-', 'x']]
+    # No win at column (index) 2
+
+# print(game_board[2][2]) # v1: x; use format for loop
+
+if (game_board[0][2] == 'x' and
+    game_board[1][2] == 'x' and
+    game_board[2][2] == 'x'):
+        print('A win at column 2.')
+else:
+    print('No win at column 2.')
+
+
+
+# integer num_lines is read from input, representing the number of rows of data
+# remaining in the input
+# two-dimensional list vals_2d consists of data read from the remaining input
+# output each row of numbers in vals_2d on one line, ending each number with a space
+num_lines = int(input())
+
+vals_2d = []
+
+for row_index in range(num_lines):  # ensures only num_lines rows of input is read
+    row_elements = []
+    for x in input().split():
+        row_elements.append(int(x))
+    vals_2d.append(row_elements)
+# print(row_elements)
+
+for row in vals_2d:
+    for val in row:
+        print(val, end=' ')
+    print()
+
+
+
+# integer grid_size is read from input representing the number of rows & columns of a 
+# two-dimensional list. 
+# list pattern_grid is created with zeros, 0, as the initial values
+# for each element at row index i and column index j of pattern_grid, assign the 
+# element with the value of j minus is
+grid_size = int(input())
+
+pattern_grid = []
+
+for i in range(grid_size):
+    row = []
+    for j in range(grid_size):
+        row.append(0)
+    pattern_grid.append(row)
+# print(row)          # returns [0, 0, 0, 0]
+
+# fill in values with column[j] - row[i]
+for i in range(grid_size):
+    for j in range(grid_size):
+        pattern_grid[i][j] = j - i
+# print(row)          # returns [-3, -2, -1, 0]
+
+for row in pattern_grid:
+    for cell in row:
+        print(cell, end=' ')
+    print()
