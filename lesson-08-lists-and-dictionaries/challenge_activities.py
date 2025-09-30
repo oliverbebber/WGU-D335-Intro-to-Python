@@ -155,6 +155,29 @@ print(f'Median: {middle_value}')
 
 
 
+# 8.4.1
+# assign sum_extra with the total extra credit received given the list
+# test_grades. Iterate through the list with for grade in test_grades:
+# the code uses the split() method to split a string at each space into
+# a list of string values & the map() function to convert each string value
+# to an integer.
+# full credit is 100, so anything over 100 is extra credit
+user_input = input()
+test_grades = list(map(int, user_input.split())) # test_grades is an integer list of test scores
+
+sum_extra = 0 # Initialize 0 before your loop
+
+for grade in test_grades:
+    if grade > 100:
+        sum_extra += grade - 100
+        
+print(f'Sum extra: {sum_extra}')
+
+
+
+
+
+
 # 8.4.2
 # Read input and split input into tokens
 tokens = input().split()
