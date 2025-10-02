@@ -141,6 +141,17 @@ Important: It's a good practice to use methods to add and delete list elements v
   > print(f'Max even #: {max_num}')
   > ```
 
+## Built-in functions supporting list objects
+
+| Function     | Description                                         | Example Code                             | Example Output |
+|-------------|-----------------------------------------------------|-----------------------------------------|----------------|
+| all(list)    | True if every element in list is True (!= 0), or if the list is empty. | `print(all([1, 2, 3]))`<br>`print(all([0, 1, 2]))` | True<br>False |
+| any(list)    | True if any element in the list is True.           | `print(any([0, 2]))`<br>`print(any([0, 0]))`       | True<br>False |
+| max(list)    | Get the maximum element in the list.              | `print(max([-3, 5, 25]))`                | 25             |
+| min(list)    | Get the minimum element in the list.              | `print(min([-3, 5, 25]))`                | -3             |
+| sum(list)    | Get the sum of all elements in the list.          | `print(sum([-3, 5, 25]))`                | 27             |
+
+
 
 ### 5. List games
 
