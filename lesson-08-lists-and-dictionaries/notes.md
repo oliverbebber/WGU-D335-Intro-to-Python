@@ -172,6 +172,12 @@ Important: It's a good practice to use methods to add and delete list elements v
 
 ### 8. Loops modifying lists
 
+- **[:]**: copies a list
+  - Example
+  > ``` python
+  > copy = my_list[:]:
+  > ```
+
 ### 9. List comprehensions
 
 A list comprehension has 3 parts:
