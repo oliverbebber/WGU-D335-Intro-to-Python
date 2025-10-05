@@ -132,12 +132,14 @@ Note: each method (```file.close()```, ```file.read()```, ```file.readlines()```
 ### 5. Writing files
 
 - **file.write() method**: writes a string argument to a file; accepts string arguments only - int & floating-point values must be converted (```str()```)
-  - Example
+  - Example (writing to a file)
   > ``` python
   > f = open('myfile.txt', 'w')  # Open file
   > f.write('Example string:\n  test....')  # Write string
   > f.close()  # Close the file
   > ```
+
+Note: the write() method **only** accepts a string argument. Integers and floating-point values **must** be converted using the str() method
 
  - Converting numeric values to strings
    - Example of converting floating-point value
