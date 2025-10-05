@@ -589,3 +589,20 @@ for pos in range(len(user_values)):
 # 7
 #
 
+
+
+
+# 8.7.2
+# list countries_list is read from input
+countries_list = input().split()
+
+# assign backup_copy with a copy of countries_list using [:]
+backup_copy = countries_list[:]
+
+# assign selected_countries with a slice of countries_list that includes the
+# elements at the odd indices of countries_list
+selected_countries = countries_list[1::2]
+
+countries_list.clear()
+print(f'Backup list of countries: {backup_copy}')
+print(f'Selected list of countries: {selected_countries}')
