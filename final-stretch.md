@@ -3,7 +3,7 @@
 > Last-minute prep tasks before exam day.
 
 ## ✅ Complete Lesson Topics
-- [ ] Strings
+- [x] Strings
 - [ ] Lists & Dictionaries
 - [ ] Exceptions
 - [ ] Modules
