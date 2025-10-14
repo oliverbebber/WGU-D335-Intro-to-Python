@@ -215,3 +215,36 @@ key_value = input()
 key_value_tokens = key_value.split(' => ')
 
 print(key_value_tokens)
+
+
+
+
+# str all_colors and int insert_index are read from input
+all_colors = input()
+insert_index = int(input())
+
+# perform the following tasks:
+# 1. Split all_colors into tokens using a comma as the separator and assign 
+#    color_list with the result
+
+color_list = all_colors.split(',')
+# print(color_list)
+
+# 2. insert "green" at index insert_index in color_list
+color_list.insert(insert_index, 'green')        # remember, index comes before the str
+
+print(color_list)
+
+
+
+
+
+# list megs_number is read from input
+megs_number = input().split()
+
+# join the strings in megs_number together to create a single string with ']-[' as
+# the separator and assign customized_number with the result
+customized_number = ']-['.join(megs_number)
+
+customized_number = '[' + customized_number + ']'
+print(f'Megs number: {customized_number}')
