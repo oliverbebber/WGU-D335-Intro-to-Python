@@ -189,6 +189,26 @@ else:
 
 
 
+
+# course_string is read from input with leading and trailing whitespaces
+
+course_string = input()
+
+# remove any leading and trailing whitespaces in the course_string
+# course_string.strip()
+
+# if course_string contains 'Class:', capitalize all the chars
+if 'Class:' in course_string:
+    result = course_string.strip().upper()
+# otherwise, lowercase all the chars
+else:
+    result = course_string.strip().lower()
+
+# print out the resulting string
+print(f'{result}')
+
+
+
 # 7.5.2
 key_value = input()
 
