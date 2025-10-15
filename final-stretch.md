@@ -20,9 +20,10 @@
   - [ ] Files
 - [ ] Complete Practice Test 1
 - [ ] Complete Practice Test 2
+- [ ] Retake Pre-assessment
 - [ ] Revisit any problems I struggled with
 
 ## 📚 Notes & Resources
-- [ ] Watch FreeCodeCamp [Learn Python](https://www.youtube.com/watch?v=rfscVS0vtbw&t=7907s) Video
+- [x] Watch FreeCodeCamp [Learn Python](https://www.youtube.com/watch?v=rfscVS0vtbw&t=7907s) Video
 - [ ] Review lab exercises / code snippets
 - [ ] Reference cheat sheets
