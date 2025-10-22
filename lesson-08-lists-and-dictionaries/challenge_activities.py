@@ -606,3 +606,75 @@ selected_countries = countries_list[1::2]
 countries_list.clear()
 print(f'Backup list of countries: {backup_copy}')
 print(f'Selected list of countries: {selected_countries}')
+
+
+
+
+
+# 8.8.2 
+# list scores_list contains integers read from input
+# each int represents a student's score on a test
+# test input: -84 67 56 79
+
+scores_list = []
+
+tokens = input().split()
+	# print(tokens)     # prints ['-84', '67', '56', '79']
+for token in tokens:
+	# print(token)        # prints each element on new line
+	scores_list.append(int(token))
+	# print(scores_list)  # prints [-84] [-84, 67] [-84, 67, 56] [-84, 67, 56, 79]
+  
+print('Original scores:', end=' ')
+for score in scores_list:
+    # print(score)        # prints each element on new line
+    print(score, end=' ')
+print()                 # prints each element on same line
+
+# write a loop to update all negative elements in scores_list with the negation
+# of the element's current value
+for i in range(len(scores_list)):
+    if scores_list[i] < 0:
+        scores_list[i] = -scores_list[i]
+        # print(scores_list[i])   # prints 84
+    # print(scores_list[i])   # prints 84 67 56 79, each on their own line
+# print(scores_list[i])   # prints 79
+
+print('Corrected scores:', end=' ')
+for score in scores_list:
+    print(score, end=' ')
+print()
+
+
+
+
+# list data_samples contains integers read from input
+# each int represents a random data sample in an experiment
+# test input: 48 80 28 70
+
+data_samples = []
+
+tokens = input().split()
+for token in tokens:
+    data_samples.append(int(token))
+  
+print('Original samples:', end=' ')
+for samples in data_samples:
+    print(samples, end=' ')
+print()
+
+# write a loop to remove every element from data_samples that is greater than or 
+# equal to 70 and output the removed element, followed by 'dropped'
+# iterate over a copy of the list using slice notation (data_samples[start:end])
+for sample in data_samples[:]:
+    if sample >= 70:
+        print(sample, 'dropped')
+        data_samples.remove(sample)
+
+print('Filtered samples:', end=' ')
+for samples in data_samples:
+    print(samples, end=' ')
+print()
+
+
+
