@@ -122,8 +122,14 @@ my_list[3:6]    # output: [3, 5, 8]
 nums = [10, 20, 30, 40, 50]
 
 for pos in range(len(nums)):
+    # print(tmp)          # prints out each element divided by 2 (5.0 10.0 15.0 20.0 25.0)
+    # print(nums[pos])    # prints out each element in nums
     tmp = nums[pos] / 2
     if (tmp % 2) == 0:
+        # print (tmp %2)  # prints out 0.0 0.0
         nums[pos] = tmp
+
+    # print(nums[pos])    # prints out 10.0 20.0
+
 print(nums[1])
 # 10.0
