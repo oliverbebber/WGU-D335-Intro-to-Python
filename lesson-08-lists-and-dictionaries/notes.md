@@ -178,6 +178,20 @@ Important: It's a good practice to use methods to add and delete list elements v
   > copy = my_list[:]:
   > ```
 
+Example of modifying a list during iteration
+> ``` python
+> my_list = [1, 2, 3, 4]
+>
+> for i in range(len(my_list)):
+>   my_list[i] =+ 5
+>
+> print(my_list)
+> > ```
+> Output: [5, 5, 5, 5]
+
+**Common error**: adding or removing a list element while iterating over the list.
+
+
 ### 9. List comprehensions
 
 A list comprehension has 3 parts:
