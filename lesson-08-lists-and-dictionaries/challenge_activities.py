@@ -678,3 +678,35 @@ print()
 
 
 
+
+# list colors_list contains words read from the first line of input
+# list favorite_colors contains words read from the second line of input
+# test input: 
+    # bronze violet tan purple
+    # cyan bronze tan
+
+colors_list = input().split()
+favorite_colors = input().split()
+  
+print('Available colors:', end=' ')
+for color in colors_list:
+    print(color, end=' ')
+print()
+
+print('Favorite colors:', end=' ')
+for color in favorite_colors:
+    print(color, end=' ')
+print()
+
+# for each element in colors_list that is not in favorite_colors:
+    # output the element, followed by 'not wanted'
+    # remove the element from colors_list
+for color in colors_list[:]:       # remember to use a copy of a list to iterate safely
+    if color not in favorite_colors:
+        print(color, 'not wanted')
+        colors_list.remove(color)
+
+print('Remaining colors:', end=' ')
+for color in colors_list:
+    print(color, end=' ')
+print()
