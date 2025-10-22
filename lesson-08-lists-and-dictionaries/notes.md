@@ -141,6 +141,14 @@ Important: It's a good practice to use methods to add and delete list elements v
   > print(f'Max even #: {max_num}')
   > ```
 
+
+## IndexError and enumerate()
+**Common error**: attempting to access a list with an index that is out of the list's index range
+  - Example
+    - `my_list[8]` when `my_list`'s indices are 0-7
+    - The program will abort execution and display **IndexError**
+
+
 ## Built-in functions supporting list objects
 
 | Function     | Description                                         | Example Code                             | Example Output |
