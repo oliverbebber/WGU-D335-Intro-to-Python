@@ -165,6 +165,38 @@ Important: It's a good practice to use methods to add and delete list elements v
 
 ### 6. List nesting
 
+**list nesting**: embedding a list within another list
+  - Example
+  > ``` python
+  > my_list = [[5, 6], [50, 60, 70]]
+  > ```
+  > This creates a list with two elements, each being lists
+
+List nesting allows programmers to create a multi-dimensional data structure
+- The simplest would be a two-dimensional table, which could be a tic-tac-toe board or spreadsheet
+
+Multi-dimensional examples
+> ``` python
+> my_list = [[10, 20], [30, 40]]
+> print(f'First nested list: {my_list[0]}')
+> print(f'Second nested list: {my_list[1]}')
+> print(f'Element 0 of first nested list: {my_list[0][0]}')
+> ```
+>
+> Tic-tac-toe
+> ``` python
+> tic_tac_toe = [
+>    ['X', 'O', 'X'],
+>    [' ', 'X', ' '],
+>    ['O', 'O', 'X']
+> ]
+> 
+> print(tic_tac_toe[0][0], tic_tac_toe[0][1], tic_tac_toe[0][2])
+> print(tic_tac_toe[1][0], tic_tac_toe[1][1], tic_tac_toe[1][2])
+> print(tic_tac_toe[2][0], tic_tac_toe[2][1], tic_tac_toe[2][2])
+> ```
+
+
 ### 7. List slicing
 
 ## Common list slicing operations
