@@ -199,6 +199,15 @@ Multi-dimensional examples
 
 ### 7. List slicing
 
+**slice notation**: used to read multiple elements from a list to create a new list that contains the desired elements
+  - Example
+  > `my_list[0:2]`
+  - This indicates the start and end positions of a range of elements to retrieve
+  -  0 is the position of the first element to read
+  - 2 is the last element to read
+  - All elements between 0 and 2 from my_list are added to the new list
+  - However, 2 is *not* added to the new list 
+
 ## Common list slicing operations
 
 | Operation                 | Description                                                     | Example code                                | Example output          |
