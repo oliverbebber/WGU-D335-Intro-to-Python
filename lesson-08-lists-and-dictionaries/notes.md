@@ -249,6 +249,11 @@ A list comprehension has 3 parts:
 2. A **loop variable component** to bind the current iteration element
 3. An **iterable object component** to iterate over (list, string, tuple, enumerate, etc)
 
+Basic form:
+> ``` python
+> new_list = [expression for loop_variable_name in iterable]
+> ```
+
 Note: list comprehensions are *always* surrounded by brackets; it builds and returns a **new** list object. 
 
   - Example
@@ -270,6 +275,24 @@ List comprehensions can replace *some* for loops
 | 5   | Find the sum of the row with the smallest sum in a two-dimensional table. | my_list = [[5, 10, 15], [2, 3, 16], [100]]  <br>sum_list = []  <br>for row in my_list:  <br>sum_list.append(sum(row))  <br>min_row = min(sum_list)  <br>print(min_row) | my_list = [[5, 10, 15], [2, 3, 16], [100]]  <br>min_row = min([sum(row) for row in my_list])  <br>print(min_row) | 21                     |
 
 
+## Conditional list comprehensions
+
+Basic form:
+> ``` python
+> new_list = [expression for name in iterable if condition]
+> ```
+
+- Using this syntax will *only* add an element to the resulting list *if* the condition is True.
+
+Conditional list comprehension example
+> ``` python
+> # get a list of integers from user input
+> numbers = [int(i) for i in input('Enter numbers:').split()]
+>
+> # return a list of even numbers
+> even_numbers = [i for i in numbers if (i % 2) == 0]
+> print(f'Even numbers only: {even_numbers}'
+> ```
 
 ### 10. Sorting lists
 
