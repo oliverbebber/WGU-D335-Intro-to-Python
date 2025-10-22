@@ -710,3 +710,31 @@ print('Remaining colors:', end=' ')
 for color in colors_list:
     print(color, end=' ')
 print()
+
+
+
+
+# 8.9.1
+my_list = [-1, 0, 1, 2]
+new_list = [ number + 4 for number in my_list ]
+print(new_list)
+# Output: [3, 4, 5, 6]
+#
+
+my_list = [-3, -2, -1, 0, 1, 2, 3]
+new_list = [ number for number in my_list if number > 0 ]
+print(new_list)
+# Output: [1, 2, 3]
+#
+
+my_list = [-3, -2, -1, 0, 1, 2, 3]
+new_list = [ number + 4 for number in my_list if number <= 2 ]
+print(new_list)
+# Output: [1, 2, 3, 4, 5, 6]
+#
+
+my_list = [-3, -2, -1, 0, 1, 2, 3]
+new_list = [ number * 5 for number in my_list if (number < -1) and (number % 2 == 1) ]
+print(new_list)
+# Output: [-15]
+#
