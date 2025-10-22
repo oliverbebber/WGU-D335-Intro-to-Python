@@ -133,3 +133,45 @@ for pos in range(len(nums)):
 
 print(nums[1])
 # 10.0
+
+
+
+
+# 8.9.2
+What's the output of the list comprehension program in row 1 if my_list is [-7, -3, 0]?
+# [3, 7, 10]
+
+Alter the list comprehension from row 2 to convert each number to a float instead of a string.
+my_list = [5, 20, 50]
+my_list = [ ___ for i in my_list]
+print(my_list)
+# float(i)
+
+What's the output of the list comprehension program from row 3 if the user enters "4 6 100"?
+# [4, 6, 100]
+
+What's the output of the list comprehension program in row 4 if my_list is [[5, 10], [1]]?
+# [15, 1]
+
+Alter the list comprehension from row 5 to calculate the sum of every number contained by my_list.
+my_list = [[5, 10, 15], [2, 3, 16], [100]]
+sum_list  = (_____ [sum(row) for row in my_list])
+print(sum_list)
+# sum
+
+
+
+
+# 8.9.3 
+Write a list comprehension that contains elements with the desired vals. Use 'i' as the loop var
+
+Desired result: twice the value of each element in the list variable x.
+# [i*2 for i in x]
+
+Desired result: the absolute value of each element in x. 
+Use the abs() function to find the absolute value of a number.
+# [abs(i) for i in x] 
+
+Desired result: the largest square root of any element in x. 
+Use math.sqrt() to calculate the square root.
+# [max([math.sqrt(i) for i in x])]
