@@ -738,3 +738,28 @@ new_list = [ number * 5 for number in my_list if (number < -1) and (number % 2 =
 print(new_list)
 # Output: [-15]
 #
+
+
+
+
+# 8.9.2
+# list samples_list contains integers read from input
+# assign processed_list with a new list where each element is 3x the corresponding
+# element in samples_list minus one
+# test input: 19 0 5 10
+
+samples_list = []
+
+# Read input
+tokens = input().split()
+for token in tokens:
+    print(token)    # print 19 0 5 10 on individual lines
+    samples_list.append(int(token))
+
+processed_list = [3 * token - 1 for token in samples_list]  # expression loopvar iterable
+
+print(f'Original: {samples_list}')
+print(f'Processed: {processed_list}')
+
+
+
