@@ -763,3 +763,43 @@ print(f'Processed: {processed_list}')
 
 
 
+
+
+# list raw_list contains integers read from input
+# assign filtered_list with the new list containing all the odd numbers in raw_list,
+# in that order
+# test input: 23 48 14 13
+
+# Read input
+raw_list = [int(x) for x in input().split()]
+
+filtered_list = [x for x in raw_list if (x % 2 == 1)]
+
+print(f'All numbers: {raw_list}')
+print(f'Odd numbers: {filtered_list}')
+
+
+
+
+
+# integer num_rows is read from input representing the numbers of rows in a 
+# two-dimensional list
+# list raw_list is a two-dimensional list containing the remaining integers from input
+# assign computed_list with the new list containing True for each row in raw_list
+# that has all non-zero values, and False otherwise
+# test input: 
+# 3
+# 0 28
+# 8 3
+# 0 0 0
+
+# Read input
+num_rows = int(input())
+raw_list = []
+for i in range(num_rows):
+    raw_list.append([int(x) for x in input().split()])
+
+computed_list = [all(row) for row in raw_list]
+
+print(f'All numbers: {raw_list}')
+print(f'Row has no zeros: {computed_list}')
