@@ -5,9 +5,9 @@
 ## ✅ Complete Lesson Topics
 - [x] Strings
 - [ ] Lists & Dictionaries
-- [ ] Exceptions
-- [ ] Modules
-- [ ] Files
+- [x] Exceptions
+- [x] Modules
+- [x] Files
 
 ## 📝 Practice & Exercises
 - [ ] Complete Additional Labs
