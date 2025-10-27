@@ -4,7 +4,7 @@
 
 ## ✅ Complete Lesson Topics
 - [x] Strings
-- [ ] Lists & Dictionaries
+- [x] Lists & Dictionaries
 - [x] Exceptions
 - [x] Modules
 - [x] Files
@@ -18,12 +18,12 @@
   - [ ] Lists & Dictionaries
   - [ ] Exceptions
   - [ ] Files
-- [ ] Complete Practice Test 1
-- [ ] Complete Practice Test 2
-- [ ] Retake Pre-assessment
+- [x] Complete Practice Test 1
+- [x] Complete Practice Test 2
+- [x] Retake Pre-assessment
 - [ ] Revisit any problems I struggled with
 
 ## 📚 Notes & Resources
 - [x] Watch FreeCodeCamp [Learn Python](https://www.youtube.com/watch?v=rfscVS0vtbw&t=7907s) Video
-- [ ] Review lab exercises / code snippets
+- [x] Review lab exercises / code snippets
 - [ ] Reference cheat sheets
