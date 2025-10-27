@@ -20,5 +20,24 @@ data_mixture = ["Python is fun", 2024, 5.67, ["apple", "banana", "coconut"], Non
 print("Enter index:")
 index = int(input())
 
+# retrieve the element at the given index
+element = data_mixture[index]
+# print(element)
+
+# determine its data type using the type() function and its .name attribute
+data_type = type(element).__name__
+# print(data_type)
+
+# check if the element belongs to one of the following categories:
+# if the element is "iterable" (list, str, dict), output: "This element is iterable"
+if isinstance(element, (list, str, dict)):
+    message = "This element is iterable."
+    # if the element is "numeric" (int, float), output: "this element is numeric"
+elif isinstance(element, (int, float)):
+    message = "This element is numeric."
+# for other data types not in these categories, output: "this is a different data type"
+else:
+    message = "This is a different data type."
+
 # Finish later
 print(f'Element: {element}, Type: {data_type}, Message: {message}')
