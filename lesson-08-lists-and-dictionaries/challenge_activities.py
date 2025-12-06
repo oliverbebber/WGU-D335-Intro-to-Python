@@ -803,3 +803,37 @@ computed_list = [all(row) for row in raw_list]
 
 print(f'All numbers: {raw_list}')
 print(f'Row has no zeros: {computed_list}')
+
+
+
+
+
+# 8.13.2
+
+# create a dictionary named color_dict containing key-value pairs 
+# 'R': 255, 'G': 99, and 'B': 71
+# read strings new_key and new_value from input
+# add new_key and new_value as a new key-value pair to color_dict with 
+# new_key as the key and new_value as the value
+
+# test input:
+# note
+# my favorite color
+
+# expected output:
+# R: 255
+# G: 99
+# B: 71
+# note: my favorite color
+
+color_dict = {'R': 255, 'G': 99, 'B': 71}
+
+new_key = input()
+new_value = input()
+
+color_dict[new_key] = new_value
+
+print(f'R: {color_dict["R"]}')
+print(f'G: {color_dict["G"]}')
+print(f'B: {color_dict["B"]}')
+print(f'{new_key}: {color_dict[new_key]}')
