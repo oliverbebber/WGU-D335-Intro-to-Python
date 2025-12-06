@@ -302,6 +302,8 @@ Conditional list comprehension example
 
 ### 13. Dictionaries
 
+NOTE: Dictionaries are **mutable**, just like lists. This means they can be *modified in place*.
+
 - **dict type**: the data type that implements a dictionary in Python; dictionaries associate keys with values
   - Example
   > ``` python
