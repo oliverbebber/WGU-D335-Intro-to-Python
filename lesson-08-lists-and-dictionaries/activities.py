@@ -175,3 +175,25 @@ Use the abs() function to find the absolute value of a number.
 Desired result: the largest square root of any element in x. 
 Use math.sqrt() to calculate the square root.
 # [max([math.sqrt(i) for i in x])]
+
+
+
+# 8.14.1
+# determine the output of each code segment. if the code produces an error, the answer is None
+# assume my_dic has the following entries:
+# my_dict = dict(bananas=1.59, fries=2.39, burger=3.50, sandwich=2.99)
+
+my_dict.update(dict(soda=1.49, burger=3.69))
+burger_price = my_dict.get('burger', 0)
+print(burger_price)
+
+# output:
+# 3.69
+
+
+my_dict['burger'] = my_dict['sandwich']
+val = my_dict.pop('sandwich')
+print(my_dict['burger'])
+
+# output:
+# 2.99
