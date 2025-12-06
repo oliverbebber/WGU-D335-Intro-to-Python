@@ -391,8 +391,18 @@ Useful methods:
 
 # Iterating over a Dictionary
 
-## `dict.items()`
+Useful to access or modify the elements within a dictionary
+- A for loop can be used, with the loop variable set to a key of an entry in each iteration
+- The order is that of which the elements were inserted into the dictionary
+- The python interpreter creates a has of each key
+  - **Hash**: a transformation of the key into a unique value that allows the interpreter to perform quick lookups
+- Ordering is determined by the hash value but these values can change depending on the Python version, as well as other factors
 
+**View object**: provides read-only access to keys and values within a dictionary
+- Programs can iterate over view objects to access one key-value pair, or one value at a time - depending on the method uses
+
+## `dict.items()`
+- Returns a view object that yield (key, value) tuples
 > ```python
 > num_calories = dict(Coke=90, Coke_zero=0, Pepsi=94)
 > for soda, calories in num_calories.items():
@@ -407,7 +417,7 @@ Useful methods:
 > Pepsi: 94
 
 ## `dict.keys()`
-
+- Returns a view object that yields dictionary keys
 > ``` python
 > num_calories = dict(Coke=90, Coke_zero=0, Pepsi=94)
 > for soda in num_calories.keys():
@@ -422,7 +432,7 @@ Useful methods:
 > Pepsi
 
 ## `dict.values()`
-
+- Returns a view object that yields dictionary values
 > ``` python
 > num_calories = dict(Coke=90, Coke_zero=0, Pepsi=94)
 > for calories in num_calories.values():
