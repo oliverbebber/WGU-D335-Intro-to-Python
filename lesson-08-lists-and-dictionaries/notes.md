@@ -311,7 +311,34 @@ Conditional list comprehension example
   >    10: 5.0
   > }
   > ```
-  
+
+There are a few different approaches to create a dictionary:
+
+- Using braces `{}` with key-value pairs
+  - format: `{key: value, key: value, ...}`
+  - Example
+  > ``` python
+  > {'Oliver': 'A+', 'Colton': 'C+'}
+  > ```
+  >
+  > This creates a dictionary with 2 keys, 'Oliver' and 'Colton', that are associated with the grades 'A+' and 'C+'.
+
+- Using disctionary comprehension
+  - Uses a loop inside `{}` to build a new dictionary
+  - Similar concept to list comprehension 
+
+- Using the `dict()` built-in function:
+  - Multiple ways to use it: 
+    - Using keyword arguents
+      > ``` python
+      > dict(Bob='805-123-4567', John='954-123-4567')
+      > ```
+    - Using a list of tuple pairs
+      > ``` python
+      > dict([('Bob', '805-123-4567'), ('John', '954-123-4567')])
+      > ```
+  - Both examples produce equivalent dictionaries 
+
 ## Common dict operations
 
 | Operation          | Description                                                        | Example code                       |
