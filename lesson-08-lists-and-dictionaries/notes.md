@@ -363,6 +363,21 @@ There are a few different approaches to create a dictionary:
 
 ### 15. Dictionary methods reference
 
+| Method                 | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| `clear()`              | Removes all items from the dictionary.                                      |
+| `copy()`               | Returns a shallow copy of the dictionary.                                   |
+| `fromkeys(keys, value)`| Returns a new dictionary with specified keys and a default value.           |
+| `get(key)`             | Returns the value for the specified key, or `None` if the key does not exist. |
+| `items()`              | Returns a view object of the dictionary’s key-value pairs.                  |
+| `keys()`               | Returns a view object of the dictionary's keys.                             |
+| `pop(key)`             | Removes and returns the value for the specified key.                        |
+| `popitem()`            | Removes and returns an arbitrary `(key, value)` pair from the dictionary.   |
+| `setdefault(key, value)`| Returns the value of the specified key if it exists, otherwise sets it to the default value. |
+| `update(other)`        | Updates the dictionary with key-value pairs from another dictionary or iterable. |
+| `values()`             | Returns a view object of the dictionary's values.                           |
+
+
 ### 16. Iterating over a dictionary
 
 Useful methods:
