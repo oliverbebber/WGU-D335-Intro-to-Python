@@ -837,3 +837,89 @@ print(f'R: {color_dict["R"]}')
 print(f'G: {color_dict["G"]}')
 print(f'B: {color_dict["B"]}')
 print(f'{new_key}: {color_dict[new_key]}')
+
+
+
+
+
+# read string athlete_name from input
+# create a list containing values 55, 100, and 85, in this order
+# add a new key-value pair to three_attempts with athlete_name as the key
+# and the list as the value
+
+# test input:
+# Aya
+
+# Expected output:
+# Aya: [55, 100, 85]
+
+three_attempts = {} # creates empty dictionary
+
+athlete_name = input() 
+
+my_list = [55, 100, 85]
+
+# add new key-value pair
+three_attempts[athlete_name] = my_list
+
+print(f'{athlete_name}: {three_attempts[athlete_name]}')
+
+
+
+
+# integer num_data is read from input, representing the number of remaining strings
+# in the input
+# use a for loop to read the remaining strings from input
+# each string consists of a key string and a value string, separated by a space
+# add each key-value pair into the dictionary favorite_food
+
+# test input:
+# 3
+# Eli peach
+# Tia berry
+# Mai oatmeal
+
+# expected output:
+# Favorite food:
+# {'Eli': 'peach', 'Tia': 'berry', 'Mai': 'oatmeal'}
+
+favorite_food = {}
+num_data = int(input())
+
+for food in range(num_data):    # loop through favorite_food num_data times
+    input_key = input()
+    name, food = input_key.split()
+    favorite_food[name] = food
+
+print('Favorite food:')
+print(favorite_food)
+
+
+
+# read strings from input until 'done' is read. for each string read:
+# if the string is a key in dictionary users_record, delete the key from users_record
+# otherwise, output the string followed by ' not in dict'
+
+# test input:
+# Kai
+# Ina
+# done
+
+# expected output:
+# Kai not in dict
+# Updated users record:
+# {'Gus': 'gushed@orange.com'}
+
+users_record = {'Ina': 'ina@corn.com', 'Gus': 'gus@orange.com'}
+
+user_input = input()
+
+while user_input != 'done':
+    if user_input in users_record:
+        del users_record[user_input]
+    else:
+        print(f'{user_input} not in dict')
+    user_input = input()
+
+print('Updated users record:')
+print(users_record)
