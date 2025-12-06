@@ -923,3 +923,103 @@ while user_input != 'done':
 
 print('Updated users record:')
 print(users_record)
+
+
+
+
+# 8.14.2
+
+# multiple key-value pairs, each representing a room number and name, are read from input
+# and added to room_records1
+# first, merge room_records2 with room_records1
+# then, merge room_records3 with room_records2
+# last, clear room_records1
+
+# test input:
+# 533 Ada
+# 877 Jen
+# exit
+
+# expected output:
+# Room records 1:
+# {}
+# Room records 2:
+# {'761': 'Del', '380': 'Ani', '533': 'Ada', '877': 'Jen'}
+# Room records 3:
+# {'875': 'Ava', '761': 'Del', '380': 'Ani', '533': 'Ada', '877': 'Jen'}
+
+room_records1 = {'380': 'Ani'}
+room_records2 = {'761': 'Del'}
+room_records3 = {'875': 'Ava'}
+ref_record1 = room_records1  # For testing purposes, ref_record1 references room_records1
+ref_record2 = room_records2  # For testing purposes, ref_record2 references room_records2
+ref_record3 = room_records3  # For testing purposes, ref_record3 references room_records3
+
+input_line = input()
+
+while input_line != 'exit':
+	room, name = input_line.split()
+	room_records1[room] = name
+	input_line = input()
+
+# org output:
+# Room records 1:
+# {'380': 'Ani', '533': 'Ada', '877': 'Jen'}
+# Room records 2:
+# {'761': 'Del'}
+# Room records 3:
+# {'875': 'Ava'}
+
+room_records2.update(room_records1) # merge room_records2 with room_records1
+room_records3.update(room_records2) # merge room_records3 with room_records2
+room_records1.clear() # clear room_records1
+
+print('Room records 1:')
+print(room_records1)
+print('Room records 2:')
+print(room_records2)
+print('Room records 3:')
+print(str(room_records3))
+
+
+
+# dictionary doctors_location contains key-value pairs that represent the room number
+# of each doctor
+# dictionary patient_directory contains key-value pairs that represent the patient in each
+# room
+# string doctor_name is read from input
+
+# complete the following tasks:
+# 1. assign room_num with the value associated with key doctor_name in doctors_location.
+# any string that is not a key in doctors_location has a default value -99
+# 2. use pop() to remove room_num from patient_directory and assign patient_name with the
+# value returned. any number that is not a key in patient_directory has the default value
+# 'nobody'
+
+# test input:
+# Kim
+
+# expected output:
+# Kim (room 174) is seeing Meg.
+# Remaining patients:
+# {189: 'Taj', 247: 'Jan', 913: 'Ada'}
+
+# test input:
+# Hall
+
+# expected output:
+# Hall (room -99) is seeing nobody.
+# Remaining patients:
+# {174: 'Meg', 189: 'Taj', 247: 'Jan', 913: 'Ada'}
+
+doctors_location = {'Kato': 913, 'Lee': 189, 'Kim': 174, 'Sims': 247}
+patient_directory = {174: 'Meg', 189: 'Taj', 247: 'Jan', 913: 'Ada'}
+
+doctor_name = input()
+
+room_num = doctors_location.get(doctor_name, -99) # assign value in dict
+patient_name = patient_directory.pop(room_num, 'nobody') # remove value in dict
+
+print(f'{doctor_name} (room {room_num}) is seeing {patient_name}.')
+print('Remaining patients:')
+print(patient_directory)
