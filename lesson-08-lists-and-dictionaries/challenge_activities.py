@@ -1023,3 +1023,35 @@ patient_name = patient_directory.pop(room_num, 'nobody') # remove value in dict
 print(f'{doctor_name} (room {room_num}) is seeing {patient_name}.')
 print('Remaining patients:')
 print(patient_directory)
+
+
+
+
+# 8.16.1
+# multiple key-value pairs, each representing a person's name & email address, are read
+# from input and added to contact_dict
+# convert contact_dict's items into a list, then sort the list
+# assign sorted_items with the sorted list
+
+# test input:
+# Mai stork3@lemon.com
+# Aya aya8@milk.com
+# Ana ana7@cream.com
+# done
+
+# expected output:
+# [('Ana', 'ana7@cream.com'), ('Aya', 'aya8@milk.com'), ('Mai', 'stork3@lemon.com')]
+
+contact_dict = {}
+
+input_line = input()
+while input_line != 'done':
+    name, email = input_line.split()
+    contact_dict[name] = email
+    input_line = input()
+
+items_list = list(contact_dict.items())
+
+sorted_items = sorted(items_list)
+
+print(sorted_items)
