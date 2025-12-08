@@ -1055,3 +1055,37 @@ items_list = list(contact_dict.items())
 sorted_items = sorted(items_list)
 
 print(sorted_items)
+
+
+
+
+
+
+# multiple key-value pairs, each representing a hotel room number and the guest's
+# name, are read from input and added to room_data
+# output each key-value pair in sorted order of the keys, separating each key and value
+# by a space on a new line
+
+# test input:
+# 303 Bob
+# 167 Ani
+# quit
+
+# expected output:
+# 167 Ani
+# 303 Bob
+
+room_data = {}
+
+input_line = input()
+while input_line != 'quit':
+    room_number, guest = input_line.split()
+    room_data[int(room_number)] = guest
+    input_line = input()
+
+sorted_list = sorted(room_data) # sort the room_numbers (key)
+
+# print(sorted_list)    # returns [167, 303]
+
+for room_number in sorted_list:
+    print(room_number, room_data[room_number])  # print the key, plus access dict values
