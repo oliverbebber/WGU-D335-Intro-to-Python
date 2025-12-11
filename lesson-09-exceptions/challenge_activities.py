@@ -1,3 +1,74 @@
+# 9.1.1
+try:
+    number1 = int(input())
+    print(number1 * 2)
+
+    number2 = int(input())    # causes the exception as K is not an int
+    print(number2 * 2)
+except:
+    print('x')
+print('e')
+
+# input: 
+# 3
+# K
+
+# output:
+# 6
+# x
+# e
+#
+
+
+user_input = input()
+while user_input != 'q':    # q causes the program to skip the entire try/except blocks
+    try:
+        number = int(user_input)
+        print(number * 3)
+    except:
+        print('x')
+    user_input = input()
+print('e')
+
+# input:
+# 5
+# 6
+# q
+
+# output:
+# 15
+# 18
+# e
+#
+
+
+user_input = input()
+while user_input != 'q':
+    try:
+        number = int(user_input)
+        print(number * 4)
+    except:
+        print('x')
+    user_input = input()
+print('e')
+
+# input:
+# 3
+# L
+# 7
+# q
+
+# output:
+# 12
+# x
+# 28
+# e
+#
+
+
+
+
+
 # 9.1.2
 # Add a try block to read an integer manufacture_year from input
 # and outputs 'Manufacture year is ' followed by the value of manufacture_year
