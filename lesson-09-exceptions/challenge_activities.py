@@ -330,3 +330,48 @@ while valid_password == False:
 #
 
 
+
+# 9.3.2
+# in the try block:
+# 1. raise a ValueError exception with the message 'Number of grapes available must be positive'
+# if total_grapes is less than or equal to 0
+# 2. raise a ValueError exception with the message 'Number of grapes requested must be within
+# range' if grapes_requested is less than 0 or is greater than total_grapes
+
+try:
+    total_grapes = int(input())  
+    grapes_requested = int(input())  
+    
+    if total_grapes <= 0:
+        raise ValueError('Number of grapes available must be positive')
+    
+    if grapes_requested < 0 or grapes_requested > total_grapes:
+	    raise ValueError('Number of grapes requested must be within range')
+	
+    grapes_remaining = total_grapes - grapes_requested
+
+    print(f'Grapes remaining: {grapes_remaining}')
+
+except ValueError as excpt:
+    print(f'Error: {excpt}')
+
+
+
+# write an exception handler to:
+# 1. catch an IndexError exception and bind excpt1 to the exception instance being caught
+# 2. output excpt1
+# 3. output 'Tuple operation cannot be completed.' on a new line
+
+fruit_tuple = ('jujube', 'avocado', 'apricot', 'pumpkin', 'melon', 'papaya', 'fig', 'lime', 'orange', 'coconut')
+
+try:
+    tuple_index = int(input())
+
+    if (tuple_index < 0) or (tuple_index >= len(fruit_tuple)):
+        raise IndexError(f'Valid range is 0 to {len(fruit_tuple) - 1}.')
+    
+    print(f'Value is {fruit_tuple[tuple_index]}.')
+
+except IndexError as excpt1:
+	print(f'{excpt1}')
+	print('Tuple operation cannot be completed.')
