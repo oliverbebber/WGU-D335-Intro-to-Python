@@ -214,6 +214,39 @@ print('OK')
 
 
 
+# 9.2.2
+# complete the following:
+# 1. write an exception handler to catch ValueError and output 'float(): Input is not a float.'
+# 2. write an exception handler to catch OverflowError and output 'math.pow(): result of 10
+# raised to the power of ', followed by x_value and ' is too large.'
+
+import math
+
+try:
+	x_value = float(input())
+	print(f'10 raised to the power of {x_value} is {math.pow(10, x_value)}')
+
+except ValueError:
+    print('float(): Input is not a float.')
+except OverflowError:
+    print(f'math.pow(): result of 10 raised to the power of {x_value} is too large.')
+
+
+
+# write an exception handler to catch ValueError and output 'int(): Input is not an integer.'
+# write an exception handler to catch IndexError and output 'String index is less than -6 or 
+# greater than 5.'
+food_word = 'butter'
+
+try:
+	string_index = int(input())
+	print(f"Character at index {string_index} is '{food_word[string_index]}'")
+
+except ValueError:
+    print('int(): Input is not an integer.')
+except IndexError:
+    print('String index is less than -6 or greater than 5.')
+
 
 
 
@@ -295,6 +328,5 @@ while valid_password == False:
 # output: Error: Invalid
 # Accepted
 #
-
 
 
