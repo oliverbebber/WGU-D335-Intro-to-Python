@@ -6,6 +6,24 @@ These are my notes for Lesson 09 of the Intro to Python course.
 
 ### 1. Handling exceptions using try and except
 
+- **Error-checking code**: code programmers use to detect & handle errors that occur while a program executes
+
+- **try block**: used to test code for errors
+
+- **except block**: used to handle the error
+  - Statements in the try block that are not executed before the except block are skipped
+  - If no errors occur, the except block is skipped
+
+
+## Basic exception-handling constructs
+
+> ``` python
+> try:
+>   # code that may produce errors
+> except:  # initiates the following if any error occurs in the try block
+>   # exception handling code
+> ```
+
 ## Common exception types
 
 | Type             | Reason exception is raised                                           |
@@ -30,3 +48,5 @@ These are my notes for Lesson 09 of the Intro to Python course.
 ### References
 
 [Python: Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
+
+[Python Try Except](https://www.w3schools.com/python/python_try_except.asp)
