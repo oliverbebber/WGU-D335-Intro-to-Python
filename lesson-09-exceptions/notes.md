@@ -68,6 +68,10 @@ Multiple exception types can sometimes be handled by the same exception handler.
 
 ### 3. Raising exceptions
 
+Code that finds errors can execute a *raise* statement, which causes the program to exit from the try block and the execution of an exception handler.
+  - The exception handler prints the argument passed by the raise statement that triggered the execution
+
+
 ### 4. Exceptions with functions
 
 ### 5. Using finally to clean up
@@ -79,3 +83,5 @@ Multiple exception types can sometimes be handled by the same exception handler.
 [Python: Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
 
 [Python Try Except](https://www.w3schools.com/python/python_try_except.asp)
+
+[Python's raise: Effectively Raising Exceptions in Your Code](https://realpython.com/python-raise-exception/)
