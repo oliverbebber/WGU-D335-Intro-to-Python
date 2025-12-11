@@ -37,6 +37,35 @@ These are my notes for Lesson 09 of the Intro to Python course.
 
 ### 2. Multiple exception handlers
 
+Multiple exception handlers can be added to a try block by adding in additional except blocks & specifying the type of exception each block handles.
+  
+  - Example
+  > ``` python
+  > try:
+  >   # normal code
+  > except TypeError:
+  >   # code that handles TypeErrors
+  > except ValueError:
+  >   # code that handles ValueErorrs
+  > except:
+  >   # code that handles other exception types
+  > ```
+
+Note: if no exception handler exists for an error type, an unhandled exception *may* occur. This will cause the interpreter to print the exception that occurred and halt the program.
+
+Multiple exception types can sometimes be handled by the same exception handler. A tuple can be used to specify all of the exception types a handler's code should execute.
+  - Example
+  > ``` python
+  > try:
+  >   # ...
+  > except (ValueError, TypeError):
+  >   # Exception handler for any ValueError or TypeError that occurs.
+  > except (NameError, AttributeError):
+  >   # A different handler for NameError and AttributeError exceptions.
+  > except:
+  >   # A different handler for any other exception type.
+  > ```
+
 ### 3. Raising exceptions
 
 ### 4. Exceptions with functions
